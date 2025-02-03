@@ -20,6 +20,12 @@ function initFE() {
   }
 
 $(document).ready(function() {
+    $(document).on('click', "[data-toggleclass]", (e) => {
+        e.stopPropagation()
+        e.preventDefault()
+        $(e.target).addClass('active')
+      })
+      
     $(".arrowmenu").on('click',function () {
         console.log(1)
         $(".headermenu__wrapper").animate({
@@ -151,20 +157,30 @@ $(document).ready(function() {
       $(this).closest('.haederbanner').hide()
   })
 
-  $('.productcard .cardrating').each(function() {
-      $(this).find('span.stars-active').css('width', $(this).find('.cardrating__value').text() * 11.2);
-  });
-  $('.detailinfo__reviews .cardrating').each(function() {
-      $(this).find('span.stars-active').css(
-          'width',
-          $(this).find('.cardrating__value').text() * ($(this).find('.fa-star').width() + 2.1)
-      );
-  });
-  $('.reviews__rating .cardrating').each(function() {
-      $(this).find('span.stars-active').css(
-          'width',
-          $(this).find('.cardrating__value').text() * 18);
-  });
+  $(".productcard .cardrating").each(function () {
+    $(this)
+      .find("span.stars-active")
+      .css("width", $(this).find(".cardrating__value").text() * 11.2)
+  })
+  if ($(window).width() < 1024) {
+    $(".detailinfo__reviews .cardrating").each(function () {
+      $(this)
+        .find("span.stars-active")
+        .css("width", +$(this).find(".cardrating__value").text() * 15)
+    })
+  } else {
+    $(".detailinfo__reviews .cardrating").each(function () {
+      $(this)
+        .find("span.stars-active")
+        .css("width", +$(this).find(".cardrating__value").text() * 18)
+    })
+  }
+
+  $(".reviews__rating .cardrating").each(function () {
+    $(this)
+      .find("span.stars-active")
+      .css("width", $(this).find(".cardrating__value").text() * 18)
+  })
 
   $("input[type=tel]").mask("7 (999) 999-99-99");
 
@@ -338,8 +354,8 @@ function productSliderInit() {
             infinite: true,
             slidesToShow: 5,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
+           /*  autoplay: true,
+            autoplaySpeed: 3000, */
             swipe: false,
             nextArrow: $(this).closest('.productslider').find('.sliderarrows__right'),
             prevArrow: $(this).closest('.productslider').find('.sliderarrows__left'),

@@ -36,9 +36,9 @@ const config = {
   },
   devtool: "source-map",
   mode: "production",
-  optimization: {
-    minimize: true,
-    minimizer: [
+ /*  optimization: {
+    minimize: false,
+   minimizer: [
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
@@ -54,8 +54,8 @@ const config = {
       new TerserPlugin({
         extractComments: true,
       }),
-    ],
-  },
+    ]
+  }, */
   module: {
     rules: [{
         test: /\.(sass|scss)$/,
@@ -94,7 +94,7 @@ const config = {
      }), */
      new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
-      filename: "./css/style.bundle.css",
+      filename: "./css/main.bundle.css",
     }),
     new CopyPlugin({
       patterns: [{
