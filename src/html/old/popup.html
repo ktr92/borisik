@@ -1,0 +1,831 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> 
+  <style>
+    [data-toggle='modal'] {margin-bottom: 5px;}
+  </style>
+  <main>
+  <div class="container">
+    <a href="#popup_delivery" data-toggle='modal' class="btn btn_main"> Выбрать способ доставки </a>
+    <a href="#popup_callback" data-toggle='modal' class="btn btn_main"> Заказать звонок</a>
+    <a href="#popup_auth" data-toggle='modal' class="btn btn_main"> Авторизация</a>
+    <a href="#popup_reg" data-toggle='modal' class="btn btn_main"> Регистрация</a>
+    <a href="#popup_password" data-toggle='modal' class="btn btn_main"> Восстановление пароля</a>
+    <a href="#popup_sms" data-toggle='modal' class="btn btn_main">Вход по SMS</a>
+    <a href="#popup_reset" data-toggle='modal' class="btn btn_main">Сброс пароля</a>
+    <a href="#popup_email" data-toggle='modal' class="btn btn_main">Мы отправили письмо</a>
+    <a href="#popup_success" data-toggle='modal' class="btn btn_main">Пароль был успешно обновлен!</a>
+    <a href="#popup_review" data-toggle='modal' class="btn btn_main">Оставить отзыв</a>
+    <br>
+    <br>
+  </div>
+  <!-- /.container -->
+</main>
+<div class="modal fade" tabindex="-1" role="dialog" id='popup_delivery'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title">Укажите адрес доставки</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+        
+            <div class="deliverytabs js-tabs">
+              <div class="deliverytabs__header">
+                <ul class='js-tabsheader'>
+                  <li class='active'>Доставка</li>
+                  <li>Самовывоз</li>
+                </ul>
+              </div>
+              <!-- /.deliverytabs__header -->
+              <div class="deliverytabs__main">
+                <div class="deliverytabs__item active js-tabscontent">
+                  <div class="deliverytabs__form">
+                    <!-- форму можно поставить в другое если на самовывоз понадобится отдельная -->
+                    <form action="#">
+                    <div class="deliverytabs__inputrow">
+                      <div class="deliverytabs__inputcol mobile-full">
+                        <div class="deliverytabs__input">
+                          <label for="">Город</label>
+                          <div class="selectbox">
+                            <select name="" id="">
+                              <option value="">г. Москва</option>
+                              <option value="">г. Санкт-Петербург</option>
+                              <option value="">г. Казань</option>
+                            </select>
+                          </div>
+                          <!-- /.selectbox -->
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                      <div class="deliverytabs__inputcol mobile-full">
+                        <div class="deliverytabs__input">
+                          <label for="">Улица</label>
+                          <input type="text" class='input-error' value='123'>
+                          <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label for="">Дом, корпус</label>
+                          <input type="text">
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label for="">Подьезд</label>
+                          <input type="text">
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label for="">Этаж</label>
+                          <input type="text">
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label for="">Квартира</label>
+                          <input type="text" class='input-error' value='123'>
+                          <span class="input-errortext">Имя не может содержать символы: 123</span>
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                    </div>
+                    <!-- /.deliverytabs__inputrow -->
+                    <div class="deliverytabs__map">
+                      <div class="map-delivery">
+                        <!-- заглушка карты -->
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A910d035e8541c432b40bd4d37b0412bfbb2a89bb51d5eb57d49fe768cb62627d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                      </div>
+                      <!-- /.map-delivery -->
+                    </div>
+                    <!-- /.deliverytabs__map -->
+                    <div class="modal-submit">
+                      <div class="buttonsrow">
+                        <div class="buttonsrow__item">
+                          <a class='btn_border btn_gray'>Отмена</a>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                        <div class="buttonsrow__item">
+                          <button type='submit' class='btn btn_main'>Подтвердить</button>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                      </div>
+                      <!-- /.buttonsrow -->
+                    </div>
+                    <!-- /.modal-submit -->
+                    </form>
+                  </div>
+                  <!-- /.deliverytabs__form -->
+                </div>
+                <!-- /.deliverytabs__item -->
+                <!-- самовывоз -->
+                <div class="deliverytabs__item js-tabscontent">
+                    <div class="deliverytabs__pickup">
+                      <form action="">
+                      <div class="pickuptabs" data-tabs='pickup_tabs'>
+                        <div class="pickuptabs__header">
+                          <ul class="pickuptabs__ul" data-headertabs='pickup_header'>
+                            <li class='active'><img src="img/Location.svg" class='pickuptabimg' alt=""><img class='pickuptabimg-active'  src="img/Location-active.svg" alt=""><span>На карте</span></li>
+                            <li><img src="img/BulletedList.svg"  class='pickuptabimg'  alt=""><img class='pickuptabimg-active'  src="img/BulletedList-active.svg" alt=""><span>Списком</span></li>
+                          </ul><!-- /.pickuptabs__ul -->
+                        </div><!-- /.pickuptabs__header -->
+                        <div class="pickuptabs__main">
+
+                          <!-- самовывоз - карта -->
+                          <div class="pickuptabs__content active"  data-contenttabs='pickup_content'>
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A910d035e8541c432b40bd4d37b0412bfbb2a89bb51d5eb57d49fe768cb62627d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                          </div><!-- /.pickuptabs__content -->
+
+                          <!-- самовывоз - список -->
+                          <div class="pickuptabs__content "  data-contenttabs='pickup_content'>
+                            <div class="pickuptabs__search"> 
+                              <div class="searchinput">
+                                <button type="submit"><img src="img/Search.svg" alt=""></button>
+                                <!--  <input type="text" placeholder='Я ищу...' id='title-search-input_fixed'> -->
+                                <input type="text" placeholder="Поиск по списку" >
+                              </div>
+                            </div><!-- /.pickuptabs__search -->
+                            <div class="pickup__list">
+                              <div class="pickuplist">
+                                <div class="pickuplist__items">
+
+                                  <!-- надо повесить клик на блоки pickuplist__item = выбор пункта выдачи -->
+                                  <div class="pickuplist__item">
+                                    <div class="pickuplist__header">
+                                      105318, Москва г, Внутригородская территория муниципальный округ Соколиная гора, Щербаковская ул, дом 3
+                                    </div>
+                                    <div class="pickuplist__content">
+                                      <div class="pickuplist__addr">
+                                        <div class="pickuplist__address">
+                                          <img src="img/Moscow_Metro 1.svg" alt="">
+                                          <span>Алексеевская</span>
+                                        </div><!-- /.pickuplist__address -->
+                                        <div class="pickuplist__address">
+                                          <img src="img/Moscow_Metro 1.svg" alt="">
+                                          <span>Багратионовская</span>
+                                        </div><!-- /.pickuplist__address -->
+                                      </div><!-- /.pickuplist__addr -->
+                                      <div class="pickuplist__dtime">
+                                        <div class="dtime">
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                        </div><!-- /.dtime -->
+                                        
+                                      </div><!-- /.pickuplist__dt -->
+                                    </div><!-- /.pickuplist__content -->
+                                  </div><!-- /.pickuplist__item -->
+
+                                 <!-- надо повесить клик на блоки pickuplist__item = выбор пункта выдачи -->
+                                  <div class="pickuplist__item">
+                                    <div class="pickuplist__header">
+                                      105318, Москва г, Внутригородская территория муниципальный округ Соколиная гора, Щербаковская ул, дом 3
+                                    </div>
+                                    <div class="pickuplist__content">
+                                      <div class="pickuplist__addr">
+                                        <div class="pickuplist__address">
+                                          <img src="img/Moscow_Metro 1.svg" alt="">
+                                          <span>Алексеевская</span>
+                                        </div><!-- /.pickuplist__address -->
+                                        <div class="pickuplist__address">
+                                          <img src="img/Moscow_Metro 1.svg" alt="">
+                                          <span>Багратионовская</span>
+                                        </div><!-- /.pickuplist__address -->
+                                      </div><!-- /.pickuplist__addr -->
+                                      <div class="pickuplist__dtime">
+                                        <div class="dtime">
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                        </div><!-- /.dtime -->
+                                        
+                                      </div><!-- /.pickuplist__dt -->
+                                    </div><!-- /.pickuplist__content -->
+                                  </div><!-- /.pickuplist__item -->
+                                  <div class="pickuplist__item">
+                                    <div class="pickuplist__header">
+                                      105318, Москва г, Внутригородская территория муниципальный округ Соколиная гора, Щербаковская ул, дом 3
+                                    </div>
+                                    <div class="pickuplist__content">
+                                      <div class="pickuplist__addr">
+                                        <div class="pickuplist__address">
+                                          <img src="img/Moscow_Metro 1.svg" alt="">
+                                          <span>Алексеевская</span>
+                                        </div><!-- /.pickuplist__address -->
+                                        <div class="pickuplist__address">
+                                          <img src="img/Moscow_Metro 1.svg" alt="">
+                                          <span>Багратионовская</span>
+                                        </div><!-- /.pickuplist__address -->
+                                      </div><!-- /.pickuplist__addr -->
+                                      <div class="pickuplist__dtime">
+                                        <div class="dtime">
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                          <div class="dtime__item">
+                                            ПН-СБ: <b>09:00 - 21:00</b> 
+                                          </div><!-- /.dtime__item -->
+                                        </div><!-- /.dtime -->
+                                        
+                                      </div><!-- /.pickuplist__dt -->
+                                    </div><!-- /.pickuplist__content -->
+                                  </div><!-- /.pickuplist__item -->
+                                </div><!-- /.pickuplist__items -->
+                              </div><!-- /.pickuplist -->
+                            </div><!-- /.pickup__list -->
+                          </div><!-- /.pickuptabs__content -->
+                          <!-- заглушка карты -->
+                        </div><!-- /.pickuptabs__main -->
+                      </div><!-- /.pickuptabs -->
+                      <div class="modal-submit">
+                        <div class="buttonsrow">
+                          <div class="buttonsrow__item">
+                            <a class='btn_border btn_gray'>Отмена</a>
+                          </div>
+                          <!-- /.buttonsrow__item -->
+                          <div class="buttonsrow__item">
+                            <button type='submit' class='btn btn_main'>Выбрать самовывоз</button>
+                          </div>
+                          <!-- /.buttonsrow__item -->
+                        </div>
+                        <!-- /.buttonsrow -->
+                      </div>
+                      <!-- /.modal-submit -->
+                      </form>
+                    </div><!-- /.deliverytabs__pickup -->
+                  </div>
+                  <!-- /.deliverytabs__item -->
+               
+              </div>
+              <!-- /.deliverytabs__main -->
+            </div>
+            <!-- /.deliverytabs -->
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Заказать звонок</div>
+          <div class="modal-subtitle">Наш оператор свяжется с Вами в течение нескольких минут</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Ваше имя</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Телефон</label>
+                  <input type="tel" placeholder='7 (___) ___-__-__'>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_auth'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Авторизация</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Телефон или Email</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Пароль</label>
+                  <div class="inputpassword">
+                    <input type="password" >
+                    <img src="img/Invisible.svg" alt="" data-toggle="password">
+                  </div><!-- /.inputpassword -->
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="flex content-between passwordforgot">
+                <div class="check">
+                  <input type="checkbox" id="save" checked="checked" value="Y">
+                  <label for="save">Запомнить меня</a>
+                  </label>
+                </div>  
+                <a href="#">Забыли пароль?</a>
+              </div>
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Войти</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <a class='btn_border btn_gray red'>SMS-авторизация</a>
+
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="textlogin flex content-between items-center">
+                <div class="textlogin__text">У вас еще нет учетной записи?</div>
+                <div class="textlogin__link"><a href="">Зарегистрируйтесь</a></div>
+              </div><!-- /.textlogin -->
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_password'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Восстановление пароля</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Email</label>
+                  <input type="text">
+                  <div class="textinput">Ссылка для смены пароля будет отправлена на указанную почту</div><!-- /.textinput -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input formblock__input_center">
+                  <img src="img/captcha.png" alt="">
+                </div><!-- /.formblock__input -->
+                
+              </div><!-- /.formblock__main -->
+            
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Сбросить пароль</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <a class='btn_border btn_gray red'>SMS-авторизация</a>
+
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_sms'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Вход по SMS</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main formblock__main_small">
+                <div class="formblock__input">
+                  <label for="">Ваш телефон</label>
+                  <input type="tel" placeholder='7 (___) ___-__-__'>
+                </div><!-- /.formblock__input -->
+               
+              </div><!-- /.formblock__main -->
+            
+              <div class="modal-submit modal-submit_small"> 
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Войти по SMS</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                 
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="textlogin flex content-between items-center">
+                <div class="textlogin__text">У вас еще нет учетной записи?</div>
+                <div class="textlogin__link"><a href="">Зарегистрируйтесь</a></div>
+              </div><!-- /.textlogin -->
+              
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_email'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+             
+              <div class="modalinfo">
+                <div class="modalinfo__image"><img src="img/send.svg" alt=""></div><!-- /.modalinfo__image -->
+                <div class="modalinfo__title">Мы отправили письмо на <span class="red">*****llz@gmail.com</span></div><!-- /.modalinfo__title -->
+                <div class="modalinfo__text">Следуйте инструкциям в письме для продолжение процедуры сброса пароля</div><!-- /.modalinfo_-text -->
+              </div><!-- /.modalinfo -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Ок</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                 
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_reset'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Сброс пароля</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+               
+                <div class="formblock__input">
+                  <label for="">Новый пароль</label>
+                  <div class="inputpassword">
+                    <input type="password" >
+                    <img src="img/Invisible.svg" alt="" data-toggle="password">
+                  </div><!-- /.inputpassword -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Повторите, пожалуйста</label>
+                  <div class="inputpassword">
+                    <input type="password" >
+                    <img src="img/Invisible.svg" alt="" data-toggle="password">
+                  </div><!-- /.inputpassword -->
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+             
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Обновить пароль</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                 
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_success'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+             
+              <div class="modalinfo">
+                <div class="modalinfo__image"><img src="img/success.svg" alt=""></div><!-- /.modalinfo__image -->
+                <div class="modalinfo__title">Пароль был успешно обновлен!</div><!-- /.modalinfo__title -->
+                <div class="modalinfo__text">Теперь вы можете войти в вашую учетную запись.</div><!-- /.modalinfo_-text -->
+              </div><!-- /.modalinfo -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Войти</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                 
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='popup_reg'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Регистрация</div>
+            <div class="textlogin flex content-between items-center">
+              <div class="textlogin__text">Уже есть учетная запись?</div>
+              <div class="textlogin__link"><a href="">Авторизируйтесь</a></div>
+            </div><!-- /.textlogin -->
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="formblock__main formblock__main_cols">
+            <div class="formblock__input">
+              <label for="">Ваше имя</label>
+              <input type="text" class='input-error' value='123'>
+              <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Фамилия</label>
+              <input type="text">
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Email</label>
+              <input type="text">
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Телефон</label>
+              <input type="tel" placeholder='7 (___) ___-__-__'>
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input formblock__input__full">
+              <div class="informwrapper informwrapper_green">
+                <div class="informwrapper__title">Укажите почту и получите:</div>
+                <div class="informwrapper__list">
+                  <div class="checklist">
+                    <ul>
+                      <li>Скидку 15% на первый заказ от 1000 рублей.</li>
+                      <li>Участвие в розыгрышах и выигрыш промокодов.</li>
+                      <li>Уведомления о всех акциях, новинах и новостях.</li>
+                    </ul>
+                  </div><!-- /.checklist -->
+                </div><!-- /.informwrapper__list -->
+              </div><!-- /.informwrapper -->
+            </div><!-- /.formblock__input__full -->
+            <div class="formblock__input">
+              <label for="">Новый пароль</label>
+              <div class="inputpassword">
+                <input type="password" >
+                <img src="img/Invisible.svg" alt="" data-toggle="password">
+              </div><!-- /.inputpassword -->
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Повторите, пожалуйста</label>
+              <div class="inputpassword">
+                <input type="password" >
+                <img src="img/Invisible.svg" alt="" data-toggle="password">
+              </div><!-- /.inputpassword -->
+            </div><!-- /.formblock__input -->
+          </div><!-- /.formblock__main -->
+             
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow xs-full">
+                  <div class="buttonsrow__item ">
+                    <div class="formblock__check">
+                      <div class="check">
+                        <input type="checkbox" id="agree" checked="checked" value="Y">
+                        <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                        </label>
+                      </div>
+                    </div><!-- /.formblock__check -->
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                  <div class="buttonsrow__item ">
+                    <button type='submit' class='btn btn_main'>Зарегистрироваться</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                 
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_review'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Оставить отзыв</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="accountname">
+              <div class="accountname__image">
+                <div class="accountname__img"><img src="img/accplh.svg" alt=""></div><!-- /.accountname__img -->
+              </div><!-- /.accountname__image -->
+              <div class="accountname__content">
+                <div class="accountname__label">от имени:</div><!-- /.accountname__label -->
+                <div class="accountname__name">Андрей Маринович</div><!-- /.accountname__name -->
+              </div><!-- /.accountname__content -->
+            </div><!-- /.accountname -->
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Email</label>
+                  <input type="text" class='input-error' value='xolxllz@gmail.com'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input"> 
+                  <label for="">Текст отзыва</label>
+                 <textarea name="" id="" cols="" rows="2"></textarea><!-- /# -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <div class="formrating">
+                    <div class="formrating__text">Ваша оценка:</div>
+                    <span class="score">
+                      <div class="score-wrap">
+                        <span class="stars-active" style="width: 0;">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <span class="stars-inactive">
+                            <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                        </span>
+                      </div>
+                    </span>
+                    <span class='formrating__value'>0</span>
+                    <input type="hidden" name="formrating" value='0'>
+
+                  </div>
+                  <script>
+                      $('.formrating .score-wrap').mousemove(function (e) {
+                            if ($('.formrating input[name="formrating"]').val() === '0') {
+                                var stars = parseInt((e.pageX - $(this).offset().left) / 28) * 28 + 28;
+                                $(this).find('span.stars-active').css('width', stars);
+                            }
+
+                        });
+
+                        $('.formrating .score-wrap').click(function (e) {
+                            var stars = parseInt((e.pageX - $(this).offset().left) / 28) + 1;
+                            var $inp = $('.formrating input[name="formrating"]');
+                            $inp.val(stars);
+                            $('.formrating span.stars-active').css('width', stars  * 28);
+                            $('.formrating__value').html(stars);
+                            // при нажатии на рейтинг 
+                        });
+                  </script>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= _.template(require('../includes/footer.html').default)(data) %>

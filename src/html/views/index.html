@@ -1,0 +1,1811 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+<%= _.template(require('../includes/header.html').default)(data) %>
+<main>
+  <div class="mainslider">
+    <div class="container">
+      <div class="mainslider__wrapper">
+        <div class="swiper mainswiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide1.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide2.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide3.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide4.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide1.jpg" /></a>
+            </div>
+          </div>
+        </div>
+        <div thumbsSlider="" class="swiper mainswiperpreview">
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/slide1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide1.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainslider-pagination"></div>
+      <!-- /.mainslider__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.mainslider -->
+  <div class="pageblock indexcat">
+    <div class="container">
+      <h2>Популярное</h2>
+      <div class="indexcat__items">
+        <div class="indexcat__item indexcat__item_large">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #E9F2FF; '>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Полуфабрикаты</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+                <div class="indexcat__text">Только лучшие качественные полуфабрикаты заморожены исключительно сухой заморозкой и сохранающие свой вкус!</div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-1.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item indexcat__large -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #FFF7E9;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Мясные консервы</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-2.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #E2F3FF;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Морепродукты</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-3.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #FFF8E9;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Молочные продукты</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-4.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #FFE9E9;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Фрукты, овощи</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-5.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item indexcat__item_large">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #E9F2FF; '>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">На шашлык</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+                <div class="indexcat__text">Только лучшие качественные полуфабрикаты заморожены исключительно сухой заморозкой и сохранающие свой вкус!</div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-6.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item indexcat__large -->
+      </div>
+      <!-- /.indexcat__items -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblock indexcat -->
+  <div class="pageblocksl">
+    <div class="container">
+      <a class="mainmenubtn onlyMobile" href='#'>
+      <img class="burgericon" src="img/menubtn2.svg" alt="">
+      <span>Каталог товаров</span>
+      </a>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblocksl -->
+  <div class="pageblocksl productslider">
+    <div class="container">
+      <div class="blockheader flex items-center content-between">
+        <div class="blockheader__left">
+          <h2>Хиты</h2>
+          <a href="#">Смотреть все</a>   
+        </div>
+        <!-- /.blockheader__left -->
+        <div>
+          <div class="sliderarrows flex">
+            <div class="sliderarrows__left">
+              <img src="img/left.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrows__right">
+              <img src="img/right.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__right -->
+          </div>
+          <!-- /.sliderarrows -->
+        </div>
+      </div>
+      <!-- /.blockheader -->
+      <div class="productslider__wrapper">
+        <div class="productslider__container ">
+          <div class="productslider__slider ">
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+          </div>
+          <!-- /.productslider__slide r -->
+        </div>
+        <!-- /.productslider__container -->
+      </div>
+      <!-- /.productslider__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblock -->
+  <div class="blockslider pageblocksl">
+    <div class="container blockslider__wrapper">
+      <div class="blockslider__container swiper">
+        <div class="blockslider__slider swiper-wrapper">
+          <div class="blockslider__slide swiper-slide">
+            <div class="blockslider__content">
+              <a href="#">
+              <img src="img/slider2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- /.blockslider__slide -->
+          <div class="blockslider__slide swiper-slide">
+            <div class="blockslider__content">
+              <a href="#">
+              <img src="img/slider2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- /.blockslider__slide -->
+        </div>
+        <!-- /.blockslider__slider -->     
+        <div class="blockslider-pagination"></div>
+      </div>
+      <!-- /.blockslider__container -->
+      <div class="blockslider-button-next"><img src="img/right.svg" alt=""></div>
+      <div class="blockslider-button-prev"><img src="img/left.svg" alt=""></div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.blockslider -->
+  <div class="pageblocksl productslider">
+    <div class="container">
+      <div class="blockheader flex items-center content-between">
+        <div class="blockheader__left">
+          <h2>Новинки</h2>
+          <a href="#">Смотреть все</a>   
+        </div>
+        <!-- /.blockheader__left -->
+        <div>
+          <div class="sliderarrows flex">
+            <div class="sliderarrows__left">
+              <img src="img/left.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrows__right">
+              <img src="img/right.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__right -->
+          </div>
+          <!-- /.sliderarrows -->
+        </div>
+      </div>
+      <!-- /.blockheader -->
+      <div class="productslider__wrapper">
+        <div class="productslider__container ">
+          <div class="productslider__slider ">
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+          </div>
+          <!-- /.productslider__slide r -->
+        </div>
+        <!-- /.productslider__container -->
+      </div>
+      <!-- /.productslider__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblock -->
+  <div class="pageblocksl recipeslider">
+    <div class="container">
+      <div class="blockheader flex items-center content-between">
+        <div class="blockheader__left">
+          <h2>Готовим вместе</h2>
+          <a href="#">Все рецепты</a>   
+        </div>
+        <!-- /.blockheader__left -->
+        <div>
+          <div class="sliderarrows flex">
+            <div class="sliderarrows__left">
+              <img src="img/left.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrows__right">
+              <img src="img/right.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__right -->
+          </div>
+          <!-- /.sliderarrows -->
+        </div>
+      </div>
+      <!-- /.blockheader -->
+      <div class="itemslistslider__wrapper">
+        <div class="itemslistslider__container">
+          <div class="itemslist__slider recipeslider__slider">
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe2.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+          </div>
+          <!-- /.itemslistslider__slider -->
+        </div>
+        <!-- /.itemslistslider__container -->
+      </div>
+    </div>
+  </div>
+  <div class="fitchesline pageblock">
+    <div class="container">
+      <div class="fitchesline__items">
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard1.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Самая свежая продукция <br>
+                  прямо с завода
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard2.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Широкий ассортимент <br>
+                  на любой вкус
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard3.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Скидки участникам  
+                  программы лояльности
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard4.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Доставка  <br>
+                  день в день
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard5.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">ХАСПП международная сертификация</div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+      </div>
+      <!-- /.fitchesline__items -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.fitchesline -->
+  <div class="pageblock">
+  <div class="aboutblock">
+    <div class="container">
+      <div class="aboutblock__header">
+        <h2>Наши поставщики производители</h2>
+      </div>
+      <!-- /.aboutblock__header -->
+      <div class="aboutblock__wrapper">
+        <div class="aboutblock__left">
+          <div class="aboutblock__video">
+            <div class="video-container">
+               <iframe data-loader="youtube" data-src="FAWjZPzKRSM" width="" height="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- /.video-container -->
+          </div>
+          <!-- /.aboutblock__video -->
+        </div>
+        <!-- /.aboutblock__left -->
+        <div class="aboutblock__right">
+          <div class="aboutblock__content">
+            <div class="aboutblock__img">
+              <img src="img/logo_small.png" alt="">
+            </div>
+            <!-- /.aboutblock__img -->
+            <div class="aboutblock__text">
+              <p class="bigtext">
+                Это высокотехнологичное предприятие, оснащенное современным оборудованием от ведущих мировых производителей
+              </p>
+              <!-- /.aboutblock__text bigtext -->
+              <p>Производство продукции «Мясницкий ряд» осуществляется на базе МПЗ «Мясницкий ряд»</p>
+              <p>Все это гарантирует строгий контроль качества всей выпускаемой продукции, её соответствие Европейским стандартам и безопасность. На сегодняшний день, предприятие неоднократно успешно, без замечаний, прошло международный сертификационный аудит.</p>
+            </div>
+            <!-- /.aboutblock__text -->
+            <div class="docblock docblock_sert">
+              <div class="docblock__icon">
+                <div class="docblock__icn"><img src="img/sert.svg" alt=""></div>
+              </div>
+              <!-- /.docblock__icon -->
+              <div class="docblock__main">
+                <div class="docblock__title">ISO 22000:2005 и ХАССП</div>
+                <!-- /.docblock__title -->
+                <div class="docblock__text">Сертифицированно по международной системе</div>
+                <!-- /.docblock__text -->
+              </div>
+              <!-- /.docblock__main -->
+            </div>
+            <!-- /.docblock docblock_sert -->
+          </div>
+          <!-- /.aboutblock__content -->
+        </div>
+        <!-- /.aboutblock__right -->
+      </div>
+      <!-- /.container aboutblock__wrapper -->
+    </div>
+    <!-- /.aboutblock -->
+  </div>
+  <!-- /.pageblock -->
+  <div class="pageblocksl">
+    <div class="imgsliderblock">
+      <div class="container">
+        <div class="imgslider">
+          <div class="imgslider__container slider-wrapper">
+            <div class="imgslider__slider">
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#' class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner1.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner2.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <div class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner3.png" alt="">
+                    </div>
+                  </div>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner4.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner5.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner1.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner2.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+            </div>
+            <!-- /.imgslider__slider -->
+            <div class="beyond-button-next"><img src="img/right.svg" alt=""></div>
+            <div class="beyond-button-prev"><img src="img/left.svg" alt=""></div>
+          </div>
+          <!-- /.imgslider__container -->
+        </div>
+        <!-- /.imgslider -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.imgsliderblock -->
+  </div>
+  <!-- /.pageblocksl -->
+</main>
+<%= _.template(require('../includes/footer.html').default)(data) %>

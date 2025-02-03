@@ -1,0 +1,588 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <style>
+  li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: inline-block;
+  }
+</style>
+<main>
+  <div class="page">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pageheader">
+        <h1>Оформление заказа</h1>
+      </div>
+      <div class="orderpage orderform">
+        <form action="">
+          <div class="cartblock">
+            <div class="cartblock__main">
+              <div class="ordermain">
+                <div class="orderform__content">
+                  <div class="orderform__blocks">
+                    <div class="orderform__block">
+                      <div class="infocard">
+                        <div class="infocard__title">Способ получения и время доставки</div>
+                        <div class="sitetabs">
+                          <div class="sitetabs__header sitetabs__header_small">
+                            <ul class="">
+                              <li class="active"> Доставка </li>
+                              <li> Самовывоз </li>
+                            </ul>
+                          </div>
+                          <div class="sitetabs__wrapper">
+                            <div class="sitetabs__content sitetabs__content_small active">
+                              <div class="sitetabs__main">
+                                <div class="orderadress">
+                                  <div class="orderadress__items">
+                                    <div class="orderadress__item">
+                                      <div class="orderadress__input">
+                                        <label for="address_001" class='formcheckbox'>
+                                          <span class="orderinput">
+                                            <div class="orderinput__input">
+                                              <input type="radio" checked name='address' id='address_001'>
+                                              <span class="checkmark"></span>
+                                              <span class='orderinput__text'>г. Одинцово, ул. Татарская, д.15, стр.1, кв.101</span>
+                                              <span class="orderinput__border"></span>
+                                            </div>
+                                          </span>
+                                          <div class="orderadress__buttons">
+                                            <a href="" class="orderadress__button orderadress__edit">
+                                              <img src="img/edit.svg" alt="">
+                                            </a>
+                                            <a href="" class="orderadress__button orderadress__remove">
+                                              <img src="img/remove.svg" alt="">
+                                            </a>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="orderadress__item">
+                                      <div class="orderadress__input">
+                                        <label for="address_002" class='formcheckbox'>
+                                          <span class="orderinput">
+                                            <div class="orderinput__input">
+                                              <input type="radio" name='address' id='address_002'>
+                                              <span class="checkmark"></span>
+                                              <span class='orderinput__text'>г. Москва, ул. Тверская, д. 17</span>
+                                              <span class="orderinput__border"></span>
+                                            </div>
+                                          </span>
+                                          <div class="orderadress__buttons">
+                                            <a href="" class="orderadress__button orderadress__edit">
+                                              <img src="img/edit.svg" alt="">
+                                            </a>
+                                            <a href="" class="orderadress__button orderadress__remove">
+                                              <img src="img/remove.svg" alt="">
+                                            </a>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="orderadress__item">
+                                      <div class="orderadress__input">
+                                        <label for="address_003" class='formcheckbox'>
+                                          <span class="orderinput">
+                                            <div class="orderinput__input">
+                                              <input type="radio" name='address' id='address_003'>
+                                              <span class="checkmark"></span>
+                                              <span class='orderinput__text'>г. Москва, ул. Одинцвоская, д.179</span>
+                                              <span class="orderinput__border"></span>
+                                            </div>
+                                          </span>
+                                          <div class="orderadress__buttons">
+                                            <a href="" class="orderadress__button orderadress__edit">
+                                              <img src="img/edit.svg" alt="">
+                                            </a>
+                                            <a href="" class="orderadress__button orderadress__remove">
+                                              <img src="img/remove.svg" alt="">
+                                            </a>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="orderaddress__add">
+                                    <span onclick='$("#editaddress").show(); $(this).closest(".orderaddress__add").hide()' class="btn btn_main btn_icontext btn_add">
+                                      <span>Добавить адрес</span>
+                                    </span>
+                                  </div>
+                                  <div id="editaddress" class='editaddress'>
+                                    <div class="orderform__label">Адрес доставки</div>
+                                    <div class="selectinput">
+                                      <div class="selectinput__select">
+                                        <div class="selectbox selectbox_arrow">
+                                          <select name="" id="">
+                                            <option value="">г. Москва</option>
+                                            <option value="">г. Москва</option>
+                                            <option value="">г. Москва</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="selectinput__input">
+                                        <input type="text" value='ул. Тверская, 293, д481'>
+                                      </div>
+                                    </div>
+                                    <div class="editaddress__buttons">
+                                      <a href='#' class='editaddress__reset'>
+                                        <img src="img/close_icon.svg" alt="">
+                                        <span>Сбросить</span>
+                                      </a>
+                                      <a href='#' class='editaddress__accept'>
+                                        <img src="img/accept_icon.svg" alt="">
+                                        <span>Сохранить</span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="orderadress__datetime">
+                                    <div class="orderadress__date">
+                                      <div class="orderform__label">Дата доставки</div>
+                                      <input type="text" class='inputdate' value='' id='js-flatpickr'>
+                                    </div>
+                                    <div class="orderadress__time">
+                                      <div class="orderform__label">Время доставки</div>
+                                      <div class="selectbox inputtime selectbox_arrow">
+                                        <select name="" id="">
+                                          <option value="">с 10:00 до 12:00</option>
+                                          <option value="">с 10:00 до 12:00</option>
+                                          <option value="">с 10:00 до 12:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="sitetabs__content sitetabs__content_small ">
+                              <div class="sitetabs__main">
+                                <div class="orderadress">
+                                  <div class="orderadress__items">
+                                    <div class="orderadress__item">
+                                      <div class="orderadress__input">
+                                        <label for="address_011" class='formcheckbox'>
+                                          <span class="orderinput">
+                                            <div class="orderinput__input">
+                                              <input type="radio" checked name='address' id='address_011'>
+                                              <span class="checkmark"></span>
+                                              <span class='orderinput__text'>г. Москва, ул. Тверская, д. 17</span>
+                                              <span class="orderinput__border"></span>
+                                            </div>
+                                          </span>
+                                          <div class="orderadress__buttons">
+                                            <a href="" class="orderadress__button orderadress__edit">
+                                              <img src="img/edit.svg" alt="">
+                                            </a>
+                                            <a href="" class="orderadress__button orderadress__remove">
+                                              <img src="img/remove.svg" alt="">
+                                            </a>
+                                          </div>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="orderaddress__add">
+                                    <a href="#" onclick='' class="btn btn_main btn_icontext btn_add">
+                                      <span>Добавить адрес</span>
+                                    </a>
+                                  </div>
+                                  <div class="orderadress__datetime">
+                                    <div class="orderadress__date">
+                                      <div class="orderform__label">Дата доставки</div>
+                                      <input type="text" class='inputdate active' value='01.11.2022'>
+                                    </div>
+                                    <div class="orderadress__time">
+                                      <div class="orderform__label">Время доставки</div>
+                                      <div class="selectbox inputtime selectbox_arrow">
+                                        <select name="" id="">
+                                          <option value="">с 10:00 до 12:00</option>
+                                          <option value="">с 10:00 до 12:00</option>
+                                          <option value="">с 10:00 до 12:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="orderform__block">
+                    <div class="infocard">
+                      <div class="infocard__title">Покупатель</div>
+                      <div class="orderform__inputrow">
+                        <div class="orderform__inputcol orderform__inputcol_4 mobile-full">
+                          <div class="orderform__label">Имя</div>
+                          <div class="orderform__input">
+                            <input type="text" value='Андрей'>
+                          </div>
+                        </div>
+                        <div class="orderform__inputcol orderform__inputcol_4 mobile-full">
+                          <div class="orderform__label">Фамилия</div>
+                          <div class="orderform__input">
+                            <input type="text" class='input-error' value='123'>
+                            <span class="input-errortext">Фамилия не может содержать символы: 123</span>
+                          </div>
+                        </div>
+                        <div class="orderform__inputcol orderform__inputcol_4 mobile-full">
+                          <div class="orderform__label">Телефон</div>
+                          <div class="orderform__input">
+                            <input type="tel" value=''>
+                          </div>
+                        </div>
+                        <div class="orderform__inputcol orderform__inputcol_4 mobile-full">
+                          <div class="orderform__label">Email</div>
+                          <div class="orderform__input">
+                            <input type="email" value=''>
+                          </div>
+                        </div>
+                        <div class="orderform__inputcol orderform__inputcol_full">
+                          <div class="orderform__label">Ваши пожелания к заказу, например, пожелания по весу</div>
+                          <div class="orderform__input">
+                            <textarea rows='1'></textarea>
+                          </div>
+                        </div>
+                        <div class="orderform__inputcol orderform__inputcol_full">
+                          <div class="orderform__label">Телефон для применения скидки по программе “Биржа Вкусов”</div>
+                          <div class="orderform__input">
+                            <input type="tel" value='' class='input_image' style='background-image: url(img/bv.png)' placeholder='7 (___) ___-__-__'>
+                          </div>
+                        </div>
+                        <div class="orderform__inputcol orderform__inputcol_full">
+                          <div class="check">
+                            <input type="checkbox" id="agree" checked="checked" value="Y">
+                            <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="orderform__block">
+                    <div class="infocard">
+                      <div class="blockheader flex items-center content-between">
+                        <div class="blockheader__left">
+                          <div class="infocard__title">Товары в корзине <span class="carttotal__count">4</span>
+                          </div>
+                          <a href="#">Изменить</a>
+                        </div>
+                        <div></div>
+                      </div>
+                      <div class="cartblock__items">
+                        <div class="cartblock__item">
+                          <div class="minicard">
+                            <div class="minicard__wrapper">
+                              <div class="minicard__left">
+                                <a href='#' class="minicard__image">
+                                  <img src="img/product1.png" alt="">
+                                </a>
+                                <div class="minicard__info onlyMobile">
+                                  <a href='#' class="minicard__title ">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__right ">
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                        <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">762.92</div>
+                                          <div class="productcard__badge">12%</div>
+                                        </div>
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="minicard__main">
+                                  <a href='#' class="minicard__title onlyDesktop">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__buyblock">
+                                    <div class="minicard__count">
+                                      <div class="buyblock__quantity">
+                                        <div class="quantity">
+                                          <input type="number" step="1" disabled  max="" value="1" name="quantity" class="quantity-field">
+                                        </div>
+                                      </div>
+                                      <div class="minicard__amount">
+                                        <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="minicard__right onlyDesktop">
+                                <div class="minicard__pricetitle">Итого</div>
+                                <div class="minicard__price">
+                                  <div class="productcard__prices">
+                                    <div class="productcard__topprice">
+                                      <div class="productcard__oldprice">762.92</div>
+                                      <div class="productcard__badge">12%</div>
+                                    </div>
+                                    <div class="productcard__mainprice">
+                                      <div class="productcard__price">
+                                        <div class="productcard__pricevalue">674.94</div>
+                                        <div class="productcard__priceunit">₽/кг</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cartblock__item">
+                          <div class="minicard">
+                            <div class="minicard__wrapper">
+                              <div class="minicard__left">
+                                <a href='#' class="minicard__image">
+                                  <img src="img/product1.png" alt="">
+                                </a>
+                                <div class="minicard__info onlyMobile">
+                                  <a href='#' class="minicard__title ">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__right ">
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                        <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">762.92</div>
+                                          <div class="productcard__badge">12%</div>
+                                        </div>
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="minicard__main">
+                                  <a href='#' class="minicard__title onlyDesktop">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__buyblock">
+                                    <div class="minicard__count">
+                                      <div class="buyblock__quantity">
+                                        <div class="quantity">
+                                          <input type="number" step="1" disabled  max="" value="1" name="quantity" class="quantity-field">
+                                        </div>
+                                      </div>
+                                      <div class="minicard__amount">
+                                        <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="minicard__right onlyDesktop">
+                                <div class="minicard__pricetitle">Итого</div>
+                                <div class="minicard__price">
+                                  <div class="productcard__prices">
+                                    <div class="productcard__topprice">
+                                      <div class="productcard__oldprice">762.92</div>
+                                      <div class="productcard__badge">12%</div>
+                                    </div>
+                                    <div class="productcard__mainprice">
+                                      <div class="productcard__price">
+                                        <div class="productcard__pricevalue">674.94</div>
+                                        <div class="productcard__priceunit">₽/кг</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cartblock__item">
+                          <div class="minicard">
+                            <div class="minicard__wrapper">
+                              <div class="minicard__left">
+                                <a href='#' class="minicard__image">
+                                  <img src="img/product1.png" alt="">
+                                </a>
+                                <div class="minicard__info onlyMobile">
+                                  <a href='#' class="minicard__title ">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__right ">
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                        <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">762.92</div>
+                                          <div class="productcard__badge">12%</div>
+                                        </div>
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="minicard__main">
+                                  <a href='#' class="minicard__title onlyDesktop">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__buyblock">
+                                    <div class="minicard__count">
+                                      <div class="buyblock__quantity">
+                                        <div class="quantity">
+                                          <input type="number" step="1" disabled  max="" value="1" name="quantity" class="quantity-field">
+                                        </div>
+                                      </div>
+                                      <div class="minicard__amount">
+                                        <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="minicard__right onlyDesktop">
+                                <div class="minicard__pricetitle">Итого</div>
+                                <div class="minicard__price">
+                                  <div class="productcard__prices">
+                                    <div class="productcard__topprice">
+                                      <div class="productcard__oldprice">762.92</div>
+                                      <div class="productcard__badge">12%</div>
+                                    </div>
+                                    <div class="productcard__mainprice">
+                                      <div class="productcard__price">
+                                        <div class="productcard__pricevalue">674.94</div>
+                                        <div class="productcard__priceunit">₽/кг</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cartblock__item">
+                          <div class="minicard">
+                            <div class="minicard__wrapper">
+                              <div class="minicard__left">
+                                <a href='#' class="minicard__image">
+                                  <img src="img/product1.png" alt="">
+                                </a>
+                                <div class="minicard__info onlyMobile">
+                                  <a href='#' class="minicard__title ">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__right ">
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                        <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">762.92</div>
+                                          <div class="productcard__badge">12%</div>
+                                        </div>
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="minicard__main">
+                                  <a href='#' class="minicard__title onlyDesktop">Колбаса сырокопченая “Прошутто”</a>
+                                  <div class="minicard__buyblock">
+                                    <div class="minicard__count">
+                                      <div class="buyblock__quantity">
+                                        <div class="quantity">
+                                          <input type="number" step="1" disabled  max="" value="1" name="quantity" class="quantity-field">
+                                        </div>
+                                      </div>
+                                      <div class="minicard__amount">
+                                        <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="minicard__right onlyDesktop">
+                                <div class="minicard__pricetitle">Итого</div>
+                                <div class="minicard__price">
+                                  <div class="productcard__prices">
+                                    <div class="productcard__topprice">
+                                      <div class="productcard__oldprice">762.92</div>
+                                      <div class="productcard__badge">12%</div>
+                                    </div>
+                                    <div class="productcard__mainprice">
+                                      <div class="productcard__price">
+                                        <div class="productcard__pricevalue">674.94</div>
+                                        <div class="productcard__priceunit">₽/кг</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cartblock__aside"> 
+              <aside>
+                <div class="infocard carttotal" id="asidetotal">
+                  <div class="carttotal__title">Ваш заказ </div>
+                  <div class="carttotal__params">
+                    <div class="carttotal__param">
+                      <div class="carttotal__paramtitle">Вес заказа:</div>
+                      <div class="carttotal__paramvalue">10,4 кг</div>
+                    </div>
+                    <div class="carttotal__param">
+                      <div class="carttotal__paramtitle">Всего товаров</div>
+                      <div class="carttotal__paramvalue">3 шт.</div>
+                    </div>
+                    <div class="carttotal__param">
+                      <div class="carttotal__paramtitle">Стоимость доставки</div>
+                      <div class="carttotal__paramvalue">99 ₽</div>
+                    </div>
+                    <div class="carttotal__param">
+                      <div class="carttotal__paramtitle">Общая скидка:</div>
+                      <div class="carttotal__paramvalue carttotal__paramvalue_red">-4 028 ₽</div>
+                    </div>
+                  </div>
+                  <div class="carttotal__summary flex justify-between">
+                    <span>Итого:</span>
+                    <span>21 580 ₽</span>
+                  </div>
+                  <div class="carttotal__button">
+                    <button class="btn btn_main btn_full"> Оплатить заказ </button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

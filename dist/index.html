@@ -1,0 +1,3667 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>MAIN</title>
+<!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
+ -->  
+  <link rel="preload" href="fonts/Inter.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Thin.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Thin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-ExtraLight.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  
+
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/slick-theme.min.css">
+  <link rel="stylesheet" href="css/jquery.dmenu.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/maskedinput.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/hover-slider.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.dmenu.js"></script>
+  <script src="js/selectbox.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/jquery.zoom.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/jquery.lazy.min.js"></script>
+  <script src="js/jquery.lazy.youtube.min.js"></script>
+  <script src="js/autoFilling.js"></script>
+  <script src="js/fixedcart.js"></script>
+  <script src="js/flatpickr.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="jsbackdrop "></div>
+
+<div class="mobilenav" id='mobilenav'>
+  <div class="mobilenav__wrapper">
+    <div class="mobilenav__items">
+      <div class="mobilenav__item">
+        <a href="#" class="mobilenav__link">
+          <div class="mobilenav__icon">
+            <img src="img/icnCutlery.svg" alt="">
+          </div>
+          <div class="mobilenav__name">Рецепты</div>
+        </a><!-- /.mobilenav__link -->
+      </div>
+      <div class="mobilenav__item">
+        <a href="#" class="mobilenav__link">
+          <div class="mobilenav__icon">
+            <img src="img/icnLogin.svg" alt="">
+          </div>
+          <div class="mobilenav__name">Войти</div>
+        </a><!-- /.mobilenav__link -->
+      </div>
+      <div class="mobilenav__item mobilenav__item_center">
+        <a href="#" class="mobilenav__link">
+          <div class="mobilenav__icon mobilenav__icon_catalog">
+            <img src="img/icnCatalog.svg" alt="">
+          </div>
+          <div class="mobilenav__name">Каталог</div>
+        </a><!-- /.mobilenav__link -->
+      </div>
+      <div class="mobilenav__item">
+        <a href="#" class="mobilenav__link">
+          <span class="iconlinks__badge">5</span>
+          <div class="mobilenav__icon">
+            <img src="img/icnHeart.svg" alt="">
+          </div>
+          <div class="mobilenav__name">Избранное</div>
+        </a><!-- /.mobilenav__link -->
+      </div>
+      <div class="mobilenav__item">
+        <a href="#" class="mobilenav__link">
+          <span class="iconlinks__badge">10</span>
+          <div class="mobilenav__icon">
+            <img src="img/icnCart.svg" alt="">
+          </div>
+          <div class="mobilenav__name">Корзина</div>
+        </a><!-- /.mobilenav__link -->
+      </div>
+    </div><!-- /.mobilenav__items -->
+  </div><!-- /.mobilenav__wrapper -->
+</div><!-- /.mobilenav -->
+
+<div class="mobilemenu">
+  <div class="mobilemenu__wrapper">
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__menu">
+        <div class="mobilemenu__item  parent">
+          <div class="mobilemenu__content mobilemenu--catalog jscatalog">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnCatalog.svg" alt=""></span>
+            <span class='mobilemenu__name'>Каталог</span>
+            </a>    
+            <span class='jstoggler' data-action="opencatalogmenu"><img src="img/ChevronWhite.svg" alt=""></span>
+          </div>
+          <div class="mobilemenu__submenu mobilemenu__level2 ">
+            <div class="mobilecatalog">
+              <div class="mobilecatalog__header">
+                <div class="mobilecatalog__back" data-action="closecatalog"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.56742 12.2341L11.1508 4.65078C11.5738 4.22774 12.2595 4.22774 12.6826 4.65078C13.1056 5.07382 13.1056 5.75957 12.6826 6.18261L6.9485 11.9167H21.6667C22.2647 11.9167 22.75 12.402 22.75 13C22.75 13.598 22.2647 14.0834 21.6667 14.0834H6.9485L12.6826 19.8174C13.1056 20.2405 13.1056 20.9262 12.6826 21.3493C12.4708 21.5611 12.194 21.6667 11.9167 21.6667C11.6393 21.6667 11.3625 21.5611 11.1508 21.3493L3.56742 13.7659C3.14437 13.3429 3.14437 12.6572 3.56742 12.2341Z" fill="white"/>
+                  </svg>
+                  </div>
+                <div class="mobilecatalog__title">Каталог</div>
+                <div class="mobilecatalog__close" data-action="closemenu"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2.57446" width="24" height="3" transform="rotate(45 2.57446 0)" fill="white"/>
+                  <rect x="0.453125" y="16.9705" width="24" height="3" transform="rotate(-45 0.453125 16.9705)" fill="white"/>
+                  <rect x="2.57446" width="24" height="3" transform="rotate(45 2.57446 0)" fill="white"/>
+                  </svg>
+                  </div>
+              </div>
+              <div class="mobilecatalog__search">
+                <div class="headermain__search">
+                  <form action="">
+                    <div class="searchinput">
+                      <button type="submit"><img src="img/Search.svg" alt=""></button>
+                      <!--  <input type="text" placeholder='Я ищу...' id='title-search-input_fixed'> -->
+                      <input type="text" placeholder="Пастрами из сви" id="title-search-input_fixed">
+                    </div>
+                  </form>
+                </div>
+              </div><!-- /.mobilecatalog__search -->
+            </div>
+            <div class="mobilemenu__item toggle">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnSalami.svg" alt=""></span>
+                <span class='mobilemenu__name'>Колбаса</span>
+                </a>    
+                <span class='js-toggler'><img src="img/toggle.svg" alt=""></span>
+              </div>
+              <div class="mobilemenu__level3 ">
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Говядина</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Баранина</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Телятина</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Шашлык и гриль</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Мраморная говядина</span>
+                    </a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobilemenu__item toggle">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnLamb.svg" alt=""></span>
+                <span class='mobilemenu__name'>Деликатесы и копчености</span>
+                </a>    
+                <span class='js-toggler'><img src="img/toggle.svg" alt=""></span>
+              </div>
+              <div class="mobilemenu__level3 ">
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Говядина</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Баранина</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Телятина</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Шашлык и гриль</span>
+                    </a>    
+                  </div>
+                </div>
+                <div class="mobilemenu__item ">
+                  <div class="mobilemenu__content">
+                    <a href='#' class="mobilemenu__link">
+                    <span class='mobilemenu__name'>Мраморная говядина</span>
+                    </a>    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobilemenu__item active">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnNachos.svg" alt=""></span>
+                <span class='mobilemenu__name'>Сервировочная нарезка, снеки, перекусы</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnSausage.svg" alt=""></span>
+                <span class='mobilemenu__name'>Сосики и сардельки</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnCan.svg" alt=""></span>
+                <span class='mobilemenu__name'>Ливерная продукция паштеты, студдни</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnThanksgiving.svg" alt=""></span>
+                <span class='mobilemenu__name'>Мясо, птица</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnMeals.svg" alt=""></span>
+                <span class='mobilemenu__name'>Готовое к приготовлению</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnWeber.svg" alt=""></span>
+                <span class='mobilemenu__name'>Шашлыки, мясо в маринаде, колбаски для гриля</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnSnowflake.svg" alt=""></span>
+                <span class='mobilemenu__name'>Полуфабрикаты замороженные</span>
+                </a>    
+              </div>
+            </div>
+            <div class="mobilemenu__item ">
+              <div class="mobilemenu__content">
+                <a href='#' class="mobilemenu__link">
+                <span class='mobilemenu__icon'><img src="img/icnShop.svg" alt=""></span>
+                <span class='mobilemenu__name'>Минимаркет онлайн</span>
+                </a>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobilemenu__item ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnLogin.svg" alt=""></span>
+            <span class='mobilemenu__name'>Войти</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnHeart.svg" alt=""></span>
+            <span class='mobilemenu__name'>Избранное</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnCart.svg" alt=""></span>
+            <span class='mobilemenu__name'>Корзина</span>
+            </a>    
+          </div>
+        </div>
+      </div>
+      <!-- /.mobilemenu__menu -->
+    </div>
+    <!-- /.mobilemenu__block -->
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__menu">
+        <div class="mobilemenu__item  ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnCutlery.svg" alt=""></span>
+            <span class='mobilemenu__name'>Рецепты</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item  ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnInfo.svg" alt=""></span>
+            <span class='mobilemenu__name'>О компании</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item  ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnTransit.svg" alt=""></span>
+            <span class='mobilemenu__name'>Доставка и оплата</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item  ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnQuestion.svg" alt=""></span>
+            <span class='mobilemenu__name'>Как заказать</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item  ">
+          <div class="mobilemenu__content">
+            <a href='#' class="mobilemenu__link">
+            <span class='mobilemenu__icon'><img src="img/icnLocation.svg" alt=""></span>
+            <span class='mobilemenu__name'>Контакты</span>
+            </a>    
+          </div>
+        </div>
+      </div>
+      <!-- /.mobilemenu__menu -->
+    </div>
+    <!-- /.mobilemenu__block -->
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__footer">
+        <div class="footer__informblock">
+          <div class="footer__contacts">
+            <div class="contacts">
+              <div class="contacts__phone">
+                <a href="tel:+79854608305">7 (985) 460 83 05</a>
+              </div>
+              <div class="contacts__info">
+                <div class="contacts__status"></div>
+                <div class="contacts__text">С 9:00 до 21:00</div>
+              </div>
+              <!-- /.contacts__info -->
+             
+            </div>
+          </div>
+          <!-- /.footer__phone -->
+          <div class="footer__call">
+            <a href="#" class="callback btn_border">Заказать звонок</a>
+          </div>
+          <!-- /.footer__call -->
+          <div class="footer__address">
+            143002, Московская область, г. Одинцово, ул. Южная, д. 16
+          </div>
+          <!-- /.footer__address -->
+          <div class="footer__socials">
+            <div class="socials">
+              <div class="socials__items">
+                <div class="socials__item"><a href=""><img src="img/WhatsApp.svg" alt=""></a></div>
+                <!-- /.socials__item -->
+                <div class="socials__item"><a href=""><img src="img/Telegram.svg" alt=""></a></div>
+                <!-- /.socials__item -->
+                <div class="socials__item"><a href=""><img src="img/VKontakte.svg" alt=""></a></div>
+                <!-- /.socials__item -->
+                <div class="socials__item"><a href=""><img src="img/Instagram.svg" alt=""></a></div>
+                <!-- /.socials__item -->
+              </div>
+              <!-- /.socials__items -->
+            </div>
+            <!-- /.socials -->
+          </div>
+          <!-- /.footer__socials -->
+        </div>
+      </div>
+      <!-- /.mobilemenu__footer -->
+    </div>
+    <!-- /.mobilemenu__block -->
+  </div>
+  <!-- /.mobilemenu__wrapper -->
+</div>
+<!-- /.mobilepanel -->
+<header id="header" class="header">  
+  <div class="header__topline">
+    <div class="container">
+      <div class="headercontainer" id='headercontainer'>
+        <div class="mobilepanel">
+          <div class="mobilepanel__left">
+            <div class="mobilepanel__logo"><a href="#" class='logo'><img src="img/logo.svg" alt=""></a></div>
+            <!-- <div class="mobilepanel__leftitems">
+              <a href="#popup_delivery" data-toggle='modal' class="deliverylink">
+              <span class="deliverylink__icon">
+              <img src="img/LocationPin.svg" alt="">
+              </span>
+              <span class="deliverylink__text">Выберите способ и время доставки</span>
+              </a>
+              
+            </div> -->
+          </div>
+          <!-- /.mobilepanel__left -->
+          <div class="mobilepanel__menubutton">
+            <button class="menubutton">
+              <img src="img/mobilebutton.svg" alt="" class='menubutton__open'>
+              <img src="img/menubutton__close.svg" alt="" class='menubutton__close'>
+            </button>
+          </div>
+          <!-- /.mobilepanel__menubutton -->
+        </div>
+        <!-- /.mobilepanel -->
+        <div class="headertop">
+          <div class="headertop__left">
+            <div class="headertop__leftitems">
+              <a href="#popup_delivery" data-toggle='modal'  class="deliverylink">
+              <span class="deliverylink__icon">
+              <img src="img/LocationPin.svg" alt="">
+              </span>
+              <span class="deliverylink__text">Выберите способ и время доставки</span>
+              </a><!-- /.deliverylink -->
+              
+            </div>
+            <!-- /.headertop__leftitems -->
+          </div>
+          <!-- /.headertop__left -->
+          <div class="headertop__right">
+            <div class="headertop__rightitems">
+              <div class="topmenu">
+                <div class="topmenu__wrapper">
+                  <div class="topmenu__items">
+                    <ul>
+                      <li><a href="">О компании</a></li>
+                      <li><a href="">Доставка и оплата</a></li>
+                      <li><a href="">Как заказать</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.topmenu__items -->
+                </div>
+                <!-- /.topmenu__wrapper -->
+              </div>
+              <!-- /.topmenu -->
+            </div>
+            <!-- /.headertop__rightitems -->
+          </div>
+          <!-- /.headertop__right -->
+        </div>
+        <!-- /.headertop -->
+        <div class="mainmenu">
+          <div class="mainmenu__wrapper">
+            <div class="mainmenu__items">
+              <div class="mainmenu__level_1">
+                <ul class="mainmenuLevelOne">
+                  <li class='mainmenuLevelOne__item mainmenuLevelOne__parent'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/Salami.svg" alt=""></span>
+                    <span class='mainmenu__name'>Колбаса</span> 
+                    </a>
+                    <div class="mainmenu__level_2">
+                      <ul class="mainmenuLevelTwo">
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Баранина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Телятина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Мраморная говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Замороженные мраморные стейки</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="mainmenu__banner">
+                        <a href='#' class="mainmenu__img">
+                        <img src="img/banner.jpg" alt="">
+                        </a>
+                      </div>
+                      <!-- /.mainmenu__banner -->
+                    </div>
+                  </li>
+                  <li class='mainmenuLevelOne__item mainmenuLevelOne__parent'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/RackofLamb.svg" alt=""></span>
+                    <span class='mainmenu__name'>Деликатесы и копчености</span>
+                    </a>
+                    <div class="mainmenu__level_2">
+                      <ul class="mainmenuLevelTwo">
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Мраморная говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Баранина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Телятина</span>
+                          </a>
+                        </li>
+                        <li class='mainmenuLevelTwo__item'>
+                          <a class='mainmenuLevelTwo__link' href="">
+                          <span>Говядина</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/Nachos.svg" alt=""></span>
+                    <span class='mainmenu__name'>Сервировочная нарезка, снеки, перекусы</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/Sausage.svg" alt=""></span>
+                    <span class='mainmenu__name'>Сосики и сардельки</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/TinCan.svg" alt=""></span>
+                    <span class='mainmenu__name'>Ливерная продукция паштеты, студдни</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/Thanksgiving.svg" alt=""></span>
+                    <span class='mainmenu__name'>Мясо, птица</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/RealFood.svg" alt=""></span>
+                    <span class='mainmenu__name'>Готовое к приготовлению</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link '>
+                    <span class='mainmenu__icon'><img src="img/Snowflake.svg" alt=""></span>
+                    <span class='mainmenu__name'>Шашлыки, мясо в маринаде, колбаски для гриля</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/OnlineShop.svg" alt=""></span>
+                    <span class='mainmenu__name'>Полуфабрикаты замороженные</span>
+                    </a>
+                  </li>
+                  <li class='mainmenuLevelOne__item'>
+                    <a href="" class='mainmenuLevelOne__link'>
+                    <span class='mainmenu__icon'><img src="img/Weber.svg" alt=""></span>
+                    <span class='mainmenu__name'>Минимаркет онлайн</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.mainmenu__level_1 -->
+            </div>
+            <!-- /.mainmenu__items -->
+          </div>
+          <!-- /.mainmenu__wrapper -->
+        </div>
+        <!-- /.mainmenu -->
+        <div id='headermain'>
+          <div class="headermain" >
+            <div class="headermain__left">
+              <div class="headermain__logo"><a href="#" class='logo'><img src="img/logo.svg" alt=""></a></div>
+              <div class="headermain__menu onlyDesktop">
+                <button class='mainmenubtn' data-action="mainmenu">
+                <img class="burgericon icon--white" src="img/burger.svg" alt="">
+                <img class="burgericon icon--blue" src="img/burger_blue.svg" alt="">
+                <img class="closeicon" src="img/closemenu.svg" alt="">
+                <span>Каталог </span>
+                </button>
+              </div>
+              <div class="headermain__menu onlyMobile">
+                <button class='mainmenubtn' data-action="opencatalogmenu">
+                <img class="burgericon icon--white" src="img/burger.svg" alt="">
+                <img class="burgericon icon--blue" src="img/burger_blue.svg" alt="">
+                <img class="closeicon" src="img/closemenu.svg" alt="">
+                <span>Каталог </span>
+                </button>
+              </div>
+              <!-- /.headermain__menu -->
+              <div class="headermain__search">
+                <form action="">
+                  <div class="searchinput">
+                    <button type="submit"><img src="img/Search.svg" alt=""></button>
+                    <!--  <input type="text" placeholder='Я ищу...' id='title-search-input_fixed'> -->
+                    <input type="text" placeholder='' id='title-search-input_fixed'>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.headermain__left-->
+            <div class="headermain__right">
+              <div class="headermain__contacts">
+                <div class='contacts'>
+                  <div class="contacts__phone">
+                    <a href="tel:+79854608305">7 (985) 460 83 05</a>
+                  </div>
+                  <div class="contacts__info">
+                    <div class="contacts__text">C 9:00 до 21:00</div>
+                  </div>
+              
+                </div>
+              </div>
+              <div class="headermain__callback">
+                <a href="#popup_callback" class='btn_border'>Заказать звонок</a>
+              </div><!-- /.headermain__callback -->
+              <!-- /.headermain__contacts -->
+              <div class="headermain__iconlinks">
+                <div class="iconlinks">
+                  <div class="iconlinks__item">
+                    <a href="#" class="iconlinks__link">
+                    <span class="iconlinks__icon">
+                    <img src="img/account.svg" alt="">
+                    </span>
+                    <span class="iconlinks__text">Войти</span>
+                    </a>
+                  </div>
+                  <div class="iconlinks__item">
+                    <a href="#" class="iconlinks__link">
+                      <span class="iconlinks__badge">5</span>
+
+                    <span class="iconlinks__icon">
+                    <img src="img/Heart.svg" alt="">
+                    </span>
+                    <span class="iconlinks__text">Избранное</span>
+                    </a>
+                  </div>
+                  <div class="iconlinks__item">
+                    <a href="#" class="iconlinks__link">
+                    <span class="iconlinks__badge">5</span>
+                    <span class="iconlinks__icon">
+                    <img src="img/ShoppingCart.svg" alt="">
+                    </span>
+                    <span class="iconlinks__text">Корзина</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- /.iconlinks -->
+              </div>
+              <!-- /.headermain__iconlinks -->
+            </div>
+            <!-- /.headermain__right -->
+          </div>
+          <!-- /.headermain -->
+        </div>
+      </div>
+      <!-- /.headercontainer -->
+      <div class="headermenu">
+        <div class="headermenu__wrapper">
+          <div class="headermenu__items" >
+            <ul>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <img src="img/Fire.svg" alt="" class='headermenu__icon'>
+                <span class='headermenu__title'>Акции</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <img src="img/Credit Card.svg" alt="" class='headermenu__icon'>
+                <span class='headermenu__title'>Рецепты</span>
+                </a>
+              </li>
+             
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <span class='headermenu__title'>Полуфабрикаты</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <span class='headermenu__title'>Мясные консервы</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <span class='headermenu__title'>Морепродукты</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <span class='headermenu__title'>Молочные продукты</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link'>
+                <span class='headermenu__title'>Фрукты, овощи</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class='headermenu__item'>
+                <a href="#" class='headermenu__link '>
+                <span class='headermenu__title'>Пункт</span>
+                </a>
+              </li>
+              <li class="SubmenuMega SubmenuFullwidth IconOnly">
+                <ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.headermenu__items -->
+        </div>
+        <!-- /.headermenu__wrapper -->
+        <div class="arrowmenu">
+          <img src="img/arrowmenu.svg" alt="">
+        </div>
+      </div>
+      <!-- /.headermenu -->
+    </div>
+    <!-- /.container -->
+  </div>
+</header>
+<!-- /#header.header -->
+<main>
+  <div class="mainslider">
+    <div class="container">
+      <div class="mainslider__wrapper">
+        <div class="swiper mainswiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide1.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide2.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide3.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide4.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/slide1.jpg" /></a>
+            </div>
+          </div>
+        </div>
+        <div thumbsSlider="" class="swiper mainswiperpreview">
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/slide1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide1.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainslider-pagination"></div>
+      <!-- /.mainslider__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.mainslider -->
+  <div class="pageblock indexcat">
+    <div class="container">
+      <h2>Популярное</h2>
+      <div class="indexcat__items">
+        <div class="indexcat__item indexcat__item_large">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #E9F2FF; '>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Полуфабрикаты</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+                <div class="indexcat__text">Только лучшие качественные полуфабрикаты заморожены исключительно сухой заморозкой и сохранающие свой вкус!</div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-1.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item indexcat__large -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #FFF7E9;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Мясные консервы</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-2.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #E2F3FF;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Морепродукты</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-3.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #FFF8E9;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Молочные продукты</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-4.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #FFE9E9;'>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">Фрукты, овощи</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-5.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item -->
+        <div class="indexcat__item indexcat__item_large">
+          <a href="#" class='indexcat__link'>
+            <div class="indexcat__wrapper" style='background-color: #E9F2FF; '>
+              <div class="indexcat__content">
+                <div class="indexcat__header">
+                  <div class="indexcat__title">На шашлык</div>
+                  <div class="indexcat__count">106 позиций</div>
+                </div>
+                <div class="indexcat__text">Только лучшие качественные полуфабрикаты заморожены исключительно сухой заморозкой и сохранающие свой вкус!</div>
+              </div>
+              <!-- /.indexcat__content -->
+              <div class="indexcat__image"><img src="img/indexcat-6.png" alt=""></div>
+            </div>
+            <!-- /.indexcat__wrapper -->
+          </a>
+        </div>
+        <!-- /.indexcat__item indexcat__large -->
+      </div>
+      <!-- /.indexcat__items -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblock indexcat -->
+  <div class="pageblocksl">
+    <div class="container">
+      <a class="mainmenubtn onlyMobile" href='#'>
+      <img class="burgericon" src="img/menubtn2.svg" alt="">
+      <span>Каталог товаров</span>
+      </a>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblocksl -->
+  <div class="pageblocksl productslider">
+    <div class="container">
+      <div class="blockheader flex items-center content-between">
+        <div class="blockheader__left">
+          <h2>Хиты</h2>
+          <a href="#">Смотреть все</a>   
+        </div>
+        <!-- /.blockheader__left -->
+        <div>
+          <div class="sliderarrows flex">
+            <div class="sliderarrows__left">
+              <img src="img/left.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrows__right">
+              <img src="img/right.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__right -->
+          </div>
+          <!-- /.sliderarrows -->
+        </div>
+      </div>
+      <!-- /.blockheader -->
+      <div class="productslider__wrapper">
+        <div class="productslider__container ">
+          <div class="productslider__slider ">
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+          </div>
+          <!-- /.productslider__slide r -->
+        </div>
+        <!-- /.productslider__container -->
+      </div>
+      <!-- /.productslider__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblock -->
+  <div class="blockslider pageblocksl">
+    <div class="container blockslider__wrapper">
+      <div class="blockslider__container swiper">
+        <div class="blockslider__slider swiper-wrapper">
+          <div class="blockslider__slide swiper-slide">
+            <div class="blockslider__content">
+              <a href="#">
+              <img src="img/slider2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- /.blockslider__slide -->
+          <div class="blockslider__slide swiper-slide">
+            <div class="blockslider__content">
+              <a href="#">
+              <img src="img/slider2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- /.blockslider__slide -->
+        </div>
+        <!-- /.blockslider__slider -->     
+        <div class="blockslider-pagination"></div>
+      </div>
+      <!-- /.blockslider__container -->
+      <div class="blockslider-button-next"><img src="img/right.svg" alt=""></div>
+      <div class="blockslider-button-prev"><img src="img/left.svg" alt=""></div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.blockslider -->
+  <div class="pageblocksl productslider">
+    <div class="container">
+      <div class="blockheader flex items-center content-between">
+        <div class="blockheader__left">
+          <h2>Новинки</h2>
+          <a href="#">Смотреть все</a>   
+        </div>
+        <!-- /.blockheader__left -->
+        <div>
+          <div class="sliderarrows flex">
+            <div class="sliderarrows__left">
+              <img src="img/left.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrows__right">
+              <img src="img/right.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__right -->
+          </div>
+          <!-- /.sliderarrows -->
+        </div>
+      </div>
+      <!-- /.blockheader -->
+      <div class="productslider__wrapper">
+        <div class="productslider__container ">
+          <div class="productslider__slider ">
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+            <div class="productslider__slide ">
+              <div class="productslider__item">
+                <div class="productcard">
+                  <div class="productcard__wrapper">
+                    <a href="#" class="productcard__images onlyDesktop">
+                      <div class="productcard__img">
+                        <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
+                      </div>
+                    </a>
+                    <a href="#"  class="productcard__images productcard__images_mobile onlyMobile">
+                      <div class="productcard__img">
+                        <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
+                        <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
+                      </div>
+                    </a>
+                    <!-- /.productcard__images -->
+                    <div class="productcard__rating">
+                      <div class="cardrating">
+                        <div class="cardrating__item">
+                          <div class="cardrating__form">
+                            <div class="cardrating__value">
+                              <span>3.5</span>
+                            </div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="rat-stars-active stars-active">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </span>
+                          </div>
+                          <div class="productcard__count">453</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productcard__title">
+                      <a href="">Шейка копчено-вареная Московская</a>
+                    </div>
+                    <div class="productcard__buy">
+                      <div class="productcard__prices">
+                        <div class="productcard__topprice">
+                          <div class="productcard__oldprice">762.92</div>
+                          <div class="productcard__badge">12%</div>
+                        </div>
+                        <!-- /.productcard__oldprice -->
+                        <div class="productcard__mainprice">
+                          <div class="productcard__price">
+                            <div class="productcard__pricevalue">674.94</div>
+                            <div class="productcard__priceunit">₽/кг</div>
+                          </div>
+                          <!-- /.productcard__price -->
+                        </div>
+                        <!-- /.productcard__mainprice -->
+                      </div>
+                      <!-- /.productcard__prices -->
+                      <div class="productcard__button">
+                        <button class="productcard__addtocart btn active"></button>
+                      </div>
+                    </div>
+                    <!-- /.productcard__buy -->
+                    <div class="productcard__info">
+                      <div class="productcard__infoicon">
+                        <img src="img/productcard__info.svg" alt="">
+                      </div>
+                      <div class="productcard__infotext">Доставим сегодня</div>
+                    </div>
+                    <!-- /.productcard__info -->
+                  </div>
+                  <!-- /.productcard__wrapper -->
+                </div>
+                <!-- /.productcard -->
+              </div>
+              <!-- /.productslider__item -->
+            </div>
+            <!-- /.productslider__slide  -->
+          </div>
+          <!-- /.productslider__slide r -->
+        </div>
+        <!-- /.productslider__container -->
+      </div>
+      <!-- /.productslider__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.pageblock -->
+  <div class="pageblocksl recipeslider">
+    <div class="container">
+      <div class="blockheader flex items-center content-between">
+        <div class="blockheader__left">
+          <h2>Готовим вместе</h2>
+          <a href="#">Все рецепты</a>   
+        </div>
+        <!-- /.blockheader__left -->
+        <div>
+          <div class="sliderarrows flex">
+            <div class="sliderarrows__left">
+              <img src="img/left.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrows__right">
+              <img src="img/right.svg" alt="">
+            </div>
+            <!-- /.sliderarrows__right -->
+          </div>
+          <!-- /.sliderarrows -->
+        </div>
+      </div>
+      <!-- /.blockheader -->
+      <div class="itemslistslider__wrapper">
+        <div class="itemslistslider__container">
+          <div class="itemslist__slider recipeslider__slider">
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe2.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+            <div class="itemslistslider__slide">
+              <div class="itemslistslider__item">
+                <div class="itemslistcard">
+                  <div class="itemslistcard__wrapper">
+                    <a href="#" class="itemslistcard__image">
+                      <div class="itemslistcard__img"><img src="img/recipe1.jpg" alt=""></div>
+                    </a>
+                    <!-- /.itemslistcard__image -->
+                    <div class="itemslistcard__title">
+                      <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                    </div>
+                    <div class="itemslistcard__info">
+                      <div class="itemslistcard__params">
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__text">23 февраля</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                        <div class="itemslistcard__param">
+                          <span class="itemslistcard__icon">
+                          <img src="img/Clock.svg" alt="">
+                          </span>
+                          <span class="itemslistcard__text">30 мин</span>
+                        </div>
+                        <!-- /.itemslistcard__param -->
+                      </div>
+                      <!-- /.itemslistcard__params -->
+                    </div>
+                    <!-- /.itemslistcard__info -->
+                  </div>
+                  <!-- /.itemslistcard__wrapper -->
+                </div>
+                <!-- /.itemslistcard -->
+              </div>
+              <!-- /.itemslistslider__item -->
+            </div>
+            <!-- /.itemslistslider__slide -->
+          </div>
+          <!-- /.itemslistslider__slider -->
+        </div>
+        <!-- /.itemslistslider__container -->
+      </div>
+    </div>
+  </div>
+  <div class="fitchesline pageblock">
+    <div class="container">
+      <div class="fitchesline__items">
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard1.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Самая свежая продукция <br>
+                  прямо с завода
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard2.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Широкий ассортимент <br>
+                  на любой вкус
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard3.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Скидки участникам  
+                  программы лояльности
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard4.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">Доставка  <br>
+                  день в день
+                </div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+        <div class="fitchesline__item">
+          <div class="fitchescard">
+            <div class="fitchescard__wrapper">
+              <div class="fitchescard__image">
+                <div class="fitchescard__img"><img src="img/fitchescard5.png" alt=""></div>
+              </div>
+              <!-- /.fitchescard__image -->
+              <div class="fitchescard__title">
+                <div class="fitchescard__text">ХАСПП международная сертификация</div>
+              </div>
+              <!-- /.fitchescard__title -->
+            </div>
+            <!-- /.fitchescard__wrapper -->
+          </div>
+          <!-- /.fitchescard -->
+        </div>
+        <!-- /.fitchesline__item -->
+      </div>
+      <!-- /.fitchesline__items -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.fitchesline -->
+  <div class="pageblock">
+  <div class="aboutblock">
+    <div class="container">
+      <div class="aboutblock__header">
+        <h2>Наши поставщики производители</h2>
+      </div>
+      <!-- /.aboutblock__header -->
+      <div class="aboutblock__wrapper">
+        <div class="aboutblock__left">
+          <div class="aboutblock__video">
+            <div class="video-container">
+               <iframe data-loader="youtube" data-src="FAWjZPzKRSM" width="" height="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- /.video-container -->
+          </div>
+          <!-- /.aboutblock__video -->
+        </div>
+        <!-- /.aboutblock__left -->
+        <div class="aboutblock__right">
+          <div class="aboutblock__content">
+            <div class="aboutblock__img">
+              <img src="img/logo_small.png" alt="">
+            </div>
+            <!-- /.aboutblock__img -->
+            <div class="aboutblock__text">
+              <p class="bigtext">
+                Это высокотехнологичное предприятие, оснащенное современным оборудованием от ведущих мировых производителей
+              </p>
+              <!-- /.aboutblock__text bigtext -->
+              <p>Производство продукции «Мясницкий ряд» осуществляется на базе МПЗ «Мясницкий ряд»</p>
+              <p>Все это гарантирует строгий контроль качества всей выпускаемой продукции, её соответствие Европейским стандартам и безопасность. На сегодняшний день, предприятие неоднократно успешно, без замечаний, прошло международный сертификационный аудит.</p>
+            </div>
+            <!-- /.aboutblock__text -->
+            <div class="docblock docblock_sert">
+              <div class="docblock__icon">
+                <div class="docblock__icn"><img src="img/sert.svg" alt=""></div>
+              </div>
+              <!-- /.docblock__icon -->
+              <div class="docblock__main">
+                <div class="docblock__title">ISO 22000:2005 и ХАССП</div>
+                <!-- /.docblock__title -->
+                <div class="docblock__text">Сертифицированно по международной системе</div>
+                <!-- /.docblock__text -->
+              </div>
+              <!-- /.docblock__main -->
+            </div>
+            <!-- /.docblock docblock_sert -->
+          </div>
+          <!-- /.aboutblock__content -->
+        </div>
+        <!-- /.aboutblock__right -->
+      </div>
+      <!-- /.container aboutblock__wrapper -->
+    </div>
+    <!-- /.aboutblock -->
+  </div>
+  <!-- /.pageblock -->
+  <div class="pageblocksl">
+    <div class="imgsliderblock">
+      <div class="container">
+        <div class="imgslider">
+          <div class="imgslider__container slider-wrapper">
+            <div class="imgslider__slider">
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#' class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner1.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner2.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <div class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner3.png" alt="">
+                    </div>
+                  </div>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner4.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner5.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner1.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+              <div class="imgslider__slide">
+                <div class="imgslider__item">
+                  <a href='#'  class="imgslider__content">
+                    <div class="imgslider__img">
+                      <img src="img/partner2.png" alt="">
+                    </div>
+                  </a>
+                  <!-- /.imgslider__content -->
+                </div>
+                <!-- /.imgslider__item -->
+              </div>
+              <!-- /.imgslider__slide -->
+            </div>
+            <!-- /.imgslider__slider -->
+            <div class="beyond-button-next"><img src="img/right.svg" alt=""></div>
+            <div class="beyond-button-prev"><img src="img/left.svg" alt=""></div>
+          </div>
+          <!-- /.imgslider__container -->
+        </div>
+        <!-- /.imgslider -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.imgsliderblock -->
+  </div>
+  <!-- /.pageblocksl -->
+</main>
+<div class="subscribeblock">
+  <div class="container subscribe">
+    <div class="subscribe__wrapper">
+      <div class="subscribe__item subscribe__header">
+        <div class="subscribe__image">
+          <div class="subscribe__img"><img src="img/subscribe.svg" alt=""></div>
+        </div><!-- /.subscribe__image -->
+        <div class="subscribe__title">Подпишитесь на новости и <br>
+          получайте лучшие предложения!</div>
+      </div><!-- /.subscribe__item -->
+      <div class="subscribe__item subscribe__form">
+        <form action="">
+          <div class="subscribe__formcontent">
+            <div class="subscribe__input">
+              <input type="text" placeholder='Ваш email'>
+            </div>
+            <div class="subscribe__button">
+              <button type='submit'>
+                <img src="img/arr.svg" alt="" class='onlyMobile'>
+                <span> Подписаться</span> </button>
+            </div>
+          </div><!-- /.subscribe__formcontent -->
+        </form>
+      </div>
+    </div><!-- /.subscribe__item -->
+  </div><!-- /.subscribe__wrapper -->
+</div><!-- /.container subscribe -->
+</div><!-- /.subscribeblock -->
+<footer id="footer" class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__col footer__catalog">
+          <div class="footer__title">Каталог товаров</div>
+          <div class="footer__menu">
+            <ul>
+              <li><a href="">Колбасы</a></li>
+              <li><a href="">Деликатесы и копчености</a></li>
+              <li><a href="">Сервировочная нарезка, снеки, перекусы</a></li>
+              <li><a href="">Сосиски и сардельки</a></li>
+              <li><a href="">Ливерная продукция, паштеты, студни</a></li>
+              <li><a href="">Мясо, птица</a></li>
+              <li><a href="">Готовое к приготовлению</a></li>
+              <li><a href="">Шашлыки, мясо в маринаде, колбаски для гриля</a></li>
+              <li><a href="">Полуфабрикаты замороженные</a></li>
+              <li><a href="">Мясные консервы</a></li>
+              <li><a href="">Морепродукты</a></li>
+              <li><a href="">Молочные продукты, сыр, яйцо</a></li>
+              <li><a href="">Фрукты, овощи</a></li>
+              <li><a href="">Бакалея</a></li>
+              <li><a href="">Хлеб и выпечка</a></li>
+              <li><a href="">Сладости</a></li>
+            </ul>
+          </div><!-- /.footer__menu -->
+        </div><!-- /.footer__catalog -->
+        <div class="footer__col ">
+          <div class="footer__title">О компании</div>
+          <div class="footer__menu">
+            <ul>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Адреса магазинов</a></li>
+              <li><a href="">Контакты</a></li>
+
+            </ul>
+          </div><!-- /.footer__menu -->
+        </div>
+        <div class="footer__col ">
+          <div class="footer__title">Информация</div>
+          <div class="footer__menu">
+            <ul>
+              <li><a href="">Программа лояльности</a></li>
+              <li><a href="">Доставка и оплата</a></li>
+              <li><a href="">Как заказать</a></li>
+              <li><a href="">Полезно знать</a></li>
+
+            </ul>
+          </div><!-- /.footer__menu -->
+        </div>
+        <div class="footer__col footer__col_contacts">
+          <div class="footer__informblock">
+            <div class="footer__contacts">
+              <div class="contacts">
+                <div class="contacts__phone">
+                  <a href="tel:74959371212">7 (495) 937-12-12</a>
+                </div>
+                <div class="contacts__info">
+                  <div class="contacts__status"></div>
+                  <div class="contacts__text">Мы на связи с 9:00 до 21:00</div>
+                </div><!-- /.contacts__info -->
+              </div>
+            </div><!-- /.footer__phone -->
+            <div class="footer__call">
+              <a href="#" class="callback btn_border">Заказать звонок</a>
+            </div><!-- /.footer__call -->
+            <div class="footer__address">
+              143002, Московская область, г. Одинцово, ул. Южная, д. 16
+            </div><!-- /.footer__address -->
+            <div class="footer__socials">
+              <div class="socials">
+                <div class="socials__items">
+                  <div class="socials__item"><a href=""><svg alt="" width="26" height="26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M19.91 6.097A9.648 9.648 0 0013.04 3.25c-5.35 0-9.708 4.354-9.708 9.706a9.654 9.654 0 001.294 4.852l-1.377 5.03 5.148-1.351a9.716 9.716 0 004.64 1.184h.003c5.351 0 9.706-4.355 9.709-9.71 0-2.592-1.01-5.03-2.84-6.864zM13.04 21.03h-.003c-1.447 0-2.87-.39-4.107-1.124l-.295-.174-3.056.8.815-2.978-.19-.304a8.047 8.047 0 01-1.235-4.294c0-4.447 3.622-8.065 8.074-8.065 2.155 0 4.18.84 5.704 2.364a8.024 8.024 0 012.361 5.707c0 4.45-3.621 8.068-8.068 8.068zm4.425-6.043c-.242-.12-1.435-.708-1.657-.787-.222-.083-.384-.12-.546.12-.162.245-.625.79-.768.953-.14.158-.283.18-.524.06-.244-.12-1.025-.378-1.952-1.206-.72-.641-1.209-1.438-1.349-1.68-.142-.244-.015-.374.105-.494.111-.108.245-.283.365-.426.12-.14.162-.24.244-.403.08-.162.039-.304-.022-.425-.06-.12-.546-1.317-.749-1.803-.197-.473-.396-.406-.546-.416-.14-.006-.301-.006-.463-.006a.888.888 0 00-.647.305c-.223.241-.848.828-.848 2.021 0 1.194.87 2.35.99 2.511.121.159 1.711 2.609 4.145 3.66.578.25 1.029.4 1.381.51.58.184 1.11.16 1.53.099.466-.07 1.434-.587 1.637-1.155.2-.565.2-1.051.14-1.152-.06-.102-.222-.162-.466-.286z"
+                          fill="#0CBA7A" />
+                      </svg></a></div><!-- /.socials__item -->
+                  <div class="socials__item"><a href=""><svg alt="" width="26" height="26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M22.287 3.263a2.427 2.427 0 00-1.145.173c-.488.192-8.126 3.405-15.247 6.403l-2.353.99c-.911.37-1.371.97-1.371 1.78 0 .566.24 1.335 1.384 1.788l3.971 1.59c.344 1.03 1.141 3.423 1.342 4.059.119.377.42 1.327 1.18 1.549a1.5 1.5 0 00.485.08c.48 0 .825-.223.994-.353l2.525-2.135 3.066 2.835c.118.12.743.728 1.582.728 1.048 0 1.842-.872 2.008-1.716.09-.462 3.047-15.306 3.047-15.304.265-1.19-.212-1.808-.518-2.072a1.723 1.723 0 00-.95-.395zm-.718 2.34c-.408 2.047-2.634 13.223-2.973 14.834l-4.48-4.145-3.041 2.575.842-3.294s5.81-5.88 6.159-6.223c.282-.274.34-.37.34-.465 0-.127-.065-.218-.215-.218-.136 0-.32.13-.417.19-1.239.772-6.513 3.777-9.109 5.254L4.91 12.606l1.828-.768c4.657-1.96 12.952-5.453 14.832-6.235z"
+                          fill="#0CBA7A" />
+                      </svg></a></div><!-- /.socials__item -->
+                  <div class="socials__item"><a href=""><svg alt="" width="26" height="26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.788 19.068c-.973-1.752-3.48-3.857-4.516-4.773a.673.673 0 01-.055-.962c1.975-2.123 3.555-4.562 4.099-6.036.24-.65-.257-1.339-.957-1.339h-2.033c-.67 0-1.062.24-1.249.624-1.642 3.364-3.05 4.82-4.036 5.671-.552.477-1.412.082-1.412-.643V7.124A1.13 1.13 0 0013.494 6L9.78 5.958a.562.562 0 00-.454.9l.613.88c.231.306.356.677.356 1.057l-.004 3.964c0 .69-.835 1.027-1.331.544C7.28 11.668 5.824 8.33 5.3 6.733a1.13 1.13 0 00-1.075-.775l-2.003-.005c-.751 0-1.3.713-1.096 1.43 1.83 6.422 5.584 12.532 12.275 13.195a1.127 1.127 0 001.228-1.123v-2.083c0-.598.468-1.111 1.07-1.126l.064-.001c1.77 0 3.752 2.576 4.445 3.78.2.347.572.558.975.558h2.694c.786 0 1.29-.833.911-1.515z"
+                          fill="#0CBA7A" />
+                      </svg></a></div><!-- /.socials__item -->
+                  <div class="socials__item"><a href=""><svg alt="" width="26" height="26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.937 2.708c-3.43 0-6.229 2.799-6.229 6.23v8.124c0 3.43 2.798 6.23 6.23 6.23h8.124c3.43 0 6.23-2.8 6.23-6.23V8.937c0-3.43-2.8-6.229-6.23-6.229H8.937zm0 1.625h8.125a4.592 4.592 0 014.604 4.604v8.125a4.593 4.593 0 01-4.604 4.605H8.937a4.592 4.592 0 01-4.604-4.605V8.937a4.592 4.592 0 014.604-4.604zm9.48 2.167a1.083 1.083 0 10-.001 2.166 1.083 1.083 0 000-2.166zM13 7.583A5.43 5.43 0 007.583 13 5.43 5.43 0 0013 18.417 5.43 5.43 0 0018.416 13 5.43 5.43 0 0013 7.583zm0 1.625A3.78 3.78 0 0116.79 13 3.78 3.78 0 0113 16.792 3.78 3.78 0 019.208 13 3.78 3.78 0 0113 9.208z"
+                          fill="#0CBA7A" />
+                      </svg></a></div><!-- /.socials__item -->
+                </div><!-- /.socials__items -->
+              </div><!-- /.socials -->
+            </div><!-- /.footer__socials -->
+          </div><!-- /.footer__informblock -->
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__main -->
+  <div class="container">
+    <div class="footer__bottom">
+
+      <div class="footer__items">
+        <div class="footer__col footer__col_b1">
+          <div class="footer__copy">
+            <div class="footer__maincopy">2022 © Мясницкий ряд | ООО «Франчайзинговые магазины Мясницкий Ряд»</div>
+            <!-- /.footer__maincopy -->
+            <div class="footer__textcopy"><small>Мы используем cookie-файлы, чтобы получать статистику, которая помогает
+                показывать вам самые интересные и выгодные предложения. Вы можете отключить cookie-файлы в настройках.
+                Продолжая пользоваться сайтом без изменения настроек, вы даете согласие на использование ваших
+                cookie-файлов. Всегда рады видеть вас на нашем сайте! <a href="">Подробнее..</a> </small></div>
+            <!-- /.footer__textcopy -->
+          </div><!-- /.footer__copy -->
+        </div><!-- /.footer__col -->
+        <div class="footer__col footer__col_b2">
+          <div class="footer__links">
+            <div class="footer__link"><a href="">Политика конфиденциальности</a></div>
+            <div class="footer__link"><a href="">Оферта</a></div>
+          </div><!-- /.footer__links -->
+        </div><!-- /.footer__col -->
+        <div class="footer__col footer__col_b3">
+          <div class="footer__payment">
+            <div class="footer__caption">Мы принимаем</div><!-- /.footer__caption -->
+            <div class="footer__icons">
+              <div class="footer__icon"><img src="img/visa.svg" alt=""></div><!-- /.footer__icon -->
+              <div class="footer__icon"><img src="img/mastercard.svg" alt=""></div><!-- /.footer__icon -->
+              <div class="footer__icon"><img src="img/mir.svg" alt=""></div><!-- /.footer__icon -->
+            </div><!-- /.footer__icons -->
+          </div><!-- /.footer__payment -->
+        </div><!-- /.footer__col -->
+        <div class="footer__col footer__col_b4">
+          <div class="footer__dev">
+            <a href="" class="fdev">
+              <span class="fdev__title">Разработано в:</span>
+              <span class="fdev__icon"><img src="img/empis.svg" alt=""></span>
+            </a>
+          </div><!-- /.footer__dev -->
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__bottom -->
+</footer>
+
+<div class="modal fade" tabindex="-1" role="dialog" id='popup_delivery'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title">Укажите адрес доставки</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+
+          <div class="deliverytabs js-tabs">
+
+            <div class="deliverytabs__main">
+              <div class="deliverytabs__item active js-tabscontent">
+                <div class="deliverytabs__form">
+                  <form action="#">
+                    <div class="deliverytabs__inputrow">
+                      <div class="address_result">
+                        <div class="address_error">Ваш адрес не в зоне доставки !!!!</div>
+                      </div>
+                      <div class="deliverytabs__inputcol mobile-full" style="width: 100% !important">
+                        <div class="deliverytabs__input">
+                          <label>Город, улица, дом</label>
+                          <input type="text" name="address" class="address suggestions-input" id="address"
+                            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                            style="box-sizing: border-box;">
+                          <div class="suggestions-wrapper">
+                            <div class="suggestions-suggestions" style="display: none;"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label>Подъезд</label>
+                          <input type="text" name="entrance">
+                        </div>
+                      </div>
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label>Этаж</label>
+                          <input type="text" name="floor">
+                        </div>
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                      <div class="deliverytabs__inputcol">
+                        <div class="deliverytabs__input">
+                          <label>Квартира</label>
+                          <input type="text" name="room">
+                        </div>
+                        <!-- /.deliverytabs__input -->
+                      </div>
+                      <!-- /.deliverytabs__inputcol -->
+                    </div>
+                    <!-- /.deliverytabs__inputrow -->
+                    <div class="deliverytabs__map">
+                      <div class="map-delivery">
+                        <!-- заглушка карты -->
+                        <iframe
+                          src="https://yandex.ru/map-widget/v1/?um=constructor%3A910d035e8541c432b40bd4d37b0412bfbb2a89bb51d5eb57d49fe768cb62627d&amp;source=constructor"
+                          width="100%" height="400" frameborder="0"></iframe>
+                      </div>
+                      <!-- /.map-delivery -->
+                    </div>
+                    <!-- /.deliverytabs__map -->
+                    <div class="modal-submit">
+                      <div class="buttonsrow">
+                        <div class="buttonsrow__item">
+                          <a class='btn_border btn_gray'>Отмена</a>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                        <div class="buttonsrow__item">
+                          <button type='submit' class='btn btn_main confirm' disabled >Подтвердить</button>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                      </div>
+                      <!-- /.buttonsrow -->
+                    </div>
+                    <!-- /.modal-submit -->
+                  </form>
+                </div>
+                <!-- /.deliverytabs__form -->
+              </div>
+              <!-- /.deliverytabs__item -->
+              <!-- самовывоз -->
+              <div class="deliverytabs__item js-tabscontent">
+                <div class="deliverytabs__pickup">
+                  <form action="">
+                    <div class="pickuptabs" data-tabs='pickup_tabs'>
+                      <div class="pickuptabs__header">
+                        <ul class="pickuptabs__ul" data-headertabs='pickup_header'>
+                          <li class='active'><img src="img/Location.svg" class='pickuptabimg' alt=""><img
+                              class='pickuptabimg-active' src="img/Location-active.svg" alt=""><span>На карте</span>
+                          </li>
+                          <li><img src="img/BulletedList.svg" class='pickuptabimg' alt=""><img
+                              class='pickuptabimg-active' src="img/BulletedList-active.svg" alt=""><span>Списком</span>
+                          </li>
+                        </ul><!-- /.pickuptabs__ul -->
+                      </div><!-- /.pickuptabs__header -->
+                      <div class="pickuptabs__main">
+
+                        <!-- самовывоз - карта -->
+                        <div class="pickuptabs__content active" data-contenttabs='pickup_content'>
+                          <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A910d035e8541c432b40bd4d37b0412bfbb2a89bb51d5eb57d49fe768cb62627d&amp;source=constructor"
+                            width="100%" height="400" frameborder="0"></iframe>
+                        </div><!-- /.pickuptabs__content -->
+
+                        <!-- самовывоз - список -->
+                        <div class="pickuptabs__content " data-contenttabs='pickup_content'>
+                          <div class="pickuptabs__search">
+                            <div class="searchinput">
+                              <button type="submit"><img src="img/Search.svg" alt=""></button>
+                              <!--  <input type="text" placeholder='Я ищу...' id='title-search-input_fixed'> -->
+                              <input type="text" placeholder="Поиск по списку">
+                            </div>
+                          </div><!-- /.pickuptabs__search -->
+                          <div class="pickup__list">
+                            <div class="pickuplist">
+                              <div class="pickuplist__items">
+
+                                <!-- надо повесить клик на блоки pickuplist__item = выбор пункта выдачи -->
+                                <div class="pickuplist__item">
+                                  <div class="pickuplist__header">
+                                    105318, Москва г, Внутригородская территория муниципальный округ Соколиная гора,
+                                    Щербаковская ул, дом 3
+                                  </div>
+                                  <div class="pickuplist__content">
+                                    <div class="pickuplist__addr">
+                                      <div class="pickuplist__address">
+                                        <img src="img/Moscow_Metro 1.svg" alt="">
+                                        <span>Алексеевская</span>
+                                      </div><!-- /.pickuplist__address -->
+                                      <div class="pickuplist__address">
+                                        <img src="img/Moscow_Metro 1.svg" alt="">
+                                        <span>Багратионовская</span>
+                                      </div><!-- /.pickuplist__address -->
+                                    </div><!-- /.pickuplist__addr -->
+                                    <div class="pickuplist__dtime">
+                                      <div class="dtime">
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                      </div><!-- /.dtime -->
+
+                                    </div><!-- /.pickuplist__dt -->
+                                  </div><!-- /.pickuplist__content -->
+                                </div><!-- /.pickuplist__item -->
+
+                                <!-- надо повесить клик на блоки pickuplist__item = выбор пункта выдачи -->
+                                <div class="pickuplist__item">
+                                  <div class="pickuplist__header">
+                                    105318, Москва г, Внутригородская территория муниципальный округ Соколиная гора,
+                                    Щербаковская ул, дом 3
+                                  </div>
+                                  <div class="pickuplist__content">
+                                    <div class="pickuplist__addr">
+                                      <div class="pickuplist__address">
+                                        <img src="img/Moscow_Metro 1.svg" alt="">
+                                        <span>Алексеевская</span>
+                                      </div><!-- /.pickuplist__address -->
+                                      <div class="pickuplist__address">
+                                        <img src="img/Moscow_Metro 1.svg" alt="">
+                                        <span>Багратионовская</span>
+                                      </div><!-- /.pickuplist__address -->
+                                    </div><!-- /.pickuplist__addr -->
+                                    <div class="pickuplist__dtime">
+                                      <div class="dtime">
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                      </div><!-- /.dtime -->
+
+                                    </div><!-- /.pickuplist__dt -->
+                                  </div><!-- /.pickuplist__content -->
+                                </div><!-- /.pickuplist__item -->
+                                <div class="pickuplist__item">
+                                  <div class="pickuplist__header">
+                                    105318, Москва г, Внутригородская территория муниципальный округ Соколиная гора,
+                                    Щербаковская ул, дом 3
+                                  </div>
+                                  <div class="pickuplist__content">
+                                    <div class="pickuplist__addr">
+                                      <div class="pickuplist__address">
+                                        <img src="img/Moscow_Metro 1.svg" alt="">
+                                        <span>Алексеевская</span>
+                                      </div><!-- /.pickuplist__address -->
+                                      <div class="pickuplist__address">
+                                        <img src="img/Moscow_Metro 1.svg" alt="">
+                                        <span>Багратионовская</span>
+                                      </div><!-- /.pickuplist__address -->
+                                    </div><!-- /.pickuplist__addr -->
+                                    <div class="pickuplist__dtime">
+                                      <div class="dtime">
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                        <div class="dtime__item">
+                                          ПН-СБ: <b>09:00 - 21:00</b>
+                                        </div><!-- /.dtime__item -->
+                                      </div><!-- /.dtime -->
+
+                                    </div><!-- /.pickuplist__dt -->
+                                  </div><!-- /.pickuplist__content -->
+                                </div><!-- /.pickuplist__item -->
+                              </div><!-- /.pickuplist__items -->
+                            </div><!-- /.pickuplist -->
+                          </div><!-- /.pickup__list -->
+                        </div><!-- /.pickuptabs__content -->
+                        <!-- заглушка карты -->
+                      </div><!-- /.pickuptabs__main -->
+                    </div><!-- /.pickuptabs -->
+                    <div class="modal-submit">
+                      <div class="buttonsrow">
+                        <div class="buttonsrow__item">
+                          <a class='btn_border btn_gray'>Отмена</a>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                        <div class="buttonsrow__item">
+                          <button type='submit' class='btn btn_main'>Выбрать самовывоз</button>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                      </div>
+                      <!-- /.buttonsrow -->
+                    </div>
+                    <!-- /.modal-submit -->
+                  </form>
+                </div><!-- /.deliverytabs__pickup -->
+              </div>
+              <!-- /.deliverytabs__item -->
+
+            </div>
+            <!-- /.deliverytabs__main -->
+          </div>
+          <!-- /.deliverytabs -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Заказать звонок</div>
+          <div class="modal-subtitle">Наш оператор свяжется с Вами в течение нескольких минут</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Ваше имя</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Телефон</label>
+                  <input type="tel" placeholder='7 (___) ___-__-__'>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с
+                      политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_auth'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Авторизация</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Телефон или Email</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Пароль</label>
+                  <div class="inputpassword">
+                    <input type="password">
+                    <img src="img/Invisible.svg" alt="" data-toggle="password">
+                  </div><!-- /.inputpassword -->
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="flex content-between passwordforgot">
+                <div class="check">
+                  <input type="checkbox" id="save" checked="checked" value="Y">
+                  <label for="save">Запомнить меня</a>
+                  </label>
+                </div>
+                <a href="#">Забыли пароль?</a>
+              </div>
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Войти</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <a class='btn_border btn_gray red'>SMS-авторизация</a>
+
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="textlogin flex content-between items-center">
+                <div class="textlogin__text">У вас еще нет учетной записи?</div>
+                <div class="textlogin__link"><a href="">Зарегистрируйтесь</a></div>
+              </div><!-- /.textlogin -->
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_password'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Восстановление пароля</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Email</label>
+                  <input type="text">
+                  <div class="textinput">Ссылка для смены пароля будет отправлена на указанную почту</div>
+                  <!-- /.textinput -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input formblock__input_center">
+                  <img src="img/captcha.png" alt="">
+                </div><!-- /.formblock__input -->
+
+              </div><!-- /.formblock__main -->
+
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Сбросить пароль</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <a class='btn_border btn_gray red'>SMS-авторизация</a>
+
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_sms'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Вход по SMS</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main formblock__main_small">
+                <div class="formblock__input">
+                  <label for="">Ваш телефон</label>
+                  <input type="tel" placeholder='7 (___) ___-__-__'>
+                </div><!-- /.formblock__input -->
+
+              </div><!-- /.formblock__main -->
+
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Войти по SMS</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="textlogin flex content-between items-center">
+                <div class="textlogin__text">У вас еще нет учетной записи?</div>
+                <div class="textlogin__link"><a href="">Зарегистрируйтесь</a></div>
+              </div><!-- /.textlogin -->
+
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_email'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+
+          <div class="modalinfo">
+            <div class="modalinfo__image"><img src="img/send.svg" alt=""></div><!-- /.modalinfo__image -->
+            <div class="modalinfo__title">Мы отправили письмо на <span class="red">*****llz@gmail.com</span></div>
+            <!-- /.modalinfo__title -->
+            <div class="modalinfo__text">Следуйте инструкциям в письме для продолжение процедуры сброса пароля</div>
+            <!-- /.modalinfo_-text -->
+          </div><!-- /.modalinfo -->
+          <div class="modal-submit modal-submit_small">
+            <div class="buttonsrow">
+              <div class="buttonsrow__item buttonsrow__item_full">
+                <button type='submit' class='btn btn_main'>Ок</button>
+              </div>
+              <!-- /.buttonsrow__item -->
+
+            </div>
+            <!-- /.buttonsrow -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_reset'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Сброс пароля</div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+
+                <div class="formblock__input">
+                  <label for="">Новый пароль</label>
+                  <div class="inputpassword">
+                    <input type="password">
+                    <img src="img/Invisible.svg" alt="" data-toggle="password">
+                  </div><!-- /.inputpassword -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Повторите, пожалуйста</label>
+                  <div class="inputpassword">
+                    <input type="password">
+                    <img src="img/Invisible.svg" alt="" data-toggle="password">
+                  </div><!-- /.inputpassword -->
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Обновить пароль</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_success'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+
+          <div class="modalinfo">
+            <div class="modalinfo__image"><img src="img/success.svg" alt=""></div><!-- /.modalinfo__image -->
+            <div class="modalinfo__title">Пароль был успешно обновлен!</div><!-- /.modalinfo__title -->
+            <div class="modalinfo__text">Теперь вы можете войти в вашую учетную запись.</div><!-- /.modalinfo_-text -->
+          </div><!-- /.modalinfo -->
+          <div class="modal-submit modal-submit_small">
+            <div class="buttonsrow">
+              <div class="buttonsrow__item buttonsrow__item_full">
+                <button type='submit' class='btn btn_main'>Войти</button>
+              </div>
+              <!-- /.buttonsrow__item -->
+
+            </div>
+            <!-- /.buttonsrow -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='popup_reg'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Регистрация</div>
+          <div class="textlogin flex content-between items-center">
+            <div class="textlogin__text">Уже есть учетная запись?</div>
+            <div class="textlogin__link"><a href="">Авторизируйтесь</a></div>
+          </div><!-- /.textlogin -->
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="formblock__main formblock__main_cols">
+            <div class="formblock__input">
+              <label for="">Ваше имя</label>
+              <input type="text" class='input-error' value='123'>
+              <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Фамилия</label>
+              <input type="text">
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Email</label>
+              <input type="text">
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Телефон</label>
+              <input type="tel" placeholder='7 (___) ___-__-__'>
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input formblock__input__full">
+              <div class="informwrapper informwrapper_green">
+                <div class="informwrapper__title">Укажите почту и получите:</div>
+                <div class="informwrapper__list">
+                  <div class="checklist">
+                    <ul>
+                      <li>Скидку 15% на первый заказ от 1000 рублей.</li>
+                      <li>Участвие в розыгрышах и выигрыш промокодов.</li>
+                      <li>Уведомления о всех акциях, новинах и новостях.</li>
+                    </ul>
+                  </div><!-- /.checklist -->
+                </div><!-- /.informwrapper__list -->
+              </div><!-- /.informwrapper -->
+            </div><!-- /.formblock__input__full -->
+            <div class="formblock__input">
+              <label for="">Новый пароль</label>
+              <div class="inputpassword">
+                <input type="password">
+                <img src="img/Invisible.svg" alt="" data-toggle="password">
+              </div><!-- /.inputpassword -->
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Повторите, пожалуйста</label>
+              <div class="inputpassword">
+                <input type="password">
+                <img src="img/Invisible.svg" alt="" data-toggle="password">
+              </div><!-- /.inputpassword -->
+            </div><!-- /.formblock__input -->
+          </div><!-- /.formblock__main -->
+
+          <div class="modal-submit modal-submit_small">
+            <div class="buttonsrow xs-full">
+              <div class="buttonsrow__item ">
+                <div class="formblock__check">
+                  <div class="check">
+                    <input type="checkbox" id="agree" checked="checked" value="Y">
+                    <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с
+                        политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                    </label>
+                  </div>
+                </div><!-- /.formblock__check -->
+              </div>
+              <!-- /.buttonsrow__item -->
+              <div class="buttonsrow__item ">
+                <button type='submit' class='btn btn_main'>Зарегистрироваться</button>
+              </div>
+              <!-- /.buttonsrow__item -->
+
+            </div>
+            <!-- /.buttonsrow -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_review'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Оставить отзыв</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="accountname">
+              <div class="accountname__image">
+                <div class="accountname__img"><img src="img/accplh.svg" alt=""></div><!-- /.accountname__img -->
+              </div><!-- /.accountname__image -->
+              <div class="accountname__content">
+                <div class="accountname__label">от имени:</div><!-- /.accountname__label -->
+                <div class="accountname__name">Андрей Маринович</div><!-- /.accountname__name -->
+              </div><!-- /.accountname__content -->
+            </div><!-- /.accountname -->
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Email</label>
+                  <input type="text" class='input-error' value='xolxllz@gmail.com'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Текст отзыва</label>
+                  <textarea name="" id="" cols="" rows="2"></textarea><!-- /# -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <div class="formrating">
+                    <div class="formrating__text">Ваша оценка:</div>
+                    <span class="score">
+                      <div class="score-wrap">
+                        <span class="stars-active" style="width: 0;">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <span class="stars-inactive">
+                          <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                          <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                        </span>
+                      </div>
+                    </span>
+                    <span class='formrating__value'>0</span>
+                    <input type="hidden" name="formrating" value='0'>
+
+                  </div>
+                  <script>
+                    $('.formrating .score-wrap').mousemove(function (e) {
+                      if ($('.formrating input[name="formrating"]').val() === '0') {
+                        var stars = parseInt((e.pageX - $(this).offset().left) / 28) * 28 + 28;
+                        $(this).find('span.stars-active').css('width', stars);
+                      }
+
+                    });
+
+                    $('.formrating .score-wrap').click(function (e) {
+                      var stars = parseInt((e.pageX - $(this).offset().left) / 28) + 1;
+                      var $inp = $('.formrating input[name="formrating"]');
+                      $inp.val(stars);
+                      $('.formrating span.stars-active').css('width', stars * 28);
+                      $('.formrating__value').html(stars);
+                      // при нажатии на рейтинг 
+                    });
+                  </script>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с
+                      политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/index.js"></script>
+<script>
+  arObjectAutoFiling.json = { 'SELECTOR_INPUT': '#title-search-input_fixed', 'LIST_TITLE': ['Сосиски Телячьи, весовые', 'Пастрами из свинины', 'Буженина запеченная', 'Бедро куриное', 'Паштет Гасконский'], 'CACHE_TYPE': 'A', '~SELECTOR_INPUT': '#title-search-input_fixed', '~LIST_TITLE': ['Сосиски Телячьи, весовые', 'Пастрами из свинины', 'Буженина запеченная', 'Бедро куриное', 'Паштет Гасконский'], '~CACHE_TYPE': 'A' };
+</script>
