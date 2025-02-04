@@ -858,15 +858,15 @@ img {
 #headermain.fixed .headermain__contacts {
   display: none; }
 
-#headermain.fixed .headermain__right {
-  width: 388px; }
-
+/* #headermain.fixed .headermain__right {
+  width: 388px;
+}
 #headermain.fixed .headermain__left {
-  width: calc(100% - 388px); }
-
-#headermain.fixed .headermain__search {
-  max-width: 553px; }
-
+  width: calc(100% - 388px);
+} */
+/* #headermain.fixed .headermain__search {
+  max-width: 553px;
+} */
 .headercontainer.fixed {
   position: fixed;
   top: 0;
@@ -879,7 +879,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(100% - 554px);
+  width: 100%;
   padding-right: 30px; }
 
 .headermain__menu {
@@ -956,7 +956,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 584px; }
+  max-width: 584px; }
 
 .headermain__contacts {
   margin-right: 15px; }
@@ -1118,7 +1118,7 @@ img {
 .headermain__search {
   margin-left: 11px;
   width: 100%;
-  max-width: 425px; }
+  /*   max-width: 425px; */ }
 
 .logo {
   display: block;
@@ -1828,7 +1828,7 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 25px; }
+  /*   margin-bottom: 25px; */ }
 
 .cardrating__value {
   width: 0;
@@ -1846,6 +1846,9 @@ h2 {
 
 .blockslider__wrapper {
   position: relative; }
+
+.blockslider__content img {
+  border-radius: 10px; }
 
 .blockslider__content a {
   /* @include imagecenter(24.65%, width); */ }
@@ -6369,6 +6372,21 @@ iframe {
 .imgslider__container {
   position: relative; }
 
+.productcard__form {
+  margin-top: 25px; }
+
+.contacts__phone a {
+  white-space: nowrap; }
+
+.btn_border {
+  white-space: nowrap; }
+
+.shophidden .productcard__form {
+  display: none; }
+
+.shophidden .headermain__iconlinks {
+  display: none; }
+
 @media only screen and (max-width: 1500px) {
   .cartblock__aside {
     min-width: 300px; }
@@ -6806,8 +6824,8 @@ iframe {
     margin-bottom: 10px; }
   .productcard__img.slick-dotted.slick-slider {
     margin-bottom: 0; }
-  .productcard__rating {
-    margin-bottom: 12px; }
+  .productcard__form {
+    margin-top: 12px; }
   .productcard__title {
     line-height: 1; }
   .productcard__oldprice {

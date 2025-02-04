@@ -14,7 +14,7 @@ function initFE() {
   fixElement(300, false, "headermain", "fixed")
   fixElement(300, false, "headercontainer", "fixed")
  /*  fixElement(false, 0, "mobilenav", "fixed") */
-/*   blockSliderInit() */
+  blockSliderInit()
 /*   productListImgLisder()
  */  
 /* moreNewsSliderInit() */
