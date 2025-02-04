@@ -580,12 +580,12 @@ img {
   display: block;
   width: 280px;
 }
-.headermenu__item_dropdown a {
+/* .headermenu__item_dropdown a {
   @include dropdown("../img/ChevronDown-gray.svg");
   color: $gray;
-}
+} */
 .headermenu {
-  z-index: 9999;
+  z-index: 9;
   position: relative;
   display: flex;
   align-items: center;
@@ -2414,19 +2414,19 @@ li.mainmenuLevelOne__item {
   cursor: pointer;
   &:hover {
     opacity: 1;
-    background-color: #2bbeff;
+    background-color: #df000f;
     color: #fff;
   }
   &:focus {
     opacity: 1;
-    background-color: #0896d5;
+    background-color: #df000f;
   }
 
   &.disabled,
   &:disabled {
     opacity: 1;
 
-    background-color: rgba(4, 163, 233, 0.2);
+    background-color: rgba(222, 22, 22, 0.2);
     span {
       color: #df000f;
       opacity: 0.5;

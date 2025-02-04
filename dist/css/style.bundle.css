@@ -1124,24 +1124,12 @@ img {
   display: block;
   width: 280px; }
 
-.headermenu__item_dropdown a {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 13px;
-  color: rgba(37, 52, 79, 0.5); }
-  .headermenu__item_dropdown a:after {
-    content: url("../img/ChevronDown-gray.svg");
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%); }
-
+/* .headermenu__item_dropdown a {
+  @include dropdown("../img/ChevronDown-gray.svg");
+  color: $gray;
+} */
 .headermenu {
-  z-index: 9999;
+  z-index: 9;
   position: relative;
   display: flex;
   align-items: center;
@@ -2741,14 +2729,14 @@ li.mainmenuLevelOne__item {
   cursor: pointer; }
   .btn_main:hover {
     opacity: 1;
-    background-color: #2bbeff;
+    background-color: #df000f;
     color: #fff; }
   .btn_main:focus {
     opacity: 1;
-    background-color: #0896d5; }
+    background-color: #df000f; }
   .btn_main.disabled, .btn_main:disabled {
     opacity: 1;
-    background-color: rgba(4, 163, 233, 0.2); }
+    background-color: rgba(222, 22, 22, 0.2); }
     .btn_main.disabled span, .btn_main:disabled span {
       color: #df000f;
       opacity: 0.5; }
