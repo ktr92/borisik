@@ -94,7 +94,7 @@ const config = {
      }), */
      new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
-      filename: "./css/main.bundle.css",
+      filename: "./css/style.bundle.css",
     }),
     new CopyPlugin({
       patterns: [{

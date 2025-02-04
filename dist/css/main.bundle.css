@@ -1890,18 +1890,20 @@ h2 {
 
 .productcard__price {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 20px;
   color: #ed1e26; }
 
 .productcard__pricevalue {
   display: inline-block;
-  font-size: 26px;
-  line-height: 30px; }
+  font-weight: 800;
+  font-size: 20px; }
 
 .productcard__priceunit {
   display: inline-block;
   font-size: 16px;
-  line-height: 16px; }
+  line-height: 16px;
+  font-weight: 800; }
 
 .productcard__info {
   margin-top: 20px; }
