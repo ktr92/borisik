@@ -836,8 +836,8 @@ li.dm-item_submenu-overflow.dm-item_parent > a:hover {
     background-position: center;
   }
   .mainswiper {
-    height: 545px;
-    width: calc(100% - 349px);
+    height: 548px;
+    width: calc(100% - 340px);
     border-radius: 10px;
   }
   .mainswiper img {
@@ -849,7 +849,7 @@ li.dm-item_submenu-overflow.dm-item_parent > a:hover {
     box-sizing: border-box;
     width: 337px;
     padding-right: 14px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-left: 5px;
     padding-bottom: 5px;
   }
@@ -6570,5 +6570,23 @@ iframe {
   }
   .headermain__iconlinks {
     display: none;
+  }
+}
+.swiper  {
+  opacity: 0;
+}
+
+.swiper.swiper-initialized {
+  opacity: 1;
+}
+
+#mainslider_placeholder {
+  border-radius: 10px;
+}
+@media (min-width: 1023px) {
+  #mainslider_placeholder {
+      height: 548px;
+      width: calc(100% - 340px);
+      border-radius: 10px;
   }
 }

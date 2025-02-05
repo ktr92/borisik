@@ -338,7 +338,12 @@ function mainSliderInit() {
       mousewheel: true,
       direction: "vertical",
       freeMode: true,
-      watchSlidesProgress: false,
+      watchSlidesProgress: true,
+      on: {
+        init: function () {
+          $('#mainslider_placeholder').hide()
+        },
+      },
     })
     const swiper2 = new Swiper(".mainswiper", {
       lazy: true,
