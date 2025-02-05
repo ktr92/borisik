@@ -754,9 +754,9 @@ function closeByOutsideSelect() {
   }
 } */
 
-window.addEventListener("load", function () {
+  window.onload = function() {
   initFE()
-})
+}
 
 })();
 
