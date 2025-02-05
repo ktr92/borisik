@@ -754,10 +754,9 @@ function closeByOutsideSelect() {
   }
 } */
 
-  window.onload = function() {
-  initFE()
-}
-
+window.addEventListener('load', () => {
+  initFE();
+})
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.

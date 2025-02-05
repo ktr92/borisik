@@ -731,6 +731,6 @@ function closeByOutsideSelect() {
   }
 } */
 
-  window.onload = function() {
-  initFE()
-}
+window.addEventListener('load', () => {
+  initFE();
+})
