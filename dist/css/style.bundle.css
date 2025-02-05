@@ -6821,7 +6821,7 @@ iframe {
     font-size: 12px;
     line-height: 14px; }
   .productcard__badge {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 100%;
     background: #ffd600;
     border-radius: 555px;
@@ -7058,7 +7058,7 @@ iframe {
     margin-bottom: 4px; }
   .footer__textcopy,
   small {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 100%; }
   .fdev__title {
     font-size: 12px; }
@@ -7270,7 +7270,7 @@ iframe {
     overflow-x: auto;
     width: 100%; }
   .breadcrumbs__items ul span {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px; }
   .detailinfo__title {
     display: -webkit-box;
@@ -7429,7 +7429,7 @@ iframe {
     .mobiledetail .productcard__topprice {
       margin: 0; }
     .mobiledetail .productcard__badge {
-      font-size: 10px;
+      font-size: 12px;
       width: 27px;
       height: 13px; }
   .mobiledetail.fixed {
@@ -7978,7 +7978,7 @@ iframe {
     font-size: 12px;
     margin-bottom: 13px; }
   .formblock .check label {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 110%; }
   .formblock__main {
     margin-bottom: 20px; }
@@ -8029,7 +8029,7 @@ iframe {
     margin-bottom: 20px; }
   .buttonsrow__item .check label {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 110%; }
   .formblock input[type="email"],
   .formblock input[type="password"],
@@ -8174,7 +8174,7 @@ iframe {
     margin-bottom: 18px; }
   .fitchescard__text {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 100%;
     color: #2e2f31;
     text-align: left; }
