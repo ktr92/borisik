@@ -731,6 +731,10 @@ function closeByOutsideSelect() {
   }
 } */
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   initFE();
 })
+/* 
+window.addEventListener('load', () => {
+  initFE();
+}) */
