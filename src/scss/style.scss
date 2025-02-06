@@ -262,8 +262,8 @@ img {
   right: 0;
   width: 100%;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 40px rgba(37, 52, 79, 0.15);
-  box-shadow: 0px 0px 40px rgba(37, 52, 79, 0.15);
+  -webkit-box-shadow: 0px 0px 40px #f1de3a;
+  box-shadow: 0px 0px 40px #f1de3a;
   z-index: 999999;
 }
 #headermain.fixed .headermain {
@@ -1304,7 +1304,7 @@ line-height: 1;
   display: inline-block;
   position: relative;
   line-height: 1;
-  width: 58px;
+/*   width: 58px; */
   text-align: left;
   font-size: 10px;
 }
@@ -1312,7 +1312,22 @@ line-height: 1;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.score .stars-active {
+.score-wrap .fa {
+  font-size: 15px;
+}
+.score-wrap {
+  white-space: nowrap;
+}
+.score-wrap  .fa {
+  color: rgba(43, 54, 70, 0.1);
+}
+
+.score-wrap .fa.active {
+  color: $yellow;
+
+}
+
+/* .score .stars-active {
   color: #ffd600;
   position: relative;
   z-index: 10;
@@ -1329,17 +1344,16 @@ line-height: 1;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: middle;
-}
-.score .stars-inactive {
+} */
+/* .score .stars-inactive {
   color: rgba(52, 60, 75, 0.4);
   position: absolute;
   top: 0px;
   left: 0;
   -webkit-text-stroke: initial;
   vertical-align: middle;
-  /* overflow: hidden;
-		*/
-}
+
+} */
 .cardrating__value {
   width: 0;
   height: 0;
@@ -2519,14 +2533,14 @@ li.mainmenuLevelOne__item {
 .catalogpage__wrapper {
 }
 .catalogpage__main {
-  width: calc(100% - 268px);
+  width: calc(100% - 258px);
   padding-left: 24px;
 }
 .catalogaside__back {
   a {
     display: block;
     background: #f8f8fb;
-    border-radius: 8px;
+    border-radius:555px;
     margin-bottom: 18px;
 
     font-style: normal;
@@ -2545,7 +2559,9 @@ li.mainmenuLevelOne__item {
   }
 }
 .catalogaside__links {
-  margin-bottom: 22px;
+  margin-bottom: 32px;
+
+
 }
 .catalogcats {
   max-height: 300px;
@@ -2554,6 +2570,8 @@ li.mainmenuLevelOne__item {
 }
 .catalogcats__item {
   a {
+    border-radius: 555px;
+
     display: block;
     font-style: normal;
     font-weight: 400;
@@ -2561,11 +2579,11 @@ li.mainmenuLevelOne__item {
     line-height: 21px;
     color: #2e2f31;
     padding: 6px 15px;
-    border-radius: 6px;
   }
   &.active a {
-    background: rgba(4, 163, 233, 0.1);
+    background: rgba(255, 214, 0, 0.15);
     color: #df000f;
+
   }
   &:hover a,
   &:focus a {
@@ -2648,10 +2666,15 @@ li.mainmenuLevelOne__item {
   margin-bottom: 36px;
 }
 .catalogbanner__wrapper {
-  border-radius: 8px;
+
   overflow: hidden;
+  img {
+    border-radius: 8px;
+    display: block;
+  }
   a {
     display: block;
+
   }
 }
 .filternav {
@@ -2698,7 +2721,7 @@ li.mainmenuLevelOne__item {
   padding: 12px 18px;
   gap: 18px;
   height: 40px;
-  border: 1px solid rgba(37, 52, 79, 0.15);
+  border: 1px solid #f1de3a;
   border-radius: 555px;
 }
 .filternav__name {
@@ -2713,7 +2736,7 @@ li.mainmenuLevelOne__item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 18px;
+/*   margin-right: 18px; */
   color: #2e2f31;
 }
 .filternav__remove {
@@ -2729,8 +2752,12 @@ li.mainmenuLevelOne__item {
     align-items: center;
   }
   .filternav__name {
-    color: rgba(37, 52, 79, 0.4);
-    font-weight: 500;
+    margin-right: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #2e2f31;
+    opacity: 0.4;
   }
 }
 .cataloglist {
@@ -2777,13 +2804,14 @@ button:hover {
 }
 */
 .catalognav__showmore {
+  margin-top: 39px;
   margin-bottom: 39px;
 }
 .showmorelink {
   background: #ffffff;
-  border: 1px solid rgba(37, 52, 79, 0.15);
-  border-radius: 8px;
-  color: #2e2f31;
+  border: 2px solid #f1de3a;
+  border-radius:555px;
+  color: $main;
   display: block;
   padding: 19px 0;
   display: -webkit-box;
@@ -2797,14 +2825,14 @@ button:hover {
   justify-content: center;
   span {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
+    color: $main;
     font-size: 16px;
     line-height: 100%;
     margin-left: 9px;
-    color: #2e2f31;
+ 
   }
-  img {
-  }
+
 }
 .catalognav__pagination {
   display: -webkit-box;
@@ -2871,8 +2899,9 @@ button:hover {
   display: block;
   padding: 0 4px;
   height: 36px;
-  border: 1px solid rgba(37, 52, 79, 0.15);
-  border-radius: 12px;
+  border: 1px solid rgba(46, 47, 49, 0.15);
+
+  border-radius: 555px;
   min-width: 36px;
 }
 .pagination > span {
@@ -5448,7 +5477,7 @@ button:disabled {
     color: rgba(37, 52, 79, 0.4);
   }
   .productcard__button .btn_main {
-    border: 1px solid rgba(37, 52, 79, 0.15);
+    border: 1px solid #f1de3a;
     background: #fff;
   }
 }

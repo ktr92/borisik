@@ -58,7 +58,8 @@ window.onload = function () {
             jQuery("input#maxCost1").removeClass('notchanged');
           }
 
-
+          jQuery("input#maxCost1").trigger('change')
+          jQuery("input#minCost1").trigger('change')
         },
         slide: function (event, ui) {
           jQuery("input#minCost1").val(jQuery("#sliderprice1").slider("values", 0));
@@ -84,6 +85,7 @@ window.onload = function () {
 
 
       jQuery("input#maxCost1").change(function () {
+          console.log(jQuery("input#maxCost1").val())
 
         var value1 = jQuery("input#minCost1").val();
         var value2 = jQuery("input#maxCost1").val();
@@ -95,10 +97,10 @@ window.onload = function () {
 
 
         jQuery("#sliderprice1").slider("values", 1, value2);
-        $test1.prop("value", prettify(val1));
+       /*  $test1.prop("value", prettify(val1));
         var val1 = $test1.prop("value");
 
-        $test1.prop("value", prettify(val1));
+        $test1.prop("value", prettify(val1)); */
 
         if (jQuery("input#minCost1").val() == $('#limitMin1').val()) {
           jQuery("input#minCost1").addClass('notchanged');
@@ -126,11 +128,11 @@ window.onload = function () {
 
 
         jQuery("#sliderprice1").slider("values", 0, value1);
-        var val1 = $test1.prop("value");
+     /*    var val1 = $test1.prop("value");
         $test1.prop("value", prettify(val1));
 
         var val1 = $test1.prop("value");
-        $test1.prop("value", prettify(val1));
+        $test1.prop("value", prettify(val1)); */
 
         if (jQuery("input#minCost1").val() == $('#limitMin1').val()) {
           jQuery("input#minCost1").addClass('notchanged');

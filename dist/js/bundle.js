@@ -25,22 +25,22 @@ function initFE() {
   /*  cardImagesSlider() */
   /*   menuInit() */
   mainSliderInit()
- /*  detailsliderInit() */
+  /*  detailsliderInit() */
   imgSliderInit()
   recipeSliderInit()
   productSliderInit()
- /*  mobileAccordeon() */
+  /*  mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside(".mainmenu", '[data-action="mainmenu"]')
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
   fixElement(false, 750, "mobpriceFixed", "fixed")
   fixElement(300, false, "headermain", "fixed")
   fixElement(300, false, "headercontainer", "fixed")
- /*  fixElement(false, 0, "mobilenav", "fixed") */
+  /*  fixElement(false, 0, "mobilenav", "fixed") */
   blockSliderInit()
-/*   productListImgLisder()
- */  
-/* moreNewsSliderInit() */
+  /*   productListImgLisder()
+   */
+  /* moreNewsSliderInit() */
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
@@ -201,14 +201,27 @@ $(document).ready(function () {
     $(this).closest(".haederbanner").hide()
   })
   if ($(".productcard .cardrating").length > 0) {
-    $(".productcard .cardrating").each(function () {
+    $(".productcard .score-wrap").each(function () {
+      let wrapper = $(this)
+      wrapper.find(".fa").each(function (index) {
+        let fa = $(this)
+        let rating = fa.closest("[data-rating]").data("rating")
+        if (index < rating) {
+          $(this).addClass("active")
+        } else {
+          return false
+        }
+      })
+    })
+
+    /* $(".productcard .cardrating").each(function () {
       $(this)
         .find("span.stars-active")
         .css("width", $(this).find(".cardrating__value").text() * 11.6)
-    })
+    }) */
   }
   if ($(".detailinfo__reviews .cardrating").length > 0) {
-    if ($(window).width() < 1024) {
+    /* if ($(window).width() < 1024) {
       $(".detailinfo__reviews .cardrating").each(function () {
         $(this)
           .find("span.stars-active")
@@ -220,14 +233,14 @@ $(document).ready(function () {
           .find("span.stars-active")
           .css("width", +$(this).find(".cardrating__value").text() * 18)
       })
-    }
+    } */
   }
   if ($("reviews__rating .cardrating").length > 0) {
-    $(".reviews__rating .cardrating").each(function () {
+    /*  $(".reviews__rating .cardrating").each(function () {
       $(this)
         .find("span.stars-active")
         .css("width", $(this).find(".cardrating__value").text() * 18)
-    })
+    }) */
   }
   if ($("input[type=tel]").length > 0) {
     $("input[type=tel]").mask("7 (999) 999-99-99")
@@ -245,8 +258,12 @@ $(document).ready(function () {
 
   function decrementValue(e, step) {
     e.preventDefault()
-    var fieldName = $(e.target).data("field")
-    var parent = $(e.target).closest("div")
+    let $el = $(e.target)
+    if (!$el.data("field")) {
+      $el = $el.parent()
+    }
+    var fieldName = $el.data("field")
+    var parent = $el.closest("div")
     var currentVal = +parseFloat(
       parent.find("input[name=" + fieldName + "]").val()
     ).toFixed(1)
@@ -269,8 +286,12 @@ $(document).ready(function () {
 
   function incrementValue(e, step) {
     e.preventDefault()
-    var fieldName = $(e.target).data("field")
-    var parent = $(e.target).closest("div")
+    let $el = $(e.target)
+    if (!$el.data("field")) {
+      $el = $el.parent()
+    }
+    var fieldName = $el.data("field")
+    var parent = $el.closest("div")
     var currentVal = +parseFloat(
       parent.find("input[name=" + fieldName + "]").val()
     ).toFixed(1)
@@ -288,6 +309,8 @@ $(document).ready(function () {
   }
 
   $(document).on("click", ".quantity-plus", function (e) {
+    e.preventDefault()
+    e.stopPropagation()
     let step = +parseFloat(
       $(this).siblings('[type="number"]').attr("step")
     ).toFixed(1)
@@ -295,6 +318,8 @@ $(document).ready(function () {
   })
 
   $(document).on("click", ".quantity-minus", function (e) {
+    e.preventDefault()
+    e.stopPropagation()
     let step = +parseFloat(
       $(this).siblings('[type="number"]').attr("step")
     ).toFixed(1)
@@ -364,7 +389,7 @@ function mainSliderInit() {
       watchSlidesProgress: true,
       on: {
         init: function () {
-          $('#mainslider_placeholder').hide()
+          $("#mainslider_placeholder").hide()
         },
       },
     })
@@ -456,15 +481,15 @@ function productSliderInit() {
           {
             breakpoint: 1023,
             settings: {
-                slidesToShow:3,
-                slidesToScroll: 1,
+              slidesToShow: 3,
+              slidesToScroll: 1,
             },
           },
           {
             breakpoint: 767,
             settings: {
-                slidesToShow:2,
-                slidesToScroll: 1,
+              slidesToShow: 2,
+              slidesToScroll: 1,
             },
           },
         ],
@@ -754,11 +779,10 @@ function closeByOutsideSelect() {
   }
 } */
 
-
-
-window.addEventListener('load', () => {
-  initFE();
+window.addEventListener("load", () => {
+  initFE()
 })
+
 })();
 
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.

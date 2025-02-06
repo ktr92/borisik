@@ -3125,7 +3125,7 @@ li.mainmenuLevelOne__item {
   border-radius: 6px; }
 
 .catalogcats__item.active a {
-  background: rgba(4, 163, 233, 0.1);
+  background: rgba(255, 214, 0, 0.15);
   color: #df000f; }
 
 .catalogcats__item:hover a,
