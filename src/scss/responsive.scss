@@ -2308,9 +2308,15 @@
   }
 }
 @include small-screen {
- 
+  .catalogroot {
+    margin-bottom: 0;
+  }
   .indexcat__items_full .indexcat__item {
-    width: 100%;
+    width: 50%;
+
+    .indexcat__image {
+      width: unset;
+    }
   }
   .itemslistslider__slide {
     padding: 0;
@@ -2481,5 +2487,9 @@ text-align: left;
   }
   .seoblock {
     background: #fff;
+  }
+  .detailinfo__title {
+    justify-content: space-between;
+    width: 100%;
   }
 }

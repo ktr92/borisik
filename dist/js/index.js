@@ -2,7 +2,7 @@ function initFE() {
   /*  cardImagesSlider() */
   /*   menuInit() */
   mainSliderInit()
-  /*  detailsliderInit() */
+   detailsliderInit()
   imgSliderInit()
   recipeSliderInit()
   productSliderInit()
@@ -177,8 +177,8 @@ $(document).ready(function () {
     e.preventDefault()
     $(this).closest(".haederbanner").hide()
   })
-  if ($(".productcard .cardrating").length > 0) {
-    $(".productcard .score-wrap").each(function () {
+  if ($(".cardrating").length > 0) {
+    $(".cardrating .score-wrap").each(function () {
       let wrapper = $(this)
       wrapper.find(".fa").each(function (index) {
         let fa = $(this)
