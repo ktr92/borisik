@@ -599,9 +599,9 @@
     line-height: 14px;
   }
   .productcard__badge {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 100%;
-    background: #ffd600;
+    background: #00b44b;
     border-radius: 555px;
     width: 27px;
     height: 13px;
@@ -1512,8 +1512,8 @@
     }
   }
   .minicard__info {
-    width: calc(100% - 72px);
-    padding-left: 20px;
+    width: calc(100% - 82px);
+    padding-left: 10px;
   }
   .minicard__right {
     -moz-text-align-last: left;
@@ -2559,5 +2559,12 @@ text-align: left;
   .detailslider .detailswiper {
     height: 180px;
   }
-
+  .minicard_page .minicard__image {
+    width: 82px;
+    height: 79px;
+  }
+  .minicard_page .minicard__title {
+    font-size: 14px;
+    margin-bottom: 10px; 
+  }
 }
