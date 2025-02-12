@@ -767,7 +767,7 @@
                       <span class="iconlinks__text">Избранное</span>
                     </a>
                   </div>
-                  <div class="iconlinks__item">
+                  <div class="iconlinks__item iconlinks__item_card">
                     <a aria-label="link" href="#" class="iconlinks__link">
                       <span class="iconlinks__badge">5</span>
                       <span class="iconlinks__icon">
@@ -775,6 +775,174 @@
                       </span>
                       <span class="iconlinks__text">Корзина</span>
                     </a>
+                    <div class="dropdowncart" data-entity="popup-basket">
+                      <div data-entity="basket-block">
+                        <form action="#" id="full-basket" data-entity="basket-form" class="dropdowncart__main">
+                          <input type="hidden" name="quantity_float" value="Y">
+                          <input type="hidden" name="BasketRefresh" id="BasketRefresh" value="BasketRefresh">
+                          <div class="cartblock__items">
+                            <div class="cartblock__item" data-entity="item" data-id="">
+                              <div class="minicard">
+                                <div class="minicard__wrapper">
+                                  <div class="minicard__left">
+                                    <a href="#" class="minicard__image">
+                                      <img
+                                        src="img/product1.jpg"
+                                        alt="">
+                                    </a>
+                                    <div class="minicard__main">
+                                      <a href="/catalog/product/golubtsy_s_myasom/"
+                                        class="minicard__title onlyDesktop">Голубцы с мясом</a>
+                                      <div class="minicard__buyblock">
+                                        <div class="minicard__count">
+                                          <div class="buyblock__quantity">
+                                            <div class="quantity">
+                                              <span class="quantity-minus" data-field="quantity">
+                                                <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3">
+                                              </span>
+                                              <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                                min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                                data-entity="quantity" data-item="">
+                                              <span class="quantity-plus" data-field="quantity">
+                                                <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="minicard__amount">
+                                            <div class="minicard__pricecount">
+                                              430 ₽/кг </div>
+                                          </div>
+                                        </div>
+                                       <!--  <div class="minicard__statusinfo minicard__stock minicard__stock_outofstock">
+                                          Товар закончился </div> -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="minicard__right onlyDesktop">
+                                    <a href="#" class="minicard__removeposition" data-entity="basket-delete-popup"
+                                      data-item="" data-name="Голубцы с мясом" data-quantity="0.5" data-price="430"
+                                      data-id="">
+                                      <img src="img/removeposition.svg" alt="">
+                                    </a>
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                      <!--   <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">260</div>
+                                          <div class="productcard__badge">17 %
+                                          </div>
+                                        </div> -->
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cartblock__item" data-entity="item" data-id="">
+                              <div class="minicard">
+                                <div class="minicard__wrapper">
+                                  <div class="minicard__left">
+                                    <a href="#" class="minicard__image">
+                                      <img
+                                        src="img/product1.jpg"
+                                        alt="">
+                                    </a>
+                                    <div class="minicard__main">
+                                      <a href="/catalog/product/golubtsy_s_myasom/"
+                                        class="minicard__title onlyDesktop">Голубцы с мясом</a>
+                                      <div class="minicard__buyblock">
+                                        <div class="minicard__count">
+                                          <div class="buyblock__quantity">
+                                            <div class="quantity">
+                                              <span class="quantity-minus" data-field="quantity">
+                                                <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3">
+                                              </span>
+                                              <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                                min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                                data-entity="quantity" data-item="">
+                                              <span class="quantity-plus" data-field="quantity">
+                                                <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="minicard__amount">
+                                            <div class="minicard__pricecount">
+                                              430 ₽/кг </div>
+                                          </div>
+                                        </div>
+                                        <div class="minicard__statusinfo minicard__stock minicard__stock_outofstock">
+                                          Товар закончился </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="minicard__right onlyDesktop">
+                                    <a href="#" class="minicard__removeposition" data-entity="basket-delete-popup"
+                                      data-item="" data-name="Голубцы с мясом" data-quantity="0.5" data-price="430"
+                                      data-id="">
+                                      <img src="img/removeposition.svg" alt="">
+                                    </a>
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                      <!--   <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">260</div>
+                                          <div class="productcard__badge">17 %
+                                          </div>
+                                        </div> -->
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="dropdowncart__footer">
+                          <div class="dropdowncart__total">
+                            <div class="dropdowncart__remove">
+                              <div class="minicard__button">
+                                <a href="#" data-entity="clear-basket-popup" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="">
+                                  <span>Очистить корзину</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="dropdowncart__price">
+                              <span class="dropdowncart__caption">Итого:</span>
+                              <span class="dropdowncart__pricevalue">215 ₽</span>
+                            </div>
+                          </div>
+                          <div class="dropdowncart__button">
+                            <div class="carttotal__status carttotal__status_danger">
+                              Удалите отсутствующие товары
+                            </div>
+                            <div class="carttotal__status carttotal__status_danger">
+                              Минимальный заказ от 1500 руб
+                            </div>
+                            <a href="/personal/order/make/" class="btn btn_main btn_disabled">Перейти к оформлению</a>
+                          </div>
+                        </div>
+                      </div>
+                      <script>
+                        
+                          $('[ data-entity="basket-counter"]').html('<span class="iconlinks__badge">1</span>');
+                          let _html = '<span class="iconlinks__badge">1</span>';
+                          _html += '<div class="mobilenav__icon"><img src="img/icnCart.svg" alt=""></div>';
+                          _html += '<div class="mobilenav__name" >Корзина</div>';
+                          $('[ data-entity="basket-counter-mobile"]').html(_html);
+                    
+                      </script>
+                    </div>
                   </div>
                 </div>
                 <!-- /.iconlinks -->
@@ -1215,14 +1383,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -1344,14 +1512,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -1473,14 +1641,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -1602,14 +1770,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -1731,14 +1899,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -1860,14 +2028,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -1989,14 +2157,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -2187,14 +2355,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -2317,14 +2485,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -2446,14 +2614,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -2575,14 +2743,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -2704,14 +2872,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>
@@ -2833,14 +3001,14 @@
                                     </span>
                                     <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                       min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                      data-entity="quantity" data-item="3814">
+                                      data-entity="quantity" data-item="">
                                     <span class="quantity-plus" data-field="quantity">
                                       <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                     </span>
                                   </div>
                                 </div><!-- /.productcard__quantity -->
                                 <div class="productcard__addcart">
-                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item="3814"
+                                  <button aria-label="button"  class="btn btn_cart" data-entity="add2basket" data-item=""
                                     data-toggleclass="active">
                                     <div class="tocart__content tocart__before">
                                       <span>В корзину</span>

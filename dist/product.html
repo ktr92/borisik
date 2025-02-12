@@ -765,7 +765,7 @@
                       <span class="iconlinks__text">Избранное</span>
                     </a>
                   </div>
-                  <div class="iconlinks__item">
+                  <div class="iconlinks__item iconlinks__item_card">
                     <a aria-label="link" href="#" class="iconlinks__link">
                       <span class="iconlinks__badge">5</span>
                       <span class="iconlinks__icon">
@@ -773,6 +773,174 @@
                       </span>
                       <span class="iconlinks__text">Корзина</span>
                     </a>
+                    <div class="dropdowncart" data-entity="popup-basket">
+                      <div data-entity="basket-block">
+                        <form action="#" id="full-basket" data-entity="basket-form" class="dropdowncart__main">
+                          <input type="hidden" name="quantity_float" value="Y">
+                          <input type="hidden" name="BasketRefresh" id="BasketRefresh" value="BasketRefresh">
+                          <div class="cartblock__items">
+                            <div class="cartblock__item" data-entity="item" data-id="">
+                              <div class="minicard">
+                                <div class="minicard__wrapper">
+                                  <div class="minicard__left">
+                                    <a href="#" class="minicard__image">
+                                      <img
+                                        src="img/product1.jpg"
+                                        alt="">
+                                    </a>
+                                    <div class="minicard__main">
+                                      <a href="/catalog/product/golubtsy_s_myasom/"
+                                        class="minicard__title onlyDesktop">Голубцы с мясом</a>
+                                      <div class="minicard__buyblock">
+                                        <div class="minicard__count">
+                                          <div class="buyblock__quantity">
+                                            <div class="quantity">
+                                              <span class="quantity-minus" data-field="quantity">
+                                                <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3">
+                                              </span>
+                                              <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                                min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                                data-entity="quantity" data-item="">
+                                              <span class="quantity-plus" data-field="quantity">
+                                                <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="minicard__amount">
+                                            <div class="minicard__pricecount">
+                                              430 ₽/кг </div>
+                                          </div>
+                                        </div>
+                                       <!--  <div class="minicard__statusinfo minicard__stock minicard__stock_outofstock">
+                                          Товар закончился </div> -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="minicard__right onlyDesktop">
+                                    <a href="#" class="minicard__removeposition" data-entity="basket-delete-popup"
+                                      data-item="" data-name="Голубцы с мясом" data-quantity="0.5" data-price="430"
+                                      data-id="">
+                                      <img src="img/removeposition.svg" alt="">
+                                    </a>
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                      <!--   <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">260</div>
+                                          <div class="productcard__badge">17 %
+                                          </div>
+                                        </div> -->
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cartblock__item" data-entity="item" data-id="">
+                              <div class="minicard">
+                                <div class="minicard__wrapper">
+                                  <div class="minicard__left">
+                                    <a href="#" class="minicard__image">
+                                      <img
+                                        src="img/product1.jpg"
+                                        alt="">
+                                    </a>
+                                    <div class="minicard__main">
+                                      <a href="/catalog/product/golubtsy_s_myasom/"
+                                        class="minicard__title onlyDesktop">Голубцы с мясом</a>
+                                      <div class="minicard__buyblock">
+                                        <div class="minicard__count">
+                                          <div class="buyblock__quantity">
+                                            <div class="quantity">
+                                              <span class="quantity-minus" data-field="quantity">
+                                                <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3">
+                                              </span>
+                                              <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                                min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                                data-entity="quantity" data-item="">
+                                              <span class="quantity-plus" data-field="quantity">
+                                                <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
+                                              </span>
+                                            </div>
+                                          </div>
+                                          <div class="minicard__amount">
+                                            <div class="minicard__pricecount">
+                                              430 ₽/кг </div>
+                                          </div>
+                                        </div>
+                                        <div class="minicard__statusinfo minicard__stock minicard__stock_outofstock">
+                                          Товар закончился </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="minicard__right onlyDesktop">
+                                    <a href="#" class="minicard__removeposition" data-entity="basket-delete-popup"
+                                      data-item="" data-name="Голубцы с мясом" data-quantity="0.5" data-price="430"
+                                      data-id="">
+                                      <img src="img/removeposition.svg" alt="">
+                                    </a>
+                                    <div class="minicard__price">
+                                      <div class="productcard__prices">
+                                      <!--   <div class="productcard__topprice">
+                                          <div class="productcard__oldprice">260</div>
+                                          <div class="productcard__badge">17 %
+                                          </div>
+                                        </div> -->
+                                        <div class="productcard__mainprice">
+                                          <div class="productcard__price">
+                                            <div class="productcard__pricevalue">674.94</div>
+                                            <div class="productcard__priceunit">₽/кг</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="dropdowncart__footer">
+                          <div class="dropdowncart__total">
+                            <div class="dropdowncart__remove">
+                              <div class="minicard__button">
+                                <a href="#" data-entity="clear-basket-popup" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="">
+                                  <span>Очистить корзину</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="dropdowncart__price">
+                              <span class="dropdowncart__caption">Итого:</span>
+                              <span class="dropdowncart__pricevalue">215 ₽</span>
+                            </div>
+                          </div>
+                          <div class="dropdowncart__button">
+                            <div class="carttotal__status carttotal__status_danger">
+                              Удалите отсутствующие товары
+                            </div>
+                            <div class="carttotal__status carttotal__status_danger">
+                              Минимальный заказ от 1500 руб
+                            </div>
+                            <a href="/personal/order/make/" class="btn btn_main btn_disabled">Перейти к оформлению</a>
+                          </div>
+                        </div>
+                      </div>
+                      <script>
+                        
+                          $('[ data-entity="basket-counter"]').html('<span class="iconlinks__badge">1</span>');
+                          let _html = '<span class="iconlinks__badge">1</span>';
+                          _html += '<div class="mobilenav__icon"><img src="img/icnCart.svg" alt=""></div>';
+                          _html += '<div class="mobilenav__name" >Корзина</div>';
+                          $('[ data-entity="basket-counter-mobile"]').html(_html);
+                    
+                      </script>
+                    </div>
                   </div>
                 </div>
                 <!-- /.iconlinks -->
@@ -904,58 +1072,6 @@
     </div>
     <!-- /.breadcrumbs -->
 
-    <div class="mobiledetail onlyMobile" id="mobpriceFixed">
-      <div class="container">
-        <div class="detailbuy__buyblock">
-          <div class="buyblock">
-            <div class="productcard__buy">
-              <div class="productcard__prices">
-                <div class="productcard__topprice">
-                  <div class="productcard__oldprice">762.92</div>
-                  <div class="productcard__badge">12%</div>
-                </div>
-                <!-- /.productcard__oldprice -->
-                <div class="productcard__mainprice">
-                  <div class="productcard__price">
-                    <div class="productcard__pricevalue">674.94</div>
-                    <div class="productcard__priceunit">₽/кг</div>
-                  </div>
-                  <!-- /.productcard__price -->
-                </div>
-                <!-- /.productcard__mainprice -->
-              </div>
-              <!-- /.productcard__prices -->
-              <div class="buyblock__buttons flex items-center">
-                <div class="productcard__cart">
-                   <!-- <button class="tocart btn btn_main js-addmodal active">
-                      <div class="tocart__content tocart__after">
-                        <span>В корзине</span>
-                      </div>
-                    </button> -->
-                    <!-- <button class="tocart btn btn_main js-addmodal active">
-                      <div class="tocart__content tocart__before">
-                        <span>Купить</span>
-                      </div>
-                    </button> -->
-                    <button class="tocart btn btn_main js-addmodal">
-                      <div class="tocart__content tocart__before">
-                        <span>Купить</span>
-                      </div>
-                      <div class="tocart__content tocart__after">
-                        <span>В корзине</span>
-                      </div>
-                    </button>
-                </div>
-              </div>
-              <!-- /.buyblock__buttons -->
-            </div>
-          </div>
-          <!-- /.buyblock -->
-        </div>
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.mobilepanel -->
 
     <div class="productpage detail">
       <div class="container">
@@ -1150,7 +1266,7 @@
                                   </span>
                                   <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                     min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                    data-entity="quantity" data-item="3814">
+                                    data-entity="quantity" data-item="">
                                   <span class="quantity-plus" data-field="quantity">
                                     <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                   </span>
@@ -1166,7 +1282,7 @@
                         
                             <div class="productcard__addcart">
                               <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                data-item="3814" data-toggleclass="active">
+                                data-item="" data-toggleclass="active" data-action="showmodal_cart">
                                 <div class="tocart__content tocart__before">
                                   <span>В корзину</span>
                                 </div>
@@ -1641,11 +1757,13 @@
           <div class="container">
             <div class="blockheader flex items-center content-between">
               <div class="blockheader__left">
-                <h2>С этим товаром покупают</h2>
+                <h2>С этим  покупают</h2>
+                <a href="#" class="onlyMobile">Смотреть все</a>
+
               </div>
               <!-- /.blockheader__left -->
               <div class='blockheader__right'>
-                <a aria-label="link" href="#" class='extlink'>Смотреть все</a>
+                <a aria-label="link" href="#" class='extlink onlyDesktop'>Смотреть все</a>
 
                 <div class="sliderarrows flex">
                   <div class="sliderarrows__left">
@@ -1724,7 +1842,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -1756,7 +1874,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -1764,7 +1882,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -1846,7 +1964,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -1878,7 +1996,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -1886,7 +2004,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -1968,7 +2086,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2000,7 +2118,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2008,7 +2126,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2090,7 +2208,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2122,7 +2240,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2130,7 +2248,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2212,7 +2330,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2244,7 +2362,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2252,7 +2370,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2334,7 +2452,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2366,7 +2484,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2374,7 +2492,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2409,18 +2527,21 @@
           <div class="container">
             <div class="blockheader flex items-center content-between">
               <div class="blockheader__left">
-                <h2>Рекомендуем попробовать</h2>
-                <a href="#">Смотреть все</a>
+                <h2>Рекомендуем</h2>
+                <a href="#" class="onlyMobile">Смотреть все</a>
+
               </div>
               <!-- /.blockheader__left -->
-              <div>
+              <div class='blockheader__right'>
+                <a aria-label="link" href="#" class='extlink onlyDesktop'>Смотреть все</a>
+
                 <div class="sliderarrows flex">
                   <div class="sliderarrows__left">
-                    <img src="img/left.svg" alt="" />
+                    <img loading="lazy" src="img/left.svg" width="26" height="26" alt="">
                   </div>
                   <!-- /.sliderarrows__left -->
                   <div class="sliderarrows__right">
-                    <img src="img/right.svg" alt="" />
+                    <img loading="lazy" src="img/right.svg" width="26" height="26" alt="">
                   </div>
                   <!-- /.sliderarrows__right -->
                 </div>
@@ -2491,7 +2612,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2523,7 +2644,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2531,7 +2652,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2613,7 +2734,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2645,7 +2766,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2653,7 +2774,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2735,7 +2856,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2767,7 +2888,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2775,7 +2896,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2857,7 +2978,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -2889,7 +3010,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -2897,7 +3018,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -2979,7 +3100,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -3011,7 +3132,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -3019,7 +3140,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -3101,7 +3222,7 @@
                             </div>
                             <div class="productcard__rating">
                               <!--  сюда выводится округленный до целого рейтинг  -->
-                              <div class="cardrating" data-rating="3">
+                              <div class="cardrating" data-rating="4">
                                 <div class="cardrating__item">
                                   <div class="cardrating__form">
                                     <div class="cardrating__value">
@@ -3133,7 +3254,7 @@
                                       </span>
                                       <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
                                         min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                        data-entity="quantity" data-item="3814">
+                                        data-entity="quantity" data-item="">
                                       <span class="quantity-plus" data-field="quantity">
                                         <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
                                       </span>
@@ -3141,7 +3262,7 @@
                                   </div><!-- /.productcard__quantity -->
                                   <div class="productcard__addcart">
                                     <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
-                                      data-item="3814" data-toggleclass="active">
+                                      data-item="" data-toggleclass="active">
                                       <div class="tocart__content tocart__before">
                                         <span>В корзину</span>
                                       </div>
@@ -3195,10 +3316,10 @@
                   <div class="minicard__wrapper">
                     <div class="minicard__left">
                       <div class="minicard__image">
-                        <img src="img/product1.webp" alt="" />
+                        <img src="img/product1.jpg" alt="" />
                       </div>
                       <div class="minicard__info onlyMobile">
-                        <div class="minicard__title">Колбаса сырокопченая “Прошутто”</div>
+                        <div class="minicard__title">Кета в масле 280 гр.</div>
                         <div class="minicard__right">
                           <div class="minicard__price">
                             <div class="productcard__prices">
@@ -3222,38 +3343,22 @@
                       </div>
                       <!-- /.minicard__info -->
                       <div class="minicard__main">
-                        <div class="minicard__title onlyDesktop">Колбаса сырокопченая “Прошутто”</div>
+                        <div class="minicard__title onlyDesktop">Кета в масле 280 гр.</div>
                         <!-- /.minicard__title -->
                         <div class="minicard__buyblock">
-                          <div class="detailbuy__options">
-                            <div class="detailbuy__checkbox imgcheckbox">
-                              <label for="option1" class="imgcheckbox__label">
-                                <input type="radio" name="radio" id="option1" class="imgcheckbox__input" checked />
-                                <span class="imgcheckbox__content">
-                                  <img src="img/upakovka.svg" alt="" class="imgcheckbox__icon" />
-                                  <span class="imgcheckbox__title">Упаковка</span>
-                                </span>
-                              </label>
-                            </div>
-                            <!-- /.detailbuy__checkbox -->
-                            <div class="detailbuy__checkbox imgcheckbox">
-                              <label for="option2" class="imgcheckbox__label">
-                                <input type="radio" name="radio" id="option2" class="imgcheckbox__input" />
-                                <span class="imgcheckbox__content">
-                                  <img src="img/narezka.svg" alt="" class="imgcheckbox__icon" />
-                                  <span class="imgcheckbox__title">Нарезка</span>
-                                </span>
-                              </label>
-                            </div>
-                            <!-- /.detailbuy__checkbox -->
-                          </div>
-                          <!-- /.detailbuy__options -->
+                          
                           <div class="minicard__count">
                             <div class="buyblock__quantity">
                               <div class="quantity">
-                                <input type="button" value="–" class="quantity-minus" data-field="quantity" />
-                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" />
-                                <input type="button" value="+" class="quantity-plus" data-field="quantity" />
+                                <span class="quantity-minus" data-field="quantity">
+                                  <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3">
+                                </span>
+                                <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                  min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                  data-entity="quantity" data-item="">
+                                <span class="quantity-plus" data-field="quantity">
+                                  <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9">
+                                </span>
                               </div>
                             </div>
                             <div class="minicard__amount">
@@ -3269,7 +3374,6 @@
                       <!-- /.minicard__main -->
                     </div>
                     <div class="minicard__right onlyDesktop">
-                      <div class="minicard__pricetitle">Итого</div>
                       <div class="minicard__price">
                         <div class="productcard__prices">
                           <div class="productcard__topprice">
@@ -3296,7 +3400,7 @@
               </div>
               <!-- /.modalproduct__product -->
               <div class="modalproduct__buttons">
-                <a href="#" class="btn_border btn_border--blue">Продолжить покупки</a>
+                <a href="#" class="btn_border2">Продолжить покупки</a>
                 <a href="#" class="btn_main">Оформить заказ</a>
               </div>
               <!-- /.modalproduct__buttons -->
@@ -3343,7 +3447,7 @@
                                 <!-- /.productcard__left -->
                                 <div class="productcard__right">
                                   <div class="productcard__title">
-                                    <a href="">Шейка копчено-вареная Московская</a>
+                                    <a href="">Кета в масле 280 гр.</a>
                                   </div>
                                   <div class="productcard__buy">
                                     <div class="productcard__prices">
@@ -3390,7 +3494,7 @@
                                 <!-- /.productcard__left -->
                                 <div class="productcard__right">
                                   <div class="productcard__title">
-                                    <a href="">Шейка копчено-вареная Московская</a>
+                                    <a href="">Кета в масле 280 гр.</a>
                                   </div>
                                   <div class="productcard__buy">
                                     <div class="productcard__prices">
@@ -3437,7 +3541,7 @@
                                 <!-- /.productcard__left -->
                                 <div class="productcard__right">
                                   <div class="productcard__title">
-                                    <a href="">Шейка копчено-вареная Московская</a>
+                                    <a href="">Кета в масле 280 гр.</a>
                                   </div>
                                   <div class="productcard__buy">
                                     <div class="productcard__prices">
@@ -3484,7 +3588,7 @@
                                 <!-- /.productcard__left -->
                                 <div class="productcard__right">
                                   <div class="productcard__title">
-                                    <a href="">Шейка копчено-вареная Московская</a>
+                                    <a href="">Кета в масле 280 гр.</a>
                                   </div>
                                   <div class="productcard__buy">
                                     <div class="productcard__prices">
@@ -3536,7 +3640,7 @@
   </div>
 </div>
 <script>
-  $(".js-addmodal").on("click", function (e) {
+  $("[data-action='showmodal_cart']").on("click", function (e) {
     e.preventDefault();
     $(this).addClass('active')
     $("#popup_addproduct").modal("show");

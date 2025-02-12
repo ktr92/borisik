@@ -1469,7 +1469,7 @@ line-height: 1;
 .productcard__wrapper {
   background: #ffffff;
   border-radius: 12px;
-  border: 1px solid #f3f3f3;
+/*   border: 1px solid #f3f3f3; */
 
   padding: 10px 24px 31px 24px;
 }
@@ -3834,7 +3834,7 @@ text-transform: uppercase;
 .minicard__title {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   /* identical to box height */
   margin-bottom: 11px;
@@ -6708,4 +6708,126 @@ iframe {
   .badge__text {
     color: #2e2f31;
   }
+}
+
+.dropdowncart{
+  background:#fff;
+  border-radius:10px;
+  width:562px;
+  position:absolute;
+  right:0;
+  top:100%;
+  padding:19px 7px 30px 30px;
+  visibility:hidden;
+  z-index:-999;
+
+}
+.dropdowncart .minicard__image{
+  min-width:100px;
+  max-width:100px;
+  height:64px
+}
+.dropdowncart .minicard__main{
+  margin-left:29px
+}
+.dropdowncart .minicard__left{
+  padding-top:11px
+}
+.dropdowncart .cartblock__item{
+  padding-bottom:15px;
+  margin-bottom:15px
+}
+.dropdowncart .cartblock__items{
+  max-height:318px;
+  overflow:auto;
+  overflow-x:hidden;
+  padding-right:19px
+}
+.dropdowncart .minicard__wrapper{
+  align-items:flex-end
+}
+.dropdowncart .dropdowncart__total{
+  padding:22px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+.dropdowncart .dropdowncart__caption{
+  font-style:normal;
+  font-weight:600;
+  font-size:16px;
+  line-height:100%;
+  color:rgba(48,54,64,.5);
+  margin-right: 15px;
+}
+.dropdowncart .dropdowncart__pricevalue{
+  font-style:normal;
+  font-weight:600;
+  font-size:22px;
+  line-height:100%;
+
+  color: #ed1e26;
+}
+.dropdowncart .dropdowncart__button .btn{
+  width:100%;
+  max-width:100%;
+  border-radius: 5555px;
+}
+.dropdowncart__footer{
+  padding-right:19px
+}
+.dropdowncart *{
+  transition:unset
+}
+
+.iconlinks__item_card:hover .dropdowncart{
+  visibility:visible;
+  z-index:99999
+}
+
+.dropdowncart,.suggestions-wrapper{
+  filter:drop-shadow(0px 0px 40px rgba(37, 52, 79, .15))
+}
+.dropdowncart .productcard__pricevalue,.productslider__modalslider .productcard__pricevalue{
+  font-size:16px;
+  line-height:26px
+}
+.minicard__statusinfo{
+  margin:10px 0;
+  font-size:14px
+}
+.minicard__stock{
+  font-weight:700
+}
+.carttotal__status{
+  margin:10px 0;
+  font-size:14px;
+  text-align:center;
+
+ 
+}
+.carttotal__status_danger, .minicard__stock_outofstock {
+  color: #ed1e26;
+}
+
+.miniproductslider {
+  .productcard__img img {
+    width: 125px;
+    height: 80px;
+  }
+  button.productcard__addtocart {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border: 4px solid $yellow;
+  }
+}
+
+.modalproduct__buttons {
+  .btn_border2 {
+    line-height: 46px;
+  }
+}
+.modalproduct__buttons a {
+  border-radius: 555px;
 }

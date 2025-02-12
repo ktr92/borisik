@@ -1340,7 +1340,7 @@
     margin-right: 14px;
   }
   .infoicons .badge__text {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 130%;
   }
   .infoicons__item {
@@ -1358,18 +1358,20 @@
   .infoicons .badge img {
     width: 20px;
   }
-  .sitetabs__header li {
+/*   .sitetabs__header li {
     height: 36px;
-  }
+  } */
   .sitetabs__header li span.sitetabs__title {
-    margin-right: -20px;
     font-size: 16px;
-    line-height: 19px;
+
   }
-  .sitetabs__header li {
+  .sitetabs__header li span.count {
+    right: -15px;
+  }
+/*   .sitetabs__header li {
     padding-left: 24px;
     padding-right: 24px;
-  }
+  } */
   .infoicons {
     margin: 23px 0;
   }
@@ -1495,13 +1497,13 @@
     flex-wrap: wrap;
   }
   .minicard__count {
-    .buyblock__quantity {
+    /* .buyblock__quantity {
       width: 50%;
-    }
-    .minicard__amount {
+    } */
+    /* .minicard__amount {
       width: 50%;
       text-align: center;
-    }
+    } */
     input.quantity-field {
       height: 30px;
     }
@@ -2306,6 +2308,67 @@
       height: 109px;
     }
   }
+  .detailslider .detailswiper {
+    height: 380px;
+  }
+  .detailslider .swiper-slide img {
+    height: 380px;
+  }
+  
+  .productcard__buy input.quantity-field {
+    height: 40px;
+    max-width: 35px;
+  }
+  .detailbuy__buyblock .productcard__pricevalue {
+
+  }
+
+  .detailinfo__buyblock {
+    margin-bottom: 17px;
+  }
+
+  .detailbuy .productcard__buy {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+
+  .detailinfo__content {
+    margin: auto;
+    .productcard__prices {
+
+    }
+  }
+  .detailinfo__moreinfo {
+    margin-bottom: 39px;
+  }
+
+  .productcard__cart {
+    position: static;
+    flex-wrap: wrap;
+    .btn_cart span {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .productcard__cart > * {
+    flex:unset;
+    width: 100%;
+  }
+  .reviews__main {
+    padding-left: 0;
+  }
+  .reviews__item {
+    flex-wrap: wrap;
+  }
+  .reviews__title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .sitetabs__content  {
+    .itemslistslider__slide {
+      width: 100%;
+    }
+  }
 }
 @include small-screen {
   .catalogroot {
@@ -2492,4 +2555,9 @@ text-align: left;
     justify-content: space-between;
     width: 100%;
   }
+  .detailslider .swiper-slide img,
+  .detailslider .detailswiper {
+    height: 180px;
+  }
+
 }
