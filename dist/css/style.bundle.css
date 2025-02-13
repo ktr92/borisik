@@ -5637,7 +5637,7 @@ a.indexcat__title:focus {
   display: inline-block;
   margin-right: 30px;
   position: relative;
-  padding-left: 11px; }
+  padding-left: 15px; }
   .errorpage__links li:after {
     width: 6px;
     height: 6px;
@@ -5646,13 +5646,13 @@ a.indexcat__title:focus {
     left: 0;
     top: 5px;
     border-radius: 50%;
-    background: #df000f; }
+    background: #ffd600; }
   .errorpage__links li a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
-    color: #df000f; }
+    color: #2e2f31; }
 
 button:disabled {
   cursor: not-allowed; }
@@ -6008,23 +6008,29 @@ iframe {
   padding-bottom: 0 !important; }
 
 .contactspage {
-  margin-bottom: 84px; }
+  margin-bottom: 84px;
+  /*   .socials__item a {
+    box-shadow: 4px 4px 10px rgba(37, 52, 79, 0.1);
+  } */ }
   .contactspage .pageheader {
     margin-bottom: 42px; }
   .contactspage .footer__informblock {
     width: 100%; }
   .contactspage .footer__contacts .contacts__phone a {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 24px; }
+  .contactspage .footer__contacts .contacts__phone_mail a {
+    font-style: normal;
     font-weight: 500;
-    font-size: 26px;
-    line-height: 30px; }
+    font-size: 16px;
+    color: #2e2f31; }
   .contactspage .contacts__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px; }
   .contactspage .callback {
     width: 100%; }
-  .contactspage .socials__item a {
-    box-shadow: 4px 4px 10px rgba(37, 52, 79, 0.1); }
   .contactspage .footer__address {
     margin-bottom: 21px; }
 
@@ -6350,7 +6356,7 @@ iframe {
   padding: 14px 21px; }
 
 .informwrapper_green {
-  background: rgba(12, 186, 122, 0.1); }
+  background: rgba(255, 214, 0, 0.2); }
 
 .informwrapper__title {
   margin-bottom: 10px;
@@ -6374,7 +6380,7 @@ iframe {
   padding-left: 22px;
   color: #2e2f31;
   margin-bottom: 4px;
-  background-image: url(../img/checklist.svg);
+  background-image: url(../img/listcheck.svg);
   background-position: left center;
   background-repeat: no-repeat; }
   .informwrapper__list li:last-child {
@@ -6858,6 +6864,89 @@ iframe {
 .shopbutton {
   display: none; }
 
+.minicard__buttons .shopbutton {
+  display: none; }
+
+.contacts + .contacts {
+  margin-top: 20px; }
+
+.contacts__info {
+  margin-bottom: 12px; }
+
+.contacts h3 {
+  margin-bottom: 10px; }
+
+a {
+  cursor: pointer; }
+
+#map {
+  width: 100%;
+  height: 600px; }
+
+.pageheader.pageheader__type2.flex.items-center.content-between {
+  margin-bottom: 30px; }
+
+.textlogin {
+  text-align: center; }
+
+.formrating .score .stars-active {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle; }
+  .formrating .score .stars-active .fa {
+    color: #ff9500; }
+
+.formrating .score .stars-inactive {
+  color: rgba(52, 60, 75, 0.4);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  -webkit-text-stroke: initial;
+  vertical-align: middle;
+  /* overflow: hidden;
+      */ }
+
+.modal-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  margin-top: 17px;
+  text-align: center; }
+
+.formrating__value {
+  display: none; }
+
+.modal_twicelarge .modal-dialog {
+  width: 1017px; }
+
+.modalcols__productimage {
+  margin-bottom: 20px; }
+
+.modalcols {
+  display: flex;
+  flex-wrap: wrap; }
+  .modalcols > div {
+    width: calc(50% - 35px); }
+  .modalcols .modal-title {
+    text-align: left; }
+
+.modalcols__left {
+  border-right: 1px solid rgba(217, 217, 217, 0.5);
+  margin-right: 70px; }
+
+.modalcols__producttitle {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #2e2f31;
+  margin-bottom: 23px; }
+
+.btn_main {
+  max-width: unset; }
+
 .shophidden .buyblock__quantity {
   display: none; }
 
@@ -6888,6 +6977,9 @@ iframe {
 .shophidden .detailinfo__header {
   margin-bottom: 50px; }
 
+.shophidden .minicard__buttons .shopbutton {
+  display: none; }
+
 .shophidden .shopbutton {
   margin-top: 15px;
   display: block; }
@@ -6903,6 +6995,9 @@ iframe {
   width: 100%; }
 
 .shophidden .minicard__button.onlyMobile {
+  display: none; }
+
+.shophidden .recipetable__buy {
   display: none; }
 
 @media only screen and (max-width: 1500px) {
@@ -8828,19 +8923,55 @@ iframe {
   } */
   .recipedetail__description h2 {
     max-width: 232px; }
+  .shophidden .minicard__buttons .shopbutton {
+    display: block; }
   .shophidden .shopbutton {
     margin-top: 0;
     line-height: 1;
     height: 12px;
     display: block; }
   .shophidden .shopbutton a {
+    display: block;
     padding: 0;
     background: transparent;
     font-weight: 600;
     font-size: 12px;
     line-height: 1;
     color: #2e2f31;
-    height: unset; } }
+    height: unset; }
+  .contactspage .footer__contacts .contacts__phone a {
+    font-size: 18px; }
+  .contactspage .contacts__text {
+    font-size: 12px; }
+  .contactspage .footer__contacts .contacts__phone a {
+    font-size: 14px;
+    line-height: 1.2; }
+  .contacts__info {
+    margin-bottom: 12px; }
+  #map {
+    width: 100%;
+    height: 320px; }
+  .modalcols > div {
+    width: 100%; }
+  .modalcols .modal-title {
+    text-align: center; }
+  .modalcols__left {
+    margin-right: 0; }
+  .modalcols__product {
+    margin-bottom: 30px; }
+  .modalcols__product {
+    display: flex;
+    align-items: center;
+    gap: 12px; }
+  .modal-title.onlyMobile {
+    text-align: center;
+    margin: 20px 0 40px 0;
+    display: block; }
+  .modalcols__productimage {
+    max-width: 67px; }
+  .modalcols__producttitle {
+    margin-bottom: 9px;
+    font-size: 16px; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

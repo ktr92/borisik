@@ -1,0 +1,29 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> 
+  <style>
+    [data-toggle='modal'] {margin-bottom: 5px;}
+  </style>
+  <main>
+  <div class="container">
+    <!-- все попапы в футере -->
+    <a href="#popup_delivery" data-toggle='modal' class="btn btn_main"> Выбрать способ доставки </a>
+    <a href="#popup_callback" data-toggle='modal' class="btn btn_main"> Заказать звонок</a>
+    <a href="#popup_auth" data-toggle='modal' class="btn btn_main"> Авторизация</a>
+    <a href="#popup_reg" data-toggle='modal' class="btn btn_main"> Регистрация</a>
+    <a href="#popup_password" data-toggle='modal' class="btn btn_main"> Восстановление пароля</a>
+    <a href="#popup_sms" data-toggle='modal' class="btn btn_main">Вход по SMS</a>
+    <a href="#popup_reset" data-toggle='modal' class="btn btn_main">Сброс пароля</a>
+    <a href="#popup_email" data-toggle='modal' class="btn btn_main">Мы отправили письмо</a>
+    <a href="#popup_success" data-toggle='modal' class="btn btn_main">Успешная отправка</a>
+    <a href="#popup_review" data-toggle='modal' class="btn btn_main">Оставить отзыв</a>
+    <a href="#popup_rate" data-toggle='modal' class="btn btn_main">Оцените </a>
+    <a href="#popup_fastorder" data-toggle='modal' class="btn btn_main">Купитьв 1 клик </a>
+    <br>
+    <br>
+  </div>
+  <!-- /.container -->
+</main>
+
+<%= _.template(require('../includes/footer.html').default)(data) %>
