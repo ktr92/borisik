@@ -1153,7 +1153,11 @@ h2 {
     color: #2e2f31;
   }
 }
+.productcard .productcard__buy {
+  justify-content: space-between;
+}
 .productcard__buy {
+  justify-content: space-between;
   gap: 30px;
   margin-bottom: 22px;
   line-height: 1;
@@ -4233,7 +4237,7 @@ p {
 }
 .carttotal__paramvalue {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 100%;
   /* identical to box height, or 16px */
@@ -4241,7 +4245,8 @@ p {
   color: #303640;
 }
 .carttotal__paramvalue_red {
-  color: #ed1e26;
+  color: #00b44b;
+
 }
 .carttotal__summary {
   margin-top: 31px;
@@ -4263,6 +4268,11 @@ p {
   -ms-flex-align: center;
   align-items: center;
   color: #303640;
+
+  span:last-child {
+color: #ed1e26;
+font-weight: 800;
+  }
 }
 .carttotal__button {
 }
@@ -4304,7 +4314,7 @@ p {
       line-height: 100%;
       color: #2e2f31;
       padding-left: 22px;
-      background-image: url(../img/check.svg);
+      background-image: url(../img/listcheck.svg);
       background-position: left center;
       background-repeat: no-repeat;
     }
@@ -4942,11 +4952,13 @@ p {
 .recipedetail__params {
 }
 .recipeparams {
-  background: #ffffff;
+  border: 1px solid rgba(233, 233, 233, 0.93);
+border-radius: 555px;
+  /* background: #ffffff;
   -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-  border-radius: 8px;
-  padding: 15px 40px;
+  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1); */
+
+  padding: 12px 40px;
 }
 .recipeparams__items {
   display: -webkit-box;
@@ -6485,6 +6497,18 @@ iframe {
 }
 .catalog-fav {
   opacity: 0.3;
+
+  &.active {
+    opacity: 1;
+
+      path {
+        fill: $red;
+      }
+      svg {
+        stroke: $red;
+      }
+ 
+  }
 }
 
 .btn_cart {
@@ -6551,7 +6575,18 @@ iframe {
   background-position: left center;
   transform: translateY(200%);
 }
-
+.tocart_lightning  {
+  border-radius: 555px;
+}
+.tocart_lightning span {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  display: block;height: 22px;
+  background-image: url(../img/Lightning.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
 .active .tocart__before {
   transform: translateY(-200%);
 }
@@ -6621,14 +6656,13 @@ iframe {
 .btn_border {
   white-space: nowrap;
 }
-
-.shophidden {
-  .productcard__form {
-    display: none;
-  }
-  .headermain__iconlinks {
-    display: none;
-  }
+.btn_large{
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: unset;
+}
+.btn_round {
+  border-radius: 555px;
 }
 .swiper  {
   opacity: 0;
@@ -6913,4 +6947,8 @@ iframe {
     border-radius: 12px;
 
   }
+}
+
+.shopbutton {
+  display: none;
 }

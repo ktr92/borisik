@@ -1,3 +1,58 @@
+
+.shophidden {
+  .buyblock__quantity {
+    display: none;
+  }
+  .productcard__form {
+    display: none;
+  }
+  .headermain__iconlinks {
+    display: none;
+  }
+  .buyblock__shop {
+    display: block;
+  }
+  .productcard__cart {
+    display: none;
+  }
+  .detailtable {
+    display: none;
+  }
+  .detailinfo__content {
+    .infoicons {
+      margin: 50px 0;
+    }
+  }
+  .detailinfo__content .infomessage {
+    display: none;
+  }
+  .detailinfo__content .infoicons__item:first-child {
+    display: none;
+  }
+  .detailinfo__header {
+    margin-bottom: 50px;
+  }
+  .shopbutton {
+    margin-top: 15px;
+    display: block;
+
+    a {
+      font-size: 16px;
+      padding: 0 50px;
+    }
+  }
+  .cartblock__aside {
+    display: none;
+  }
+  .cartblock__main {
+    margin-right: 0;
+    width: 100%;
+  }
+  .minicard__button.onlyMobile {
+    display: none;
+  }
+}
+
 @include xlarge-screen {
   .cartblock__aside {
     min-width: 300px;
@@ -1788,6 +1843,11 @@
   }
   .recipeparams {
     padding: 16px;
+    background: #ffffff;
+  -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
+  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1); 
+  border: none;
+  border-radius: 8px;
   }
   .recipeparams__img {
     min-width: 20px;
@@ -2595,8 +2655,29 @@
   .blockheader a.onlyMobile {
     margin-top: 4px;
   }
-  .twentybanner__close {
-    top: 8px;
-    right: 8px;
-  }
+ /*  .recipedetail__img img {
+    height: 190px;
+  } */
+   .recipedetail__description {
+    h2 {
+      max-width: 232px;
+    }
+   }
+   .shophidden {
+    .shopbutton {
+      margin-top: 0;
+      line-height: 1;
+      height: 12px;
+      display: block;
+    }
+    .shopbutton a {
+      padding: 0;
+      background: transparent;
+      font-weight: 600;
+      font-size: 12px;
+      line-height:1;
+      color: #2e2f31;
+      height: unset;
+    }
+   }
 }
