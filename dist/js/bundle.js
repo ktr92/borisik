@@ -40,7 +40,7 @@ function initFE() {
   blockSliderInit()
   /*   productListImgLisder()
    */
-  /* moreNewsSliderInit() */
+  moreNewsSliderInit()
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
@@ -539,7 +539,7 @@ function recipeSliderInit() {
       $(this).slick({
         dots: false,
         arrows: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
 
         autoplay: true,

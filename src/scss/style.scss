@@ -4885,12 +4885,12 @@ p {
     padding: 9px 0;
     vertical-align: middle;
     height: 52px;
-    border-bottom: 2px solid rgba(37, 52, 79, 0.1);
+ /*    border-bottom: 2px solid rgba(37, 52, 79, 0.1); */
   }
   .recipetable_tdname {
-    width: 336px;
+    width: 350px;
     span {
-      padding-right: 36px;
+      padding-right: 14px;
     }
   }
 }
@@ -5054,12 +5054,12 @@ p {
   margin-bottom: 49px;
 }
 .pageshortdescr {
-  background: #ffffff;
+ /*  background: #ffffff;
   -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
+  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1); */
   border-radius: 8px;
   margin: 34px 0;
-  padding: 28px 35px;
+ /*  padding: 28px 35px; */
 }
 .pageshortdescr__text {
   font-style: normal;
@@ -5068,16 +5068,16 @@ p {
   line-height: 100%;
   color: #2e2f31;
   position: relative;
-  padding-left: 26px;
+  padding-left: 61px;
   &:before {
     content: "";
     background: #df000f;
     border-radius: 555px;
-    width: 4px;
-    height: 100%;
+    width: 46px;
+    height: 4px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 12px;
   }
 }
 .pagecontent {
@@ -6857,5 +6857,60 @@ iframe {
       object-fit: cover;
       object-position: center;
     }
+  }
+}
+
+.news {
+  .itemslistcard__img {
+    img {
+      height: 223px;
+    }
+  }
+  .itemslistcard__image {
+    margin-bottom: 16px;
+  }
+}
+.news_reallynews  {
+
+  .itemslistcard__img img {
+    height: 314px;
+  }
+  
+}
+.news_reallynews, .recipeslider  {
+  .itemslistcard__param {
+    padding-left: 0;
+  }
+  .itemslistcard__param::before {
+    display: none;
+  }
+  .itemslistcard__text {
+    font-size: 14px;
+  }
+  .itemslistcard__params {
+    margin-bottom: 14px;
+  }
+
+  
+}
+
+.pagecontent__img {
+  img {
+    border-radius: 8px;
+    height: 314px;
+    width: 471px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.recipedetail__img {
+  img {
+    height: 463px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+
   }
 }
