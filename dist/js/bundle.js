@@ -68,6 +68,21 @@ function lazyLoadSrc(selector) {
 }
 
 $(document).ready(function () {
+
+
+  
+
+  $(document).on("click", "[data-action='changeShops_list']", (e) => {
+    $('.changeShops_list').removeClass('active')
+    $('.changeShops_map').addClass('active')
+  })
+
+  $(document).on("click", "[data-action='changeShops_map']", (e) => {
+    $('.changeShops_map').removeClass('active')
+    $('.changeShops_list').addClass('active')
+  })
+
+
   $(document).on("click", "[data-toggleclass]", (e) => {
     e.stopPropagation()
     e.preventDefault()

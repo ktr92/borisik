@@ -1,4 +1,3 @@
-
 .shophidden {
   .buyblock__quantity {
     display: none;
@@ -34,7 +33,7 @@
   }
   .minicard__buttons .shopbutton {
     display: none;
-   }
+  }
   .shopbutton {
     margin-top: 15px;
     display: block;
@@ -1850,10 +1849,10 @@
   .recipeparams {
     padding: 16px;
     background: #ffffff;
-  -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1); 
-  border: none;
-  border-radius: 8px;
+    -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
+    box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
+    border: none;
+    border-radius: 8px;
   }
   .recipeparams__img {
     min-width: 20px;
@@ -2661,19 +2660,19 @@
   .blockheader a.onlyMobile {
     margin-top: 4px;
   }
- /*  .recipedetail__img img {
+  /*  .recipedetail__img img {
     height: 190px;
   } */
-   .recipedetail__description {
+  .recipedetail__description {
     h2 {
       max-width: 232px;
     }
-   }
- 
-   .shophidden {
+  }
+
+  .shophidden {
     .minicard__buttons .shopbutton {
       display: block;
-     }
+    }
     .shopbutton {
       margin-top: 0;
       line-height: 1;
@@ -2686,35 +2685,33 @@
       background: transparent;
       font-weight: 600;
       font-size: 12px;
-      line-height:1;
+      line-height: 1;
       color: #2e2f31;
       height: unset;
     }
-   }
+  }
 
-   .contactspage .footer__contacts .contacts__phone a {
+  .contactspage .footer__contacts .contacts__phone a {
     font-size: 18px;
-   }
-   .contactspage .contacts__text {
+  }
+  .contactspage .contacts__text {
     font-size: 12px;
-   }
-   .contactspage .footer__contacts .contacts__phone a {
+  }
+  .contactspage .footer__contacts .contacts__phone a {
     font-size: 14px;
     line-height: 1.2;
-   }
-   .contacts__info {
+  }
+  .contacts__info {
     margin-bottom: 12px;
-   }
-   #map {
+  }
+  #map {
     width: 100%;
     height: 320px;
-  
   }
 
   .modalcols {
-   
     > div {
-      width: 100%
+      width: 100%;
     }
     .modal-title {
       text-align: center;
@@ -2737,11 +2734,86 @@
     margin: 20px 0 40px 0;
     display: block;
   }
-  .modalcols__productimage  {
+  .modalcols__productimage {
     max-width: 67px;
   }
   .modalcols__producttitle {
     margin-bottom: 9px;
     font-size: 16px;
   }
+  .togglelink__items {
+    flex-wrap: wrap;
   }
+  .togglelink {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .togglelink__link {
+    padding: 11px 12px;
+    width: 50%;
+    text-align: center;
+  }
+  .changeShops {
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  .toggletab {
+    width: 100%;
+  }
+  .pageheader.pageheader__type2.flex.items-center.content-between.pageheader_toggler {
+    margin-bottom: 27px;
+  }
+  .shopslist__image {
+    min-width: 32px;
+    max-width: 32px;
+  }
+  .shopslist__main {
+    gap: 14px;
+  }
+  .shopslist__title {
+    font-weight: 500;
+font-size: 14px;
+margin-bottom: 5px;
+  }
+  .shopslist__address {
+    font-weight: 400;
+font-size: 14px;
+color: #2e2f31;
+  }
+  .shopslist__item {
+    flex-wrap: wrap;
+    padding-bottom: 22px;
+    margin-bottom: 15px;
+  }
+
+  .shopslist__param {
+    font-weight: 400;
+font-size: 12px;
+color: #2e2f31;
+margin-top: 22px;
+margin-left: 46px;
+  }
+  .shopslist__content {
+    margin-top: 4px;
+  }
+  .togglelink__link {
+    font-size: 14px;
+  }
+  .changeShops {
+    font-size: 14px;
+  }
+  .changeShops {
+    gap: 12px;
+  }
+  .shopslist__title {
+    img {
+      opacity: 0.3;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+}
