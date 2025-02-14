@@ -828,4 +828,13 @@
     </div>
   </div>
 </div>
+
+
+<script>
+ 
+  $("#popup_addproduct").on("shown.bs.modal", function (e) {
+    $(".wrap-modal-slider .productslider__modalslider").slick("setPosition");
+    $(".wrap-modal-slider").addClass("open");
+  });
+</script>
 <%= _.template(require('../includes/footer.html').default)(data) %>
