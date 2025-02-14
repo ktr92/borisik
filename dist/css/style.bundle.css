@@ -7012,9 +7012,9 @@ a {
   background: #fff;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   color: #2e2f31;
   padding: 12px 30px 12px 19px; }
   .changeShops:hover {
