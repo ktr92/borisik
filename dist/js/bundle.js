@@ -25,7 +25,7 @@ function initFE() {
   /*  cardImagesSlider() */
   /*   menuInit() */
   mainSliderInit()
-   detailsliderInit()
+  detailsliderInit()
   imgSliderInit()
   recipeSliderInit()
   productSliderInit()
@@ -68,20 +68,31 @@ function lazyLoadSrc(selector) {
 }
 
 $(document).ready(function () {
-
-
-  
+  document.querySelectorAll("form .stars").forEach((element) => {
+    element.addEventListener("click", function (e) {
+      let action = "add"
+      for (const span of this.children) {
+        span.classList[action]("active")
+        if (span === e.target) action = "remove"
+      }
+      var $inp = this.closest(".formrating").querySelector(
+        'input[name="formrating"]'
+      )
+      $inp.value = this.closest(".formrating").querySelectorAll(
+        "form .stars span.active"
+      ).length
+    })
+  })
 
   $(document).on("click", "[data-action='changeShops_list']", (e) => {
-    $('.changeShops_list').removeClass('active')
-    $('.changeShops_map').addClass('active')
+    $(".changeShops_list").removeClass("active")
+    $(".changeShops_map").addClass("active")
   })
 
   $(document).on("click", "[data-action='changeShops_map']", (e) => {
-    $('.changeShops_map').removeClass('active')
-    $('.changeShops_list').addClass('active')
+    $(".changeShops_map").removeClass("active")
+    $(".changeShops_list").addClass("active")
   })
-
 
   $(document).on("click", "[data-toggleclass]", (e) => {
     e.stopPropagation()

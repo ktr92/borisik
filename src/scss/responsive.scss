@@ -5,26 +5,29 @@
   .productcard__form {
     display: none;
   }
-  .headermain__iconlinks {
+  .iconlinks__item_login, 
+  .iconlinks__item_card {
     display: none;
   }
   .buyblock__shop {
     display: block;
+  }.headermain__iconlinks {
+    margin-left: 9px;
   }
   .productcard__cart {
     display: none;
   }
-  .detailtable {
+/*   .detailtable {
     display: none;
-  }
+  } */
   .detailinfo__content {
     .infoicons {
       margin: 50px 0;
     }
   }
-  .detailinfo__content .infomessage {
+ /*  .detailinfo__content .infomessage {
     display: none;
-  }
+  } */
   .detailinfo__content .infoicons__item:first-child {
     display: none;
   }
@@ -1781,7 +1784,7 @@
     .recipetable__buyblock {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
-      justify-content: flex-start;
+      justify-content: space-between;
       text-align: left;
     }
   }
@@ -2816,4 +2819,10 @@ margin-left: 46px;
       margin-left: 5px;
     }
   }
+  .formrating .score-wrap {
+    width: 333px;
+}
+form .stars span {
+  font-size: 64px;
+}
 }

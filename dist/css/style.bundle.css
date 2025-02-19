@@ -1735,7 +1735,13 @@ h2 {
   opacity: 1; }
 
 .productcard {
-  max-width: 278px; }
+  max-width: 278px;
+  border-radius: 13px;
+  border: 1px solid #f3f3f3;
+  background: #fff; }
+  .productcard:hover {
+    border: none;
+    box-shadow: 8px 8px 42px 0 rgba(46, 47, 49, 0.1); }
 
 .productcard__img {
   position: relative;
@@ -1988,7 +1994,7 @@ h2 {
   color: rgba(43, 54, 70, 0.1); }
 
 .score-wrap .fa.active {
-  color: #FF9500; }
+  color: #ff9500; }
 
 /* .score .stars-active {
   color: #ffd600;
@@ -2991,8 +2997,12 @@ li.mainmenuLevelOne__item {
     color: #fff;
     background: #df000f; }
 
+a.btn_main {
+  text-decoration: none !important; }
+
 .breadcrumbs {
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  margin-top: 30px; }
 
 .breadcrumbs__items ul {
   padding: 0;
@@ -3449,9 +3459,9 @@ button:hover {
   border-color: #ffd600; }
 
 .productsticker_purple {
-  color: #7b00ff;
+  color: #db3537;
   background: #fff;
-  border-color: #7b00ff; }
+  border-color: #db3537; }
 
 .productsticker_blue {
   color: #fff;
@@ -3465,7 +3475,7 @@ button:hover {
 
 .productcard__stickers {
   position: absolute;
-  z-index: 999;
+  z-index: 9;
   left: 14px;
   top: 10px; }
 
@@ -6772,7 +6782,8 @@ iframe {
   visibility: visible;
   z-index: 99999; }
 
-.dropdowncart .productcard__pricevalue, .productslider__modalslider .productcard__pricevalue {
+.dropdowncart .productcard__pricevalue,
+.productslider__modalslider .productcard__pricevalue {
   font-size: 16px;
   line-height: 26px; }
 
@@ -6788,7 +6799,8 @@ iframe {
   font-size: 14px;
   text-align: center; }
 
-.carttotal__status_danger, .minicard__stock_outofstock {
+.carttotal__status_danger,
+.minicard__stock_outofstock {
   color: #ed1e26; }
 
 .miniproductslider .productcard__img img {
@@ -6835,16 +6847,20 @@ iframe {
 .news_reallynews .itemslistcard__img img {
   height: 314px; }
 
-.news_reallynews .itemslistcard__param, .recipeslider .itemslistcard__param {
+.news_reallynews .itemslistcard__param,
+.recipeslider .itemslistcard__param {
   padding-left: 0; }
 
-.news_reallynews .itemslistcard__param::before, .recipeslider .itemslistcard__param::before {
+.news_reallynews .itemslistcard__param::before,
+.recipeslider .itemslistcard__param::before {
   display: none; }
 
-.news_reallynews .itemslistcard__text, .recipeslider .itemslistcard__text {
+.news_reallynews .itemslistcard__text,
+.recipeslider .itemslistcard__text {
   font-size: 14px; }
 
-.news_reallynews .itemslistcard__params, .recipeslider .itemslistcard__params {
+.news_reallynews .itemslistcard__params,
+.recipeslider .itemslistcard__params {
   margin-bottom: 14px; }
 
 .pagecontent__img img {
@@ -7043,58 +7059,73 @@ a {
 .togglecontent__shops.active {
   display: block; }
 
-.shophidden .buyblock__quantity {
-  display: none; }
+form .stars {
+  font-size: 0;
+  display: flex;
+  gap: 2px; }
 
-.shophidden .productcard__form {
-  display: none; }
+form .stars span {
+  font-size: 26px; }
 
-.shophidden .headermain__iconlinks {
-  display: none; }
+form .stars span::before {
+  content: "\f005";
+  color: rgba(46, 47, 49, 0.1);
+  font-family: "FontAwesome" !important; }
 
-.shophidden .buyblock__shop {
-  display: block; }
+form .stars span.active::before {
+  content: "\f005";
+  color: #ff9500;
+  font-family: "FontAwesome" !important; }
 
-.shophidden .productcard__cart {
-  display: none; }
+form .stars span:hover {
+  cursor: pointer; }
 
-.shophidden .detailtable {
-  display: none; }
+textarea {
+  resize: none; }
 
-.shophidden .detailinfo__content .infoicons {
-  margin: 50px 0; }
-
-.shophidden .detailinfo__content .infomessage {
-  display: none; }
-
-.shophidden .detailinfo__content .infoicons__item:first-child {
-  display: none; }
-
-.shophidden .detailinfo__header {
-  margin-bottom: 50px; }
-
-.shophidden .minicard__buttons .shopbutton {
-  display: none; }
-
-.shophidden .shopbutton {
-  margin-top: 15px;
-  display: block; }
-  .shophidden .shopbutton a {
-    font-size: 16px;
-    padding: 0 50px; }
-
-.shophidden .cartblock__aside {
-  display: none; }
-
-.shophidden .cartblock__main {
-  margin-right: 0;
-  width: 100%; }
-
-.shophidden .minicard__button.onlyMobile {
-  display: none; }
-
-.shophidden .recipetable__buy {
-  display: none; }
+.shophidden {
+  /*   .detailtable {
+    display: none;
+  } */
+  /*  .detailinfo__content .infomessage {
+    display: none;
+  } */ }
+  .shophidden .buyblock__quantity {
+    display: none; }
+  .shophidden .productcard__form {
+    display: none; }
+  .shophidden .iconlinks__item_login,
+  .shophidden .iconlinks__item_card {
+    display: none; }
+  .shophidden .buyblock__shop {
+    display: block; }
+  .shophidden .headermain__iconlinks {
+    margin-left: 9px; }
+  .shophidden .productcard__cart {
+    display: none; }
+  .shophidden .detailinfo__content .infoicons {
+    margin: 50px 0; }
+  .shophidden .detailinfo__content .infoicons__item:first-child {
+    display: none; }
+  .shophidden .detailinfo__header {
+    margin-bottom: 50px; }
+  .shophidden .minicard__buttons .shopbutton {
+    display: none; }
+  .shophidden .shopbutton {
+    margin-top: 15px;
+    display: block; }
+    .shophidden .shopbutton a {
+      font-size: 16px;
+      padding: 0 50px; }
+  .shophidden .cartblock__aside {
+    display: none; }
+  .shophidden .cartblock__main {
+    margin-right: 0;
+    width: 100%; }
+  .shophidden .minicard__button.onlyMobile {
+    display: none; }
+  .shophidden .recipetable__buy {
+    display: none; }
 
 @media only screen and (max-width: 1500px) {
   .cartblock__aside {
@@ -8387,7 +8418,7 @@ a {
   .recipetable .recipetable__buyblock {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start;
+    justify-content: space-between;
     text-align: left; }
   .breadcrumbs {
     margin-bottom: 19px; }
@@ -9122,7 +9153,11 @@ a {
     opacity: 0.3;
     vertical-align: middle;
     display: inline-block;
-    margin-left: 5px; } }
+    margin-left: 5px; }
+  .formrating .score-wrap {
+    width: 333px; }
+  form .stars span {
+    font-size: 64px; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

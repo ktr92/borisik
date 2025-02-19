@@ -756,7 +756,7 @@
               <!-- /.headermain__contacts -->
               <div class="headermain__iconlinks">
                 <div class="iconlinks">
-                  <div class="iconlinks__item">
+                  <div class="iconlinks__item iconlinks__item_login">
                     <a aria-label="link" href="#" class="iconlinks__link">
                       <span class="iconlinks__icon">
                         <img loading="lazy" src="img/account.svg" alt="Войти" title="Войти" width="28" height="28">
@@ -764,7 +764,7 @@
                       <span class="iconlinks__text">Войти</span>
                     </a>
                   </div>
-                  <div class="iconlinks__item">
+                  <div class="iconlinks__item iconlinks__item_fav">
                     <a aria-label="link" href="#" class="iconlinks__link">
                       <span class="iconlinks__badge">5</span>
 
@@ -966,99 +966,7 @@
         </div>
       </div>
       <!-- /.headercontainer -->
-      <div class="headermenu">
-        <div class="headermenu__wrapper">
-          <div class="headermenu__items">
-            <ul>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <img loading="lazy" src="img/Fire.svg" alt="Акции" title="Акции" width="22" height="22"
-                    class='headermenu__icon'>
-                  <span class='headermenu__title'>Акции</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <img loading="lazy" src="img/Credit Card.svg" alt="Рецепты" title="Рецепты" width="22" height="22"
-                    class='headermenu__icon'>
-                  <span class='headermenu__title'>Рецепты</span>
-                </a>
-              </li>
-
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <span class='headermenu__title'>Полуфабрикаты</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <span class='headermenu__title'>Мясные консервы</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <span class='headermenu__title'>Морепродукты</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <span class='headermenu__title'>Молочные продукты</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link'>
-                  <span class='headermenu__title'>Фрукты, овощи</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class='headermenu__item'>
-                <a aria-label="link" href="#" class='headermenu__link '>
-                  <span class='headermenu__title'>Пункт</span>
-                </a>
-              </li>
-              <li class="SubmenuMega SubmenuFullwidth IconOnly">
-                <ul>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <!-- /.headermenu__items -->
-        </div>
-        <!-- /.headermenu__wrapper -->
-        <div class="arrowmenu">
-          <img loading="lazy" src="img/arrowmenu.svg" alt="далее" title="далее" width="7" height="11">
-        </div>
-      </div>
-      <!-- /.headermenu -->
+    
     </div>
     <!-- /.container -->
   </div>
@@ -1292,11 +1200,11 @@
               <div class="footer__icon"><img loading="lazy" src="img/visa.svg" alt="visa" title="visa" width="38"
                   height="12"></div>
               <!-- /.footer__icon -->
-              <div class="footer__icon"><img loading="lazy" src="img/mastercard.svg" alt="mastercard"
-                  title="mastercard" width="26" height="20">
+              <div class="footer__icon"><img loading="lazy" src="img/mastercard.svg" alt="mastercard" title="mastercard"
+                  width="26" height="20">
               </div><!-- /.footer__icon -->
-              <div class="footer__icon"><img loading="lazy" src="img/mir.svg" alt="" title="mir" width="37"
-                  height="10"></div>
+              <div class="footer__icon"><img loading="lazy" src="img/mir.svg" alt="" title="mir" width="37" height="10">
+              </div>
               <!-- /.footer__icon -->
             </div><!-- /.footer__icons -->
           </div><!-- /.footer__payment -->
@@ -1340,9 +1248,9 @@
                       <div class="deliverytabs__inputcol mobile-full" style="width: 100% !important">
                         <div class="deliverytabs__input">
                           <label>Город, улица, дом</label>
-                          <input type="text" name="address" class="address suggestions-input" id="address"
+                          <textarea rows="2" type="text" name="address" class="address suggestions-input" id="address"
                             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                            style="box-sizing: border-box;">
+                            style="box-sizing: border-box;" ></textarea>
                           <div class="suggestions-wrapper">
                             <div class="suggestions-suggestions" style="display: none;"></div>
                           </div>
@@ -1515,7 +1423,7 @@
                   </div>
                   <!-- /.buttonsrow__item -->
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <a class='btn_border btn_gray red' href="#">SMS-авторизация</a>
+                    <a class='btn_border btn_gray ' href="#">SMS-авторизация</a>
 
                   </div>
                   <!-- /.buttonsrow__item -->
@@ -1569,7 +1477,7 @@
                   </div>
                   <!-- /.buttonsrow__item -->
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <a class='btn_border btn_gray red' href="#">SMS-авторизация</a>
+                    <a class='btn_border btn_gray ' href="#">SMS-авторизация</a>
 
                   </div>
                   <!-- /.buttonsrow__item -->
@@ -1619,7 +1527,7 @@
                 </div>
                 <!-- /.buttonsrow -->
               </div>
-              <div class="textlogin flex content-between items-center">
+              <div class="textlogin  content-between items-center">
                 <div class="textlogin__text">У вас еще нет учетной записи?</div>
                 <div class="textlogin__link"><a aria-label="link" href="">Зарегистрируйтесь</a></div>
               </div><!-- /.textlogin -->
@@ -1645,8 +1553,8 @@
         <div class="modal-body">
 
           <div class="modalinfo">
-            <div class="modalinfo__image"><img loading="lazy" src="img/send.svg" alt="Отправить" width="22"
-                height="22"></div>
+            <div class="modalinfo__image"><img loading="lazy" src="img/send.svg" alt="Отправить" width="22" height="22">
+            </div>
             <!-- /.modalinfo__image -->
             <div class="modalinfo__title">Мы отправили письмо на <span class="red">*****llz@gmail.com</span></div>
             <!-- /.modalinfo__title -->
@@ -1735,7 +1643,8 @@
         <div class="modal-body">
 
           <div class="modalinfo">
-            <div class="modalinfo__image"><img loading="lazy" src="img/success.svg" alt="Успешно" title="Успешно" width="86" height="86"></div>
+            <div class="modalinfo__image"><img loading="lazy" src="img/success.svg" alt="Успешно" title="Успешно"
+                width="86" height="86"></div>
             <!-- /.modalinfo__image -->
             <div class="modalinfo__title">Текст успешного оставления отзыва!</div><!-- /.modalinfo__title -->
             <div class="modalinfo__text">Теперь вы можете войти в вашую учетную запись.</div><!-- /.modalinfo_-text -->
@@ -1763,7 +1672,7 @@
       <div class="modal-content">
         <div class="modal__header">
           <div class="modal-title">Регистрация</div>
-          <div class="textlogin flex content-between items-center">
+          <div class="textlogin  content-between items-center">
             <div class="textlogin__text">Уже есть учетная запись?</div>
             <div class="textlogin__link"><a aria-label="link" href="">Авторизируйтесь</a></div>
           </div><!-- /.textlogin -->
@@ -1811,14 +1720,16 @@
               <label for="">Новый пароль</label>
               <div class="inputpassword">
                 <input type="password">
-                <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password" width="22" height="22">
+                <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
+                  width="22" height="22">
               </div><!-- /.inputpassword -->
             </div><!-- /.formblock__input -->
             <div class="formblock__input">
               <label for="">Повторите, пожалуйста</label>
               <div class="inputpassword">
                 <input type="password">
-                <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль"data-toggle="password" width="22" height="22">
+                <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
+                  width="22" height="22">
               </div><!-- /.inputpassword -->
             </div><!-- /.formblock__input -->
           </div><!-- /.formblock__main -->
@@ -1868,7 +1779,8 @@
           <form action="">
             <div class="accountname">
               <div class="accountname__image">
-                <div class="accountname__img"><img loading="lazy" src="img/accplh.svg" alt="Аккаунт" width="60" height="60"></div>
+                <div class="accountname__img"><img loading="lazy" src="img/accplh.svg" alt="Аккаунт" width="60"
+                    height="60"></div>
                 <!-- /.accountname__img -->
               </div><!-- /.accountname__image -->
               <div class="accountname__content">
@@ -1890,73 +1802,45 @@
                 <div class="formblock__input">
                   <div class="formrating">
                     <div class="formrating__text">Ваша оценка:</div>
-                    <span class="score">
-                      <div class="score-wrap">
-                        <span class="stars-active" style="width: 0;">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <span class="stars-inactive">
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-
-                        </span>
-                      </div>
+                    <span class="stars">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
                     </span>
-                    <span class='formrating__value'>0</span>
-                    <input type="hidden" name="formrating" value='0'>
+                  </span>
+                  <span class='formrating__value'>0</span>
+                  <input type="hidden" name="formrating" value='0'>
 
-                  </div>
-                  <script>
-                    $('.formrating .score-wrap').mousemove(function (e) {
-                      if ($('.formrating input[name="formrating"]').val() === '0') {
-                        var stars = parseInt((e.pageX - $(this).offset().left) / 28) * 28 + 28 + 1.5;
-                        $(this).find('span.stars-active').css('width', stars);
-                      }
-
-                    });
-
-                    $('.formrating .score-wrap').click(function (e) {
-                      var stars = parseInt((e.pageX - $(this).offset().left) / 28) + 1;
-                      var $inp = $('.formrating input[name="formrating"]');
-                      $inp.val(stars);
-                      $('.formrating span.stars-active').css('width', stars * 28 + 1);
-                      $('.formrating__value').html(stars);
-                      // при нажатии на рейтинг 
-                    });
-                  </script>
-                </div><!-- /.formblock__input -->
-              </div><!-- /.formblock__main -->
-              <div class="formblock__check">
-                <div class="check">
-                  <input type="checkbox" id="agree" checked="checked" value="Y">
-                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
-                      href=""> с
-                      политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
-                  </label>
                 </div>
-              </div><!-- /.formblock__check -->
-              <div class="modal-submit modal-submit_small">
-                <div class="buttonsrow">
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
-                  </div>
-                  <!-- /.buttonsrow__item -->
-                </div>
-                <!-- /.buttonsrow -->
+              
+              </div><!-- /.formblock__input -->
+            </div><!-- /.formblock__main -->
+            <div class="formblock__check">
+              <div class="check">
+                <input type="checkbox" id="agree" checked="checked" value="Y">
+                <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
+                    href=""> с
+                    политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
+                </label>
               </div>
-            </div><!-- /.formblock -->
-          </form>
-        </div>
+            </div><!-- /.formblock__check -->
+            <div class="modal-submit modal-submit_small">
+              <div class="buttonsrow">
+                <div class="buttonsrow__item buttonsrow__item_full">
+                  <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
+                </div>
+                <!-- /.buttonsrow__item -->
+              </div>
+              <!-- /.buttonsrow -->
+            </div>
+        </div><!-- /.formblock -->
+        </form>
       </div>
     </div>
   </div>
+</div>
 </div>
 <div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_rate'>
   <div class="modal-dialog" role="document">
@@ -1994,49 +1878,21 @@
                   <textarea name="" id="" cols="" rows="3"></textarea><!-- /# -->
                 </div><!-- /.formblock__input -->
                 <div class="formblock__input">
-                  <div class="formrating flex content-between items-center">
+                  <div class="formrating">
                     <div class="formrating__text">Ваша оценка:</div>
-                    <span class="score">
-                      <div class="score-wrap">
-                        <span class="stars-active" style="width: 0;">
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                          <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <span class="stars-inactive">
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-                          <i class="fa fa-star" aria-hidden="true" style="color: rgba(46, 47, 49, 0.1)"></i>
-
-                        </span>
-                      </div>
+                    <span class="stars">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
                     </span>
-                    <span class='formrating__value'>0</span>
-                    <input type="hidden" name="formrating" value='0'>
+                  </span>
+                  <span class='formrating__value'>0</span>
+                  <input type="hidden" name="formrating" value='0'>
 
-                  </div>
-                  <script>
-                    $('.formrating .score-wrap').mousemove(function (e) {
-                      if ($('.formrating input[name="formrating"]').val() === '0') {
-                        var stars = parseInt((e.pageX - $(this).offset().left) / 28) * 28 + 28 + 1.5;
-                        $(this).find('span.stars-active').css('width', stars);
-                      }
-
-                    });
-
-                    $('.formrating .score-wrap').click(function (e) {
-                      var stars = parseInt((e.pageX - $(this).offset().left) / 28) + 1;
-                      var $inp = $('.formrating input[name="formrating"]');
-                      $inp.val(stars);
-                      $('.formrating span.stars-active').css('width', stars * 28 + 1);
-                      $('.formrating__value').html(stars);
-                      // при нажатии на рейтинг 
-                    });
-                  </script>
+                </div>
+                
                 </div><!-- /.formblock__input -->
               </div><!-- /.formblock__main -->
               <div class="formblock__check">
