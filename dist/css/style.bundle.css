@@ -9156,8 +9156,10 @@ textarea {
     margin-left: 5px; }
   .formrating .score-wrap {
     width: 333px; }
+  form .stars {
+    gap: 6px; }
   form .stars span {
-    font-size: 64px; } }
+    font-size: 58px; } }
 
 
 /*# sourceMappingURL=style.bundle.css.map*/

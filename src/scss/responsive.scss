@@ -5,19 +5,20 @@
   .productcard__form {
     display: none;
   }
-  .iconlinks__item_login, 
+  .iconlinks__item_login,
   .iconlinks__item_card {
     display: none;
   }
   .buyblock__shop {
     display: block;
-  }.headermain__iconlinks {
+  }
+  .headermain__iconlinks {
     margin-left: 9px;
   }
   .productcard__cart {
     display: none;
   }
-/*   .detailtable {
+  /*   .detailtable {
     display: none;
   } */
   .detailinfo__content {
@@ -25,7 +26,7 @@
       margin: 50px 0;
     }
   }
- /*  .detailinfo__content .infomessage {
+  /*  .detailinfo__content .infomessage {
     display: none;
   } */
   .detailinfo__content .infoicons__item:first-child {
@@ -2778,13 +2779,13 @@
   }
   .shopslist__title {
     font-weight: 500;
-font-size: 14px;
-margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
   }
   .shopslist__address {
     font-weight: 400;
-font-size: 14px;
-color: #2e2f31;
+    font-size: 14px;
+    color: #2e2f31;
   }
   .shopslist__item {
     flex-wrap: wrap;
@@ -2794,10 +2795,10 @@ color: #2e2f31;
 
   .shopslist__param {
     font-weight: 400;
-font-size: 12px;
-color: #2e2f31;
-margin-top: 22px;
-margin-left: 46px;
+    font-size: 12px;
+    color: #2e2f31;
+    margin-top: 22px;
+    margin-left: 46px;
   }
   .shopslist__content {
     margin-top: 4px;
@@ -2821,8 +2822,11 @@ margin-left: 46px;
   }
   .formrating .score-wrap {
     width: 333px;
-}
-form .stars span {
-  font-size: 64px;
-}
+  }
+  form .stars {
+    gap: 6px;
+  }
+  form .stars span {
+    font-size: 58px;
+  }
 }
