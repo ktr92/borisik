@@ -782,6 +782,206 @@ function closeByOutsideSelect() {
   }
 } */
 
+$(document).ready(function () {
+  function updateFileInput() {
+    const dataTransfer = new DataTransfer()
+    filesArray.forEach((file) => dataTransfer.items.add(file))
+    fileInput.files = dataTransfer.files
+  }
+
+  function refreshFileInput() {
+    const dataTransfer = new DataTransfer()
+    filesArray.forEach((file) => dataTransfer.items.add(file))
+    fileInput.files = dataTransfer.files
+  }
+  const addButton = document.getElementById("addButton")
+  const addBlock = document.getElementById("addblock")
+  const dropZone = document.getElementById("dropZone")
+  /* 	const message = document.getElementById('message'); */
+  const fileInput = document.getElementById("fileInput")
+  const fileListContainer = document.getElementById("fileList")
+
+  let totalSize = 0
+
+  let filesArray = [] // Массив для хранения файлов
+
+  addButton.addEventListener("click", () => {
+    /* fileInput.click(); */
+  })
+
+  // Обработка начала перетаскивания файла в окно
+  document.addEventListener("dragenter", (e) => {
+    e.preventDefault()
+    // Показываем зону при первом входе в область браузера с файлом
+    showDropZone()
+  })
+
+  // Обработка выхода из области браузера без перетаскивания
+  document.addEventListener("dragleave", (e) => {
+    e.preventDefault()
+    // Можно оставить пустым или добавить логику
+  })
+
+  // Обработка события dragover на документе
+  document.addEventListener("dragover", (e) => {
+    e.preventDefault()
+  })
+
+  // Обработка drop на документе - чтобы не потерять файлы вне зоны
+  document.addEventListener("drop", (e) => {
+    e.preventDefault()
+    hideDropZone()
+  })
+
+  // Обработка перетаскивания в зону
+  dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault()
+    dropZone.classList.add("dragover")
+  })
+  dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragover")
+  })
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault()
+    dropZone.classList.remove("dragover")
+
+    const droppedFiles = Array.from(e.dataTransfer.files)
+    addFiles(droppedFiles)
+    hideDropZone()
+  })
+
+  // Обработка клика по зоне для выбора файла
+  dropZone.addEventListener("click", () => {
+    fileInput.click()
+  })
+
+  // Обработка выбора файла через диалог
+  fileInput.addEventListener("change", () => {
+    if (fileInput.files.length > 0) {
+      const selectedFiles = Array.from(fileInput.files)
+      addFiles(selectedFiles)
+    }
+    hideDropZone()
+  })
+
+  // Функция добавления файлов
+  function addFiles(newFiles) {
+    if (newFiles.length > 1 || filesArray.length + newFiles.length > 1) {
+     /*  $("#myModal_filelimit").modal("show") */
+      alert(`Не более 1 файла!`);
+      return
+    }
+
+    let validExtensions = [
+      "application/pdf",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      ".pdf",
+      ".doc",
+      ".docx"
+    ]
+
+    newFiles.forEach((file) => {
+      let filetype = "." + file.name.split(/\.(?=[^\.]+$)/)[1]
+
+      let fileType = file.type
+      let fileSize = Math.round(file.size) // MB
+      if (
+        !validExtensions.includes(
+          filetype
+        ) /*  || fileSize > (14 * 1024 * 1024) */
+      ) {
+        //	$('#myModal_filetype').modal('show')
+        alert(
+          `Файл ${file.name} не соотвествует ограничениям: только .pdf, .docx, doc`
+        )
+        return
+      }
+
+      if (
+        !filesArray.some((f) => f.name === file.name && f.size === file.size)
+      ) {
+        filesArray.push(file)
+      }
+
+      totalSize = filesArray.reduce((size, item) => size + item.size, 0)
+      console.log(totalSize / 1024 / 1024)
+      if (totalSize > 14 * 1024 * 1024) {
+        /* $("#myModal_filelimit").modal("show") */
+        alert(`Общий вес файлов до 14 МБ!`);
+        filesArray.pop()
+        return
+      }
+    })
+    refreshFileInput()
+    renderFileList()
+  }
+
+  // Отрисовка списка файлов
+  function renderFileList() {
+    fileListContainer.innerHTML = ""
+
+    if (filesArray.length === 0) return
+
+    /* message.textContent = '';
+     */
+    filesArray.forEach((file, index) => {
+      let namesplit = file.name.split(/\.(?=[^\.]+$)/)
+      let filename = namesplit[0]
+      let extension = namesplit[1]
+
+      const li = document.createElement("li")
+
+      const sizeSpan = document.createElement("span")
+      sizeSpan.textContent = file.size.toFixed(2) / 1024 + ' Кб'
+         sizeSpan.classList.add('docsize')
+      const iconSpan = document.createElement("span")
+      iconSpan.innerHTML = `<img src="img/addbutton.svg" alt="">`
+      const nameSpan = document.createElement("span")
+      nameSpan.classList.add('doctitle')
+      const extSpan = document.createElement("span")
+      extSpan.classList.add('docext')
+      const nameDiv = document.createElement("div")
+      nameDiv.classList.add('docinfo')
+      nameSpan.textContent = filename
+      extSpan.textContent = " ." + extension
+
+      const deleteBtn = document.createElement("button")
+      deleteBtn.textContent = ""
+      deleteBtn.className = "delete-btn"
+      deleteBtn.onclick = () => {
+        
+        filesArray.splice(index, 1)
+        renderFileList()
+        filesArray.length = 0
+        if (filesArray.length === 0) {
+          hideDropZone()
+          document.querySelector('#addblock').classList.remove('hide')
+        }
+      }
+      nameDiv.appendChild(iconSpan)
+
+      nameDiv.appendChild(nameSpan)
+      nameSpan.appendChild(extSpan)
+      nameSpan.appendChild(sizeSpan)
+      nameDiv.appendChild(deleteBtn)
+      li.appendChild(nameDiv)
+
+      document.querySelector('#addblock').classList.add('hide')
+      fileListContainer.appendChild(li)
+    })
+  }
+
+  function showDropZone() {
+    dropZone.style.display = "flex"
+    addBlock.style.display = "none"
+  }
+  function hideDropZone() {
+    dropZone.style.display = "none"
+    addBlock.style.display = "flex"
+  }
+})
+
 window.addEventListener("load", () => {
   initFE()
 })

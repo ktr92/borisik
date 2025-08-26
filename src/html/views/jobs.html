@@ -1,0 +1,217 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li>
+                    <a href="/">
+                      <span>
+                        <img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Вакансии</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="container">
+            <div class="catalogheader catalogheader_large">
+              <div class="catalogheader__left">
+                <div class="catalogheader__title ">
+                  <h1>Вакансии</h1>
+                </div>
+                <!-- /.catalogheader__title -->
+              </div>
+              <!-- /.catalogheader__left -->
+              <!-- /.catalogheader__panel -->
+            </div>
+            <!-- /.catalogheader__right -->
+
+            <div class="jobsblock">
+              <div class="jobsblock__items">
+                <div class="jobsblock__item">
+                  <div class="jobcard">
+                    <div class="jobcard__wrapper">
+                      <div class="jobcard__main">
+                        <div class="jobcard__title">
+                          <a href="#">Head of PR Department</a>
+                        </div>
+                        <div class="jobcard__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                          сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                        <div class="jobcard__info"><small>от</small> 40 000 <small>до</small> 100 000 руб.</div>
+                      </div>
+                      <div class="jobcard__button">
+                        <a href="#popup_job" data-toggle="modal" class="btn btn_main btn_round">Откликнуться</a>
+                      </div>
+                    </div><!-- /.jobcard__wrapper -->
+                  </div><!-- /.jobcard -->
+                </div><!-- /.jobsblock__item -->
+                <div class="jobsblock__item">
+                  <div class="jobcard">
+                    <div class="jobcard__wrapper">
+                      <div class="jobcard__main">
+                        <div class="jobcard__title">
+                          <a href="#">Head of PR Department</a>
+                        </div>
+                        <div class="jobcard__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                          сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                        <div class="jobcard__info"><small>от</small> 40 000 <small>до</small> 100 000 руб.</div>
+                      </div>
+                      <div class="jobcard__button">
+                        <a href="#popup_job" data-toggle="modal" class="btn btn_main btn_round">Откликнуться</a>
+                      </div>
+                    </div><!-- /.jobcard__wrapper -->
+                  </div><!-- /.jobcard -->
+                </div><!-- /.jobsblock__item -->
+              </div><!-- /.jobsblock__items -->
+            </div><!-- /.jobsblock -->
+
+          </div>
+          <!-- /.page -->
+
+
+          <div class="modal modal_large fade" tabindex="-1" role="dialog" id='popup_job'>
+            <div class="modal-dialog" role="document">
+              <div class="modalwrapper">
+                <div class="modal-content">
+                  <div class="modal__header">
+                    <div class="modal-title">Заполните анкету</div>
+                    <div class="modal-subtitle">И вам перезвонят для консультации по вакансиям в ближайшее время</div>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                      <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="Закрыть"
+                        title="Закрыть">
+                    </span>
+                  </button>
+                  <form action="#" class="">
+
+                    <div class="modal-body formblock__main formblock__main_cols">
+                      <div class="form-result" data-entity="form-result"></div>
+                      <input type="hidden" name="PRODUCT" />
+                      <div class="formblock__input">
+                        <label for="">Ваше имя </label>
+                        <input type="text" name="NAME" required>
+                      </div><!-- /.formblock__input -->
+                      <div class="formblock__input">
+                        <label for="">Фамилия</label>
+                        <input type="text" name="LAST_NAME" required>
+                      </div><!-- /.formblock__input -->
+
+                      <div class="formblock__input">
+                        <label for="">Телефон</label>
+                        <input type="tel" name="PHONE" placeholder='7 (___) ___-__-__' required>
+                      </div><!-- /.formblock__input -->
+                      <div class="formblock__input">
+                        <label for="">Гражданство</label>
+                        <input type="text" name="WHO" required>
+                      </div><!-- /.formblock__input -->
+
+                    </div><!-- /.formblock__main -->
+
+                    <div class="formblock__file">
+                      <div class="fileupload fileupload_drop">
+                        <ul id="fileList">
+
+                         </ul>
+
+                        <!-- Изначально показываем кнопку -->
+                        <label  for="fileInput" class="addbutton" id="addblock">
+                           <div class="addbutton__text">
+                              <div class="addbutton__icon">
+                                <img src="img/addbutton.svg" alt="">
+                              </div><!-- /.addbutton__icon -->
+                              
+                              <div class="addbutton__info">
+                                <div class="addbutton__infotitle">Прикрепите ваше резюме</div><!-- /.addbutton__infotitle -->
+                                <div class="addbutton__infotags">
+                                  <div class="addbutton__infotag">pdf</div>
+                                  <div class="addbutton__infotag">doc</div>
+                                  <div class="addbutton__infotag">docx</div>
+                                </div><!-- /.addbutton__infotags -->
+                              </div><!-- /.addbutton__info -->
+                           </div>
+
+                          <div class="addbutton__button">
+                            <span id="addButton">Выбрать файл</span>
+                          </div>
+                         
+                        </label><!-- /.addbutton -->
+                        <!-- Зона перетаскивания (скрыта по умолчанию) -->
+                        <div class="drop-zone" id="dropZone" style="display:none;">
+                          <div class="dropcontent">
+                            <div class="dropcontent__wrapper">
+                              <div class="dropcontent__img">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3 1C1.89543 1 1 1.89543 1 3V33C1 34.1046 1.89543 35 3 35H26C27.1046 35 28 34.1046 28 33V10.4415L19.5269 1H3ZM0 3C0 1.34315 1.34315 0 3 0H19.75C19.892 0 20.0273 0.0603699 20.1221 0.166045L28.8721 9.91605C28.9545 10.0078 29 10.1267 29 10.25V33C29 34.6569 27.6569 36 26 36H3C1.34315 36 0 34.6569 0 33V3Z"
+                                    fill="#7B7794"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19 8V1H20V8C20 9.10457 20.8954 10 22 10H28V11H22C20.3431 11 19 9.65685 19 8Z"
+                                    fill="#7B7794"></path>
+                                </svg>
+                              </div><!-- /.dropcontent__img -->
+                              <div class="dropcontent__main">
+                                <div class="dropcontent__title">Перетащите файл сюда</div>
+                                <!-- /.dropcontent__title -->
+                              </div><!-- /.dropcontent__main -->
+                            </div><!-- /.dropcontent__wrapper -->
+                          </div><!-- /.dropcontent -->
+                        </div>
+                        <!-- Скрытый input для выбора файлов -->
+                        <input type="file" id="fileInput" name="file_upload[]" style="display:none;">
+                      </div>
+                    </div><!-- /.formblock__file -->
+
+                    <div class="modal-submit modal-submit_small">
+                      <div class="buttonsrow xs-full">
+                        <div class="buttonsrow__item ">
+                          <div class="formblock__check">
+                            <div class="check">
+                              <input type="checkbox" id="agree_callback" value="Y" required="required" name="agree">
+                              <label for="agree_callback">Даю свое согласие на обработку персональных данных, соглашаюсь
+                                <a aria-label="link" href="/politika-konfidenczialnosti/"> с
+                                  политикой конфиденциальности</a> и принимаю <a aria-label="link"
+                                  href="/oferta/">условия
+                                  оферты</a>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                        <div class="buttonsrow__item ">
+                          <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+
+                      </div>
+                      <!-- /.buttonsrow -->
+
+
+
+                  </form><!-- /.formblock__input -->
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
